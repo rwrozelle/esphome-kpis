@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import subprocess
 from pathlib import Path
 
@@ -81,15 +82,42 @@ def entity_types(esphome_root: Path, component: str) -> list[str]:
     return sorted(found)
 
 
-def platform_coverage(esphome_root: Path, component: str) -> list[str]:
-    """Return list of platform subdirectories under the component."""
+KNOWN_PLATFORMS = frozenset({"esp32", "esp8266", "rp2040", "libretiny", "host", "zephyr", "bk72xx", "rtl87xx"})
+
+_IFDEF_RE = re.compile(r"#\s*ifdef\s+(USE_\w+)")
+_PLATFORM_SUFFIX = {f"USE_{p.upper()}": p for p in KNOWN_PLATFORMS}
+
+
+_TOP_LINES = 5
+
+
+def platform_info(esphome_root: Path, component: str) -> dict:
+    """Return supported_platforms for a component.
+
+    Scans .h and .cpp files for USE_<PLATFORM> #ifdef guards in the first
+    5 lines. A guard that early means the entire file is platform-specific.
+    Mid-file guards (conditional sections within a generic file) are ignored.
+    supported_platforms: ["all"] if no top-of-file guards found, else those platforms.
+    """
     comp_dir = esphome_root / "esphome" / "components" / component
-    known_platforms = {"esp32", "esp8266", "rp2040", "libretiny", "host", "zephyr", "bk72xx", "rtl87xx"}
-    return sorted(
-        d.name
-        for d in comp_dir.iterdir()
-        if d.is_dir() and d.name in known_platforms
-    )
+
+    positive: set[str] = set()
+
+    for f in comp_dir.iterdir():
+        if f.suffix not in (".h", ".cpp"):
+            continue
+        try:
+            lines = f.read_text(encoding="utf-8", errors="ignore").splitlines()
+        except OSError:
+            continue
+        for line in lines[:_TOP_LINES]:
+            m = _IFDEF_RE.search(line)
+            if m:
+                plat = _PLATFORM_SUFFIX.get(m.group(1))
+                if plat:
+                    positive.add(plat)
+
+    return {"supported_platforms": sorted(positive) if positive else ["all"]}
 
 
 def component_tests(esphome_root: Path, component: str) -> dict:

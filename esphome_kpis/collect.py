@@ -47,7 +47,7 @@ def collect(esphome_root: Path, component_filter: list[str] | None = None) -> di
             "version_last_modified": repo.date_to_version(last_date, releases),
             "last_commit_date": last_date,
             "entity_types": repo.entity_types(esphome_root, component),
-            "platforms": repo.platform_coverage(esphome_root, component),
+            **repo.platform_info(esphome_root, component),
             **repo.component_tests(esphome_root, component),
             **repo.codeowners_info(esphome_root, component),
         }

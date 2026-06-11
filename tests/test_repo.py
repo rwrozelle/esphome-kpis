@@ -5,7 +5,7 @@ from esphome_kpis.repo import (
     component_tests,
     date_to_version,
     entity_types,
-    platform_coverage,
+    platform_info,
 )
 
 RELEASES = [
@@ -126,24 +126,46 @@ class TestEntityTypes:
         assert result == ["sensor"]
 
 
-class TestPlatformCoverage:
-    def test_detects_known_platforms(self, tmp_path):
-        comp_dir = tmp_path / "esphome" / "components" / "wifi"
-        (comp_dir / "esp32").mkdir(parents=True)
-        (comp_dir / "esp8266").mkdir(parents=True)
-        (comp_dir / "rp2040").mkdir(parents=True)
-        result = platform_coverage(tmp_path, "wifi")
-        assert result == ["esp32", "esp8266", "rp2040"]
-
-    def test_ignores_unknown_subdirs(self, tmp_path):
-        comp_dir = tmp_path / "esphome" / "components" / "wifi"
-        (comp_dir / "esp32").mkdir(parents=True)
-        (comp_dir / "helpers").mkdir(parents=True)
-        result = platform_coverage(tmp_path, "wifi")
-        assert result == ["esp32"]
-
-    def test_no_platform_subdirs(self, tmp_path):
-        comp_dir = tmp_path / "esphome" / "components" / "logger"
+class TestPlatformInfo:
+    def test_no_guards_means_all(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "dht"
         comp_dir.mkdir(parents=True)
-        result = platform_coverage(tmp_path, "logger")
-        assert result == []
+        (comp_dir / "dht.h").write_text("// generic component\n")
+        (comp_dir / "dht.cpp").write_text("// no platform guards\n")
+        assert platform_info(tmp_path, "dht") == {"supported_platforms": ["all"]}
+
+    def test_ifdef_at_top_of_header(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "adc"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "adc_esp32.h").write_text("#ifdef USE_ESP32\nstruct Esp32Adc {};\n#endif\n")
+        (comp_dir / "adc_rp2040.h").write_text("#ifdef USE_RP2040\nstruct Rp2040Adc {};\n#endif\n")
+        assert platform_info(tmp_path, "adc") == {"supported_platforms": ["esp32", "rp2040"]}
+
+    def test_ifdef_at_top_of_cpp(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "adc"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "adc_esp8266.cpp").write_text("#ifdef USE_ESP8266\nvoid foo() {}\n#endif\n")
+        assert platform_info(tmp_path, "adc") == {"supported_platforms": ["esp8266"]}
+
+    def test_mid_file_ifdef_ignored(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "dht"
+        comp_dir.mkdir(parents=True)
+        lines = ["#include <stdint.h>"] * 10 + ["#ifdef USE_ESP32", "void esp_thing();", "#endif"]
+        (comp_dir / "dht.cpp").write_text("\n".join(lines))
+        assert platform_info(tmp_path, "dht") == {"supported_platforms": ["all"]}
+
+    def test_combined_header_and_cpp(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "adc"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "adc_esp32.h").write_text("#ifdef USE_ESP32\n#endif\n")
+        (comp_dir / "adc_zephyr.h").write_text("#ifdef USE_ZEPHYR\n#endif\n")
+        (comp_dir / "adc_esp8266.cpp").write_text("#ifdef USE_ESP8266\n#endif\n")
+        (comp_dir / "adc_rp2040.cpp").write_text("#ifdef USE_RP2040\n#endif\n")
+        assert platform_info(tmp_path, "adc") == {"supported_platforms": ["esp32", "esp8266", "rp2040", "zephyr"]}
+
+    def test_ignores_non_cpp_h_files(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "wifi"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "__init__.py").write_text("cv.only_on_esp32\n")
+        (comp_dir / "readme.txt").write_text("#ifdef USE_ESP8266\n")
+        assert platform_info(tmp_path, "wifi") == {"supported_platforms": ["all"]}
