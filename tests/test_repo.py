@@ -1,16 +1,11 @@
 """Tests for local repo inspection helpers."""
 
-import pytest
-from pathlib import Path
-from unittest.mock import patch, MagicMock
-
 from esphome_kpis.repo import (
-    date_to_version,
     codeowners_info,
     component_tests,
+    date_to_version,
     platform_coverage,
 )
-
 
 RELEASES = [
     {"tag": "2024.1.0", "date": "2024-01-17"},

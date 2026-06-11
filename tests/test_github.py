@@ -1,7 +1,6 @@
 """Tests for GitHub API helpers."""
 
-import pytest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
 from esphome_kpis.github import releases
 

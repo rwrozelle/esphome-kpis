@@ -12,7 +12,6 @@ from pathlib import Path
 
 from . import github, repo
 
-
 ESPHOME_REPO_URL = "https://github.com/esphome/esphome.git"
 
 
