@@ -4,6 +4,7 @@ from esphome_kpis.repo import (
     codeowners_info,
     component_tests,
     date_to_version,
+    entity_types,
     platform_coverage,
 )
 
@@ -84,6 +85,45 @@ class TestComponentTests:
         result = component_tests(tmp_path, "wifi")
         assert result["has_tests"] is True
         assert result["test_file_count"] == 2
+
+
+class TestEntityTypes:
+    def test_detects_sensor_py(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "dht"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "sensor.py").write_text("")
+        assert entity_types(tmp_path, "dht") == ["sensor"]
+
+    def test_detects_subdir(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "gpio"
+        (comp_dir / "binary_sensor").mkdir(parents=True)
+        (comp_dir / "switch").mkdir(parents=True)
+        result = entity_types(tmp_path, "gpio")
+        assert result == ["binary_sensor", "switch"]
+
+    def test_multi_type_component(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "combo"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "sensor.py").write_text("")
+        (comp_dir / "text_sensor.py").write_text("")
+        (comp_dir / "button").mkdir()
+        result = entity_types(tmp_path, "combo")
+        assert result == ["button", "sensor", "text_sensor"]
+
+    def test_ignores_non_entity_files(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "wifi"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "wifi.cpp").write_text("")
+        (comp_dir / "helpers").mkdir()
+        assert entity_types(tmp_path, "wifi") == []
+
+    def test_no_double_count_dir_and_py(self, tmp_path):
+        comp_dir = tmp_path / "esphome" / "components" / "test_comp"
+        comp_dir.mkdir(parents=True)
+        (comp_dir / "sensor.py").write_text("")
+        (comp_dir / "sensor").mkdir()
+        result = entity_types(tmp_path, "test_comp")
+        assert result == ["sensor"]
 
 
 class TestPlatformCoverage:

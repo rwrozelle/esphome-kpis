@@ -48,6 +48,39 @@ def last_commit_date(esphome_root: Path, component: str) -> str | None:
     return out[:10] if out else None
 
 
+ENTITY_TYPES = frozenset({
+    "alarm_control_panel",
+    "binary_sensor",
+    "button",
+    "climate",
+    "cover",
+    "event",
+    "fan",
+    "light",
+    "lock",
+    "media_player",
+    "number",
+    "output",
+    "select",
+    "sensor",
+    "switch",
+    "text_sensor",
+    "update",
+    "valve",
+})
+
+
+def entity_types(esphome_root: Path, component: str) -> list[str]:
+    """Return entity types provided by this component (e.g. sensor, switch)."""
+    comp_dir = esphome_root / "esphome" / "components" / component
+    found = set()
+    for child in comp_dir.iterdir():
+        name = child.stem if child.is_file() and child.suffix == ".py" else child.name
+        if name in ENTITY_TYPES:
+            found.add(name)
+    return sorted(found)
+
+
 def platform_coverage(esphome_root: Path, component: str) -> list[str]:
     """Return list of platform subdirectories under the component."""
     comp_dir = esphome_root / "esphome" / "components" / component
