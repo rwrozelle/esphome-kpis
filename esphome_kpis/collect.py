@@ -29,6 +29,9 @@ def collect(esphome_root: Path, component_filter: list[str] | None = None) -> di
     print("Fetching release list from GitHub ...")
     releases = github.releases()
 
+    print("Bulk-fetching all issue and PR counts from GitHub ...")
+    issue_counts = github.fetch_all_issue_counts()
+
     components = repo.component_names(esphome_root)
     if component_filter:
         components = [c for c in components if c in component_filter]
@@ -37,12 +40,13 @@ def collect(esphome_root: Path, component_filter: list[str] | None = None) -> di
     results = {}
 
     for i, component in enumerate(components, 1):
-        print(f"  [{i}/{len(components)}] {component}", end="", flush=True)
+        print(f"  [{i}/{len(components)}] {component}", flush=True)
 
         first_date = repo.first_commit_date(esphome_root, component)
         last_date = repo.last_commit_date(esphome_root, component)
+        gh_counts = issue_counts.get(component, github._EMPTY_COUNTS)
 
-        kpis = {
+        results[component] = {
             "version_created": repo.date_to_version(first_date, releases),
             "version_last_modified": repo.date_to_version(last_date, releases),
             "last_commit_date": last_date,
@@ -50,17 +54,8 @@ def collect(esphome_root: Path, component_filter: list[str] | None = None) -> di
             **repo.platform_info(esphome_root, component),
             **repo.component_tests(esphome_root, component),
             **repo.codeowners_info(esphome_root, component),
+            **gh_counts,
         }
-
-        print(" [git done, fetching GitHub ...]", end="", flush=True)
-        gh_counts = github.issues_and_prs(component)
-        kpis.update(gh_counts)
-
-        results[component] = kpis
-        print(
-            f" issues={gh_counts['open_issues']}o/{gh_counts['closed_issues']}c"
-            f" prs={gh_counts['open_prs']}o/{gh_counts['closed_prs']}c"
-        )
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),

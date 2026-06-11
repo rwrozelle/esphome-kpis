@@ -65,22 +65,48 @@ def releases() -> list[dict]:
     return stable
 
 
-def issues_and_prs(component: str) -> dict:
-    """Return open/closed issue and PR counts for a component label."""
-    label = f"component: {component}"
-    result = {"open_issues": 0, "closed_issues": 0, "open_prs": 0, "closed_prs": 0}
+_COMPONENT_PREFIX = "component: "
+_EMPTY_COUNTS = {"open_issues": 0, "closed_issues": 0, "open_prs": 0, "closed_prs": 0}
 
-    for state in ("open", "closed"):
-        items = paginate(
-            f"repos/{ESPHOME_REPO}/issues",
-            labels=label,
-            state=state,
+
+def fetch_all_issue_counts(repo: str = ESPHOME_REPO) -> dict[str, dict]:
+    """Fetch all issues and PRs in one bulk pass, return counts keyed by component.
+
+    Reduces ~1400 per-component API calls to a single paginated stream.
+    Only reads state, labels, and pull_request presence per item.
+    """
+    counts: dict[str, dict] = {}
+    page = 1
+    per_page = 100
+    total = 0
+
+    while True:
+        items = get(
+            f"repos/{repo}/issues",
+            state="all",
+            per_page=per_page,
+            page=page,
         )
-        for item in items:
-            if "pull_request" in item:
-                key = f"{state}_prs"
-            else:
-                key = f"{state}_issues"
-            result[key] += 1
+        if not items:
+            break
 
-    return result
+        for item in items:
+            state = item["state"]
+            is_pr = "pull_request" in item
+            key = f"{state}_{'prs' if is_pr else 'issues'}"
+            for label in item.get("labels", []):
+                name = label.get("name", "")
+                if name.startswith(_COMPONENT_PREFIX):
+                    component = name[len(_COMPONENT_PREFIX):]
+                    if component not in counts:
+                        counts[component] = dict(_EMPTY_COUNTS)
+                    counts[component][key] += 1
+
+        total += len(items)
+        print(f"  fetched {total} issues/PRs ...", end="\r", flush=True)
+        if len(items) < per_page:
+            break
+        page += 1
+
+    print(f"  fetched {total} issues/PRs total")
+    return counts
