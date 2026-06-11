@@ -1,14 +1,21 @@
-"""GitHub API helpers with rate-limit awareness."""
+"""GitHub API helpers with rate-limit awareness and local issue/PR cache."""
 
 from __future__ import annotations
 
+import json
 import os
 import time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import requests
 
 GITHUB_API = "https://api.github.com"
 ESPHOME_REPO = "esphome/esphome"
+
+_COMPONENT_PREFIX = "component: "
+_EMPTY_COUNTS = {"open_issues": 0, "closed_issues": 0, "open_prs": 0, "closed_prs": 0}
+_CLOSED_RETENTION_DAYS = 365
 
 
 def _session() -> requests.Session:
@@ -18,6 +25,7 @@ def _session() -> requests.Session:
         s.headers["Authorization"] = f"Bearer {token}"
     s.headers["Accept"] = "application/vnd.github+json"
     s.headers["X-GitHub-Api-Version"] = "2022-11-28"
+    s.headers["User-Agent"] = "esphome-kpis/0.1 (https://github.com/rwrozelle/esphome-kpis)"
     return s
 
 
@@ -65,48 +73,133 @@ def releases() -> list[dict]:
     return stable
 
 
-_COMPONENT_PREFIX = "component: "
-_EMPTY_COUNTS = {"open_issues": 0, "closed_issues": 0, "open_prs": 0, "closed_prs": 0}
+# ---------------------------------------------------------------------------
+# Issue / PR cache
+# ---------------------------------------------------------------------------
+
+def _cutoff_iso() -> str:
+    """ISO timestamp for now minus _CLOSED_RETENTION_DAYS."""
+    return (datetime.now(timezone.utc) - timedelta(days=_CLOSED_RETENTION_DAYS)).isoformat()
 
 
-def fetch_all_issue_counts(repo: str = ESPHOME_REPO) -> dict[str, dict]:
-    """Fetch all issues and PRs in one bulk pass, return counts keyed by component.
+def _fetch_stream(repo: str, state: str, since: str | None = None) -> list[dict]:
+    """Fetch issues/PRs using cursor-based pagination to bypass the 1000-item cap.
 
-    Reduces ~1400 per-component API calls to a single paginated stream.
-    Only reads state, labels, and pull_request presence per item.
+    Advances the `since` cursor using the last item's updated_at so each
+    request stays within GitHub's per-query limit.
     """
-    counts: dict[str, dict] = {}
-    page = 1
+    results = []
+    current_since = since
     per_page = 100
-    total = 0
 
     while True:
-        items = get(
-            f"repos/{repo}/issues",
-            state="all",
-            per_page=per_page,
-            page=page,
-        )
+        params: dict = {"state": state, "per_page": per_page, "sort": "updated", "direction": "asc"}
+        if current_since:
+            params["since"] = current_since
+
+        items = get(f"repos/{repo}/issues", **params)
         if not items:
             break
 
-        for item in items:
-            state = item["state"]
-            is_pr = "pull_request" in item
-            key = f"{state}_{'prs' if is_pr else 'issues'}"
-            for label in item.get("labels", []):
-                name = label.get("name", "")
-                if name.startswith(_COMPONENT_PREFIX):
-                    component = name[len(_COMPONENT_PREFIX):]
-                    if component not in counts:
-                        counts[component] = dict(_EMPTY_COUNTS)
-                    counts[component][key] += 1
+        results.extend(items)
+        print(f"  fetched {len(results)} items ({state}) ...", end="\r", flush=True)
 
-        total += len(items)
-        print(f"  fetched {total} issues/PRs ...", end="\r", flush=True)
         if len(items) < per_page:
             break
-        page += 1
 
-    print(f"  fetched {total} issues/PRs total")
+        current_since = items[-1]["updated_at"]
+
+    return results
+
+
+def _upsert(items_store: dict, raw_items: list[dict]) -> None:
+    """Upsert raw API items into the cache store."""
+    for item in raw_items:
+        number = str(item["number"])
+        components = [
+            label["name"][len(_COMPONENT_PREFIX):]
+            for label in item.get("labels", [])
+            if label.get("name", "").startswith(_COMPONENT_PREFIX)
+        ]
+        items_store[number] = {
+            "state": item["state"],
+            "is_pr": "pull_request" in item,
+            "components": components,
+            "updated_at": item["updated_at"],
+        }
+
+
+def _prune(items_store: dict, cutoff: str) -> int:
+    """Remove closed items older than cutoff. Returns number pruned."""
+    stale = [k for k, v in items_store.items() if v["state"] == "closed" and v["updated_at"] < cutoff]
+    for k in stale:
+        del items_store[k]
+    return len(stale)
+
+
+def load_cache(path: Path) -> dict:
+    """Load cache from disk, or return an empty cache."""
+    if path.exists():
+        return json.loads(path.read_text())
+    return {"last_fetched_at": None, "items": {}}
+
+
+def save_cache(cache: dict, path: Path) -> None:
+    """Write cache to disk."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(cache, indent=2))
+
+
+def update_cache(cache: dict, repo: str = ESPHOME_REPO) -> dict:
+    """Fetch new/changed items from GitHub and merge into cache.
+
+    Cold start (no last_fetched_at):
+      - Fetch all open items (no time limit)
+      - Fetch closed items updated in the last 365 days
+
+    Incremental (cache exists):
+      - Fetch all items (open + closed) updated since last_fetched_at
+        This catches state changes (open -> closed) as well as new items.
+
+    After fetching, prune closed items older than 365 days and record
+    last_fetched_at = now.
+    """
+    cutoff = _cutoff_iso()
+    items_store = cache.setdefault("items", {})
+    last_fetched = cache.get("last_fetched_at")
+
+    if last_fetched is None:
+        print("  cold start: fetching all open items ...")
+        open_items = _fetch_stream(repo, "open")
+        print(f"  fetched {len(open_items)} open items         ")
+
+        print("  cold start: fetching closed items (last 365 days) ...")
+        closed_items = _fetch_stream(repo, "closed", since=cutoff)
+        print(f"  fetched {len(closed_items)} closed items        ")
+
+        _upsert(items_store, open_items + closed_items)
+    else:
+        print(f"  incremental fetch since {last_fetched[:10]} ...")
+        updated = _fetch_stream(repo, "all", since=last_fetched)
+        print(f"  fetched {len(updated)} updated items         ")
+        _upsert(items_store, updated)
+
+    pruned = _prune(items_store, cutoff)
+    if pruned:
+        print(f"  pruned {pruned} closed items older than 365 days")
+
+    cache["last_fetched_at"] = datetime.now(timezone.utc).isoformat()
+    return cache
+
+
+def counts_from_cache(cache: dict) -> dict[str, dict]:
+    """Derive per-component open/closed issue/PR counts from the local cache."""
+    counts: dict[str, dict] = {}
+    for item in cache.get("items", {}).values():
+        state = item["state"]
+        key = f"{state}_{'prs' if item['is_pr'] else 'issues'}"
+        for component in item["components"]:
+            if component not in counts:
+                counts[component] = dict(_EMPTY_COUNTS)
+            counts[component][key] += 1
     return counts

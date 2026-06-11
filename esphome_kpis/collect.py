@@ -13,6 +13,7 @@ from pathlib import Path
 from . import github, repo
 
 ESPHOME_REPO_URL = "https://github.com/esphome/esphome.git"
+DEFAULT_CACHE = Path("data/github_cache.json")
 
 
 def _clone_esphome(dest: Path) -> None:
@@ -21,16 +22,20 @@ def _clone_esphome(dest: Path) -> None:
         ["git", "clone", "--depth=1", "--no-single-branch", ESPHOME_REPO_URL, str(dest)],
         check=True,
     )
-    # Fetch full history for log queries (not --depth shallow)
     subprocess.run(["git", "fetch", "--unshallow"], cwd=dest, check=True)
 
 
-def collect(esphome_root: Path, component_filter: list[str] | None = None) -> dict:
+def collect(esphome_root: Path, cache_path: Path, component_filter: list[str] | None = None) -> dict:
     print("Fetching release list from GitHub ...")
     releases = github.releases()
 
-    print("Bulk-fetching all issue and PR counts from GitHub ...")
-    issue_counts = github.fetch_all_issue_counts()
+    print("Updating GitHub issue/PR cache ...")
+    cache = github.load_cache(cache_path)
+    github.update_cache(cache)
+    github.save_cache(cache, cache_path)
+    print(f"  cache saved to {cache_path} ({len(cache['items'])} items)")
+
+    issue_counts = github.counts_from_cache(cache)
 
     components = repo.component_names(esphome_root)
     if component_filter:
@@ -44,7 +49,7 @@ def collect(esphome_root: Path, component_filter: list[str] | None = None) -> di
 
         first_date = repo.first_commit_date(esphome_root, component)
         last_date = repo.last_commit_date(esphome_root, component)
-        gh_counts = issue_counts.get(component, github._EMPTY_COUNTS)
+        gh_counts = issue_counts.get(component, dict(github._EMPTY_COUNTS))
 
         results[component] = {
             "version_created": repo.date_to_version(first_date, releases),
@@ -79,6 +84,12 @@ def main() -> None:
         help="Output JSON file path",
     )
     parser.add_argument(
+        "--cache",
+        type=Path,
+        default=DEFAULT_CACHE,
+        help="GitHub issue/PR cache file path",
+    )
+    parser.add_argument(
         "--components",
         nargs="+",
         metavar="NAME",
@@ -87,7 +98,6 @@ def main() -> None:
     args = parser.parse_args()
 
     esphome_root = args.esphome_root
-    tmp_dir = None
 
     if esphome_root is None:
         tmp_dir = tempfile.mkdtemp(prefix="esphome-kpis-")
@@ -97,7 +107,7 @@ def main() -> None:
         print(f"Error: {esphome_root} does not look like an esphome repo", file=sys.stderr)
         sys.exit(1)
 
-    data = collect(esphome_root, component_filter=args.components)
+    data = collect(esphome_root, args.cache, component_filter=args.components)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(data, indent=2))
