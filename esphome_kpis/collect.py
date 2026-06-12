@@ -29,20 +29,37 @@ def _clone_esphome(dest: Path) -> None:
 
 
 def _resolve_components_from_titles(cache: dict, known: set[str]) -> int:
-    """Fill in missing components from title brackets for unlabeled items.
+    """Fill in missing components for unlabeled items by scanning issue titles.
 
-    Validates extracted names against the known component set from the local
-    esphome repo — never infers external or unknown component names.
+    Three strategies, applied together:
+    - [bracket] notation anywhere in title
+    - Underscore-containing names (e.g. online_image) anywhere in title — low false-positive rate
+    - Short single-word names only at the very start of the title (before a separator)
+
+    Validates all names against the known component set.
     Returns number of items updated.
     """
+    # Pre-compile patterns once per call (known set is stable per run)
+    underscore_pats = {c: re.compile(r"\b" + re.escape(c) + r"\b", re.IGNORECASE) for c in known if "_" in c}
+    start_pats = {c: re.compile(r"^" + re.escape(c) + r"[\s:/\-\[,]", re.IGNORECASE) for c in known if "_" not in c}
+
     updated = 0
     for item in cache.get("items", {}).values():
         if item["components"]:
             continue
         title = item.get("title", "")
-        found = [m.lower() for m in _BRACKET_RE.findall(title) if m.lower() in known]
+        found: set[str] = set()
+        for m in _BRACKET_RE.findall(title):
+            if m.lower() in known:
+                found.add(m.lower())
+        for c, pat in underscore_pats.items():
+            if pat.search(title):
+                found.add(c)
+        for c, pat in start_pats.items():
+            if pat.search(title):
+                found.add(c)
         if found:
-            item["components"] = found
+            item["components"] = sorted(found)
             updated += 1
     return updated
 
@@ -72,6 +89,10 @@ def collect(
     github.update_cache(cache, cache_path=cache_path)
     github.save_cache(cache, cache_path)
     print(f"  cache saved to {cache_path} ({len(cache['items'])} items)")
+
+    print("Updating esphome.io docs tree cache ...")
+    github.update_docs_cache(cache, cache_path=cache_path)
+    docs_types = github.docs_component_types(cache)
 
     components = repo.component_names(esphome_root)
     known = set(components)
@@ -127,16 +148,49 @@ def collect(
             "version_created": repo.date_to_version(first_date, releases),
             "version_last_modified": repo.date_to_version(last_date, releases),
             "last_commit_date": last_date,
-            "entity_types": repo.entity_types(esphome_root, component),
+            "type": repo.component_type(esphome_root, component, docs_types),
             **repo.platform_info(esphome_root, component),
             **repo.component_tests(esphome_root, component),
             **repo.codeowners_info(esphome_root, component),
             **gh_counts,
         }
 
+    # Tally attribution coverage for the footer note in rendered output.
+    # Three buckets per type:
+    #   known   — attributed to a component that exists in this repo (shown in table)
+    #   new     — attributed to a name not in this repo (new-component PRs/issues)
+    #   none    — no attribution found at all
+    def _tally(is_pr: bool) -> tuple[int, int, int]:
+        total = known_c = new_c = 0
+        for v in cache.get("items", {}).values():
+            if v["is_pr"] != is_pr:
+                continue
+            total += 1
+            comps = v.get("components", [])
+            if not comps:
+                pass  # none bucket
+            elif any(c in known for c in comps):
+                known_c += 1
+            else:
+                new_c += 1
+        return total, known_c, new_c
+
+    total_issues, known_issues, new_issues = _tally(False)
+    total_prs,    known_prs,    new_prs    = _tally(True)
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "esphome_releases": releases,
+        "issue_stats": {
+            "total_issues":      total_issues,
+            "known_issues":      known_issues,
+            "new_comp_issues":   new_issues,
+            "unattr_issues":     total_issues - known_issues - new_issues,
+            "total_prs":         total_prs,
+            "known_prs":         known_prs,
+            "new_comp_prs":      new_prs,
+            "unattr_prs":        total_prs - known_prs - new_prs,
+        },
         "components": results,
     }
 

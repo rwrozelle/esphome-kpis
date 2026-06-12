@@ -7,12 +7,15 @@ from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 from esphome_kpis.github import (
+    _fetch_docs_tree,
     _upsert,
     counts_from_cache,
+    docs_component_types,
     load_cache,
     releases,
     save_cache,
     update_cache,
+    update_docs_cache,
 )
 
 
@@ -224,3 +227,108 @@ class TestUpdateCache:
                 update_cache(cache, cache_path=None)
 
         mock_save.assert_not_called()
+
+
+class TestFetchDocsTree:
+    def test_skips_index_files(self):
+        from esphome_kpis.github import _DOCS_PATH_RE
+        paths = ["src/content/docs/components/sensor/index.mdx", "src/content/docs/components/sensor/dht.mdx"]
+        component_types: dict = {}
+        for path in paths:
+            m = _DOCS_PATH_RE.match(path)
+            if m:
+                cat, name = m.group(1), m.group(2)
+                if name != "index":
+                    if cat not in component_types.setdefault(name, []):
+                        component_types[name].append(cat)
+        assert "index" not in component_types
+        assert "dht" in component_types
+
+    def test_multi_category_component(self):
+        from esphome_kpis.github import _DOCS_PATH_RE
+        paths = [
+            "src/content/docs/components/binary_sensor/gpio.mdx",
+            "src/content/docs/components/switch/gpio.mdx",
+            "src/content/docs/components/output/gpio.mdx",
+        ]
+        component_types: dict = {}
+        for path in paths:
+            m = _DOCS_PATH_RE.match(path)
+            if m:
+                cat, name = m.group(1), m.group(2)
+                if name != "index" and cat not in component_types.setdefault(name, []):
+                    component_types[name].append(cat)
+        assert set(component_types["gpio"]) == {"binary_sensor", "switch", "output"}
+
+    def test_ignores_top_level_component_docs(self):
+        from esphome_kpis.github import _DOCS_PATH_RE
+        paths = ["src/content/docs/components/wifi.mdx", "src/content/docs/components/sensor/dht.mdx"]
+        matched = [p for p in paths if _DOCS_PATH_RE.match(p)]
+        # wifi.rst is top-level, doesn't match <category>/<name>
+        assert len(matched) == 1
+        assert "sensor/dht.mdx" in matched[0]
+
+
+class TestUpdateDocsCache:
+    def _make_get_sequence(self, component_types: dict):
+        """Return a side_effect for get() that simulates repo → branch → tree calls."""
+        calls = [0]
+        def fake_get(path, **params):
+            c = calls[0]
+            calls[0] += 1
+            if c == 0:
+                return {"default_branch": "next"}
+            if c == 1:
+                return {"commit": {"commit": {"tree": {"sha": "abc123"}}}}
+            return {
+                "tree": [
+                    {"path": f"src/content/docs/components/{cat}/{name}.mdx"}
+                    for name, cats in component_types.items()
+                    for cat in cats
+                ],
+                "truncated": False,
+            }
+        return fake_get
+
+    def test_fetches_when_cache_empty(self, tmp_path):
+        cache = {"items": {}}
+        with patch("esphome_kpis.github.get", side_effect=self._make_get_sequence({"dht": ["sensor"]})):
+            update_docs_cache(cache)
+        assert cache["docs_tree"]["component_types"]["dht"] == ["sensor"]
+        assert cache["docs_tree"]["fetched_at"] is not None
+
+    def test_skips_when_fresh(self):
+        fresh = datetime.now(timezone.utc).isoformat()
+        cache = {"docs_tree": {"fetched_at": fresh, "component_types": {"dht": ["sensor"]}}}
+        with patch("esphome_kpis.github.get") as mock_get:
+            update_docs_cache(cache)
+        mock_get.assert_not_called()
+
+    def test_refetches_when_stale(self, tmp_path):
+        stale = (datetime.now(timezone.utc) - timedelta(days=8)).isoformat()
+        cache = {"docs_tree": {"fetched_at": stale, "component_types": {}}}
+        with patch("esphome_kpis.github.get", side_effect=self._make_get_sequence({"dht": ["sensor"]})):
+            update_docs_cache(cache)
+        assert cache["docs_tree"]["component_types"]["dht"] == ["sensor"]
+
+    def test_saves_to_cache_path(self, tmp_path):
+        cache = {"items": {}}
+        cache_path = tmp_path / "cache.json"
+        with patch("esphome_kpis.github.get", side_effect=self._make_get_sequence({"dht": ["sensor"]})):
+            update_docs_cache(cache, cache_path=cache_path)
+        assert cache_path.exists()
+
+    def test_graceful_on_api_error(self):
+        cache = {"items": {}}
+        with patch("esphome_kpis.github.get", side_effect=Exception("network error")):
+            update_docs_cache(cache)
+        assert cache.get("docs_tree", {}).get("component_types") is None
+
+
+class TestDocsComponentTypes:
+    def test_returns_empty_when_not_fetched(self):
+        assert docs_component_types({}) == {}
+
+    def test_returns_mapping_from_cache(self):
+        cache = {"docs_tree": {"component_types": {"dht": ["sensor"]}}}
+        assert docs_component_types(cache) == {"dht": ["sensor"]}

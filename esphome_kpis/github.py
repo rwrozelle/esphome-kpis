@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -13,6 +14,10 @@ import requests
 
 GITHUB_API = "https://api.github.com"
 ESPHOME_REPO = "esphome/esphome"
+ESPHOME_IO_REPO = "esphome/esphome.io"
+
+_DOCS_PATH_RE = re.compile(r"^src/content/docs/components/([^/]+)/([^/]+)\.mdx?$")
+_DOCS_TTL_DAYS = 7
 
 _COMPONENT_PREFIX = "component: "
 _EMPTY_COUNTS = {"open_issues": 0, "open_prs": 0}
@@ -65,7 +70,7 @@ def releases() -> list[dict]:
     """Return all stable releases sorted oldest-first, with tag and date."""
     data = paginate(f"repos/{ESPHOME_REPO}/releases")
     stable = [
-        {"tag": r["tag_name"], "date": r["published_at"][:10]}
+        {"tag": r["tag_name"].lstrip("v"), "date": r["published_at"][:10]}
         for r in data
         if not r["prerelease"] and not r["draft"]
     ]
@@ -194,3 +199,76 @@ def counts_from_cache(cache: dict) -> dict[str, dict]:
                 counts[component] = dict(_EMPTY_COUNTS)
             counts[component][key] += 1
     return counts
+
+
+# ---------------------------------------------------------------------------
+# esphome.io docs tree — component → category mapping
+# ---------------------------------------------------------------------------
+
+def _fetch_docs_tree(repo: str) -> dict[str, list[str]]:
+    """Fetch {component: [category, ...]} from the esphome.io docs directory tree.
+
+    Parses paths matching 'docs/components/<category>/<name>.(rst|md)'.
+    Requires 3 API calls: repo info → branch → recursive tree.
+    """
+    repo_info = get(f"repos/{repo}")
+    default_branch = repo_info["default_branch"]
+
+    branch = get(f"repos/{repo}/branches/{default_branch}")
+    tree_sha = branch["commit"]["commit"]["tree"]["sha"]
+
+    tree = get(f"repos/{repo}/git/trees/{tree_sha}", recursive=1)
+    if tree.get("truncated"):
+        print(f"  warning: docs tree was truncated for {repo}")
+
+    component_types: dict[str, list[str]] = {}
+    for item in tree.get("tree", []):
+        m = _DOCS_PATH_RE.match(item.get("path", ""))
+        if not m:
+            continue
+        category, name = m.group(1), m.group(2)
+        if name == "index":
+            continue
+        if category not in component_types.setdefault(name, []):
+            component_types[name].append(category)
+
+    return component_types
+
+
+def update_docs_cache(
+    cache: dict,
+    cache_path: Path | None = None,
+    repo: str = ESPHOME_IO_REPO,
+) -> dict:
+    """Refresh docs component→type mapping if older than TTL (default 7 days).
+
+    Stores result in cache['docs_tree'] with a fetched_at timestamp.
+    """
+    docs = cache.setdefault("docs_tree", {})
+    fetched_at = docs.get("fetched_at")
+
+    if fetched_at:
+        age_days = (datetime.now(timezone.utc) - datetime.fromisoformat(fetched_at)).days
+        if age_days < _DOCS_TTL_DAYS:
+            print(f"  docs tree cache is {age_days}d old (TTL={_DOCS_TTL_DAYS}d), skipping fetch")
+            return cache
+
+    print(f"  fetching docs tree from {repo} ...")
+    try:
+        component_types = _fetch_docs_tree(repo)
+    except Exception as e:
+        print(f"  warning: could not fetch docs tree: {e}")
+        return cache
+
+    docs["fetched_at"] = datetime.now(timezone.utc).isoformat()
+    docs["component_types"] = component_types
+    print(f"  docs tree: {len(component_types)} documented components")
+
+    if cache_path:
+        save_cache(cache, cache_path)
+    return cache
+
+
+def docs_component_types(cache: dict) -> dict[str, list[str]]:
+    """Return the cached docs component→type mapping (empty dict if not yet fetched)."""
+    return cache.get("docs_tree", {}).get("component_types", {})

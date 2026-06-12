@@ -24,6 +24,7 @@ include = ["esphome_kpis*"]
 
 [project.scripts]
 esphome-kpis = "esphome_kpis.collect:main"
+esphome-kpis-render = "esphome_kpis.render:main"
 
 [tool.ruff]
 line-length = 120
