@@ -15,7 +15,7 @@ def _gh_link(name: str, kind: str, count: int | str) -> str:
     if not count:
         return ""
     q = quote(f'is:{kind} is:open label:"component: {name}"')
-    return f'<a href="{_GH_ISSUES.format(q=q)}">{count}</a>'
+    return f'<a href="{_GH_ISSUES.format(q=q)}" target="_blank" rel="noopener">{count}</a>'
 
 
 def _row(name: str, data: dict) -> str:
