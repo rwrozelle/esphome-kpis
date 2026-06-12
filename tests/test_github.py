@@ -7,9 +7,6 @@ from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 from esphome_kpis.github import (
-    _CLOSED_RETENTION_DAYS,
-    _cutoff_iso,
-    _prune,
     _upsert,
     counts_from_cache,
     load_cache,
@@ -23,10 +20,10 @@ def _iso(days_ago: int = 0) -> str:
     return (datetime.now(timezone.utc) - timedelta(days=days_ago)).isoformat()
 
 
-def _make_raw(number: int, state: str, is_pr: bool, components: list[str], days_ago: int = 1) -> dict:
+def _make_raw(number: int, is_pr: bool, components: list[str], days_ago: int = 1) -> dict:
     item: dict = {
         "number": number,
-        "state": state,
+        "state": "open",
         "labels": [{"name": f"component: {c}"} for c in components],
         "updated_at": _iso(days_ago),
     }
@@ -70,20 +67,19 @@ class TestReleases:
 class TestUpsert:
     def test_adds_new_item(self):
         store = {}
-        _upsert(store, [_make_raw(1, "open", False, ["wifi"])])
+        _upsert(store, [_make_raw(1, False, ["wifi"])])
         assert "1" in store
-        assert store["1"]["state"] == "open"
         assert store["1"]["components"] == ["wifi"]
         assert store["1"]["is_pr"] is False
 
     def test_updates_existing_item(self):
-        store = {"1": {"state": "open", "is_pr": False, "components": ["wifi"], "updated_at": _iso(5)}}
-        _upsert(store, [_make_raw(1, "closed", False, ["wifi"], days_ago=1)])
-        assert store["1"]["state"] == "closed"
+        store = {"1": {"is_pr": False, "components": ["wifi"], "updated_at": _iso(5)}}
+        _upsert(store, [_make_raw(1, False, ["wifi"], days_ago=1)])
+        assert store["1"]["updated_at"] > _iso(3)
 
     def test_multi_component_label(self):
         store = {}
-        _upsert(store, [_make_raw(1, "open", False, ["wifi", "mqtt"])])
+        _upsert(store, [_make_raw(1, False, ["wifi", "mqtt"])])
         assert store["1"]["components"] == ["wifi", "mqtt"]
 
     def test_no_component_label_stored_as_empty(self):
@@ -94,57 +90,44 @@ class TestUpsert:
 
     def test_pr_flagged_correctly(self):
         store = {}
-        _upsert(store, [_make_raw(3, "open", True, ["mqtt"])])
+        _upsert(store, [_make_raw(3, True, ["mqtt"])])
         assert store["3"]["is_pr"] is True
 
-
-class TestPrune:
-    def test_removes_old_closed(self):
-        cutoff = _cutoff_iso()
-        store = {
-            "1": {"state": "closed", "updated_at": _iso(_CLOSED_RETENTION_DAYS + 10)},
-            "2": {"state": "closed", "updated_at": _iso(30)},
-            "3": {"state": "open", "updated_at": _iso(_CLOSED_RETENTION_DAYS + 10)},
-        }
-        pruned = _prune(store, cutoff)
-        assert pruned == 1
-        assert "1" not in store
-        assert "2" in store
-        assert "3" in store  # open items never pruned
-
-    def test_returns_zero_when_nothing_to_prune(self):
-        store = {"1": {"state": "closed", "updated_at": _iso(30)}}
-        assert _prune(store, _cutoff_iso()) == 0
+    def test_no_state_stored(self):
+        store = {}
+        _upsert(store, [_make_raw(1, False, ["wifi"])])
+        assert "state" not in store["1"]
 
 
 class TestCountsFromCache:
     def test_counts_open_issue(self):
-        cache = {"items": {"1": {"state": "open", "is_pr": False, "components": ["wifi"], "updated_at": _iso(1)}}}
+        cache = {"items": {"1": {"is_pr": False, "components": ["wifi"], "updated_at": _iso(1)}}}
         result = counts_from_cache(cache)
         assert result["wifi"]["open_issues"] == 1
-        assert result["wifi"]["closed_issues"] == 0
+        assert result["wifi"]["open_prs"] == 0
 
-    def test_counts_closed_pr(self):
-        cache = {"items": {"1": {"state": "closed", "is_pr": True, "components": ["mqtt"], "updated_at": _iso(1)}}}
+    def test_counts_open_pr(self):
+        cache = {"items": {"1": {"is_pr": True, "components": ["mqtt"], "updated_at": _iso(1)}}}
         result = counts_from_cache(cache)
-        assert result["mqtt"]["closed_prs"] == 1
+        assert result["mqtt"]["open_prs"] == 1
+        assert result["mqtt"]["open_issues"] == 0
 
     def test_multi_component_counted_for_each(self):
-        item = {"state": "open", "is_pr": False, "components": ["wifi", "mqtt"], "updated_at": _iso(1)}
+        item = {"is_pr": False, "components": ["wifi", "mqtt"], "updated_at": _iso(1)}
         cache = {"items": {"1": item}}
         result = counts_from_cache(cache)
         assert result["wifi"]["open_issues"] == 1
         assert result["mqtt"]["open_issues"] == 1
 
     def test_unlabeled_item_not_counted(self):
-        cache = {"items": {"1": {"state": "open", "is_pr": False, "components": [], "updated_at": _iso(1)}}}
+        cache = {"items": {"1": {"is_pr": False, "components": [], "updated_at": _iso(1)}}}
         result = counts_from_cache(cache)
         assert result == {}
 
-    def test_all_four_keys_present(self):
-        cache = {"items": {"1": {"state": "open", "is_pr": False, "components": ["dht"], "updated_at": _iso(1)}}}
+    def test_only_two_keys_present(self):
+        cache = {"items": {"1": {"is_pr": False, "components": ["dht"], "updated_at": _iso(1)}}}
         result = counts_from_cache(cache)
-        assert set(result["dht"].keys()) == {"open_issues", "closed_issues", "open_prs", "closed_prs"}
+        assert set(result["dht"].keys()) == {"open_issues", "open_prs"}
 
 
 class TestLoadSaveCache:
@@ -154,7 +137,7 @@ class TestLoadSaveCache:
 
     def test_load_existing(self, tmp_path):
         path = tmp_path / "cache.json"
-        data = {"last_fetched_at": "2026-01-01T00:00:00Z", "items": {"1": {"state": "open"}}}
+        data = {"last_fetched_at": "2026-01-01T00:00:00Z", "items": {"1": {"is_pr": False}}}
         path.write_text(json.dumps(data))
         assert load_cache(path) == data
 
@@ -167,59 +150,77 @@ class TestLoadSaveCache:
 
 
 class TestUpdateCache:
-    def _stream(self, items):
-        """Return a _fetch_stream mock that yields items in one shot."""
-        return lambda *a, **kw: items
-
-    def test_cold_start_fetches_open_and_closed(self):
-        open_items = [_make_raw(1, "open", False, ["wifi"])]
-        closed_items = [_make_raw(2, "closed", False, ["mqtt"], days_ago=30)]
-        cache = {"last_fetched_at": None, "items": {}}
-
-        call_args = []
+    def _make_stream(self, pages: list[list[dict]]):
+        """Return a _fetch_stream side_effect that yields the given pages."""
         def fake_stream(repo, state, since=None):
-            call_args.append((state, since))
-            return open_items if state == "open" else closed_items
+            yield from pages
+        return fake_stream
 
-        with patch("esphome_kpis.github._fetch_stream", side_effect=fake_stream):
-            update_cache(cache)
+    def test_cold_start_fetches_open(self, tmp_path):
+        items = [_make_raw(1, False, ["wifi"])]
+        cache = {"last_fetched_at": None, "items": {}}
+        cache_path = tmp_path / "cache.json"
 
-        states = [a[0] for a in call_args]
-        assert "open" in states
-        assert "closed" in states
+        with patch("esphome_kpis.github._fetch_stream", side_effect=self._make_stream([items])):
+            update_cache(cache, cache_path=cache_path)
+
         assert "1" in cache["items"]
-        assert "2" in cache["items"]
         assert cache["last_fetched_at"] is not None
 
-    def test_incremental_fetches_all_since_last(self):
-        cache = {
-            "last_fetched_at": _iso(7),
-            "items": {"1": {"state": "open", "is_pr": False, "components": ["wifi"], "updated_at": _iso(7)}},
-        }
-        new_item = _make_raw(2, "open", True, ["mqtt"])
-
+    def test_cold_start_passes_no_since(self):
+        cache = {"last_fetched_at": None, "items": {}}
         call_args = []
+
         def fake_stream(repo, state, since=None):
-            call_args.append((state, since))
-            return [new_item]
+            call_args.append(since)
+            return iter([])
 
         with patch("esphome_kpis.github._fetch_stream", side_effect=fake_stream):
             update_cache(cache)
 
-        assert call_args[0][0] == "all"
-        assert call_args[0][1] is not None
-        assert "2" in cache["items"]
+        assert call_args[0] is None
 
-    def test_prunes_old_closed_after_update(self):
-        old_closed = {
-            "state": "closed",
-            "is_pr": False,
-            "components": ["dht"],
-            "updated_at": _iso(_CLOSED_RETENTION_DAYS + 10),
-        }
-        cache = {"last_fetched_at": _iso(1), "items": {"99": old_closed}}
+    def test_incremental_passes_last_fetched_as_since(self):
+        last = _iso(7)
+        cache = {"last_fetched_at": last, "items": {}}
+        call_args = []
 
-        with patch("esphome_kpis.github._fetch_stream", return_value=[]):
+        def fake_stream(repo, state, since=None):
+            call_args.append(since)
+            return iter([])
+
+        with patch("esphome_kpis.github._fetch_stream", side_effect=fake_stream):
             update_cache(cache)
 
-        assert "99" not in cache["items"]
+        assert call_args[0] == last
+
+    def test_saves_incrementally_after_each_page(self, tmp_path):
+        page1 = [_make_raw(1, False, ["wifi"])]
+        page2 = [_make_raw(2, True, ["mqtt"])]
+        cache = {"last_fetched_at": None, "items": {}}
+        cache_path = tmp_path / "cache.json"
+        saves_at = []
+
+        original_save = save_cache
+
+        def tracking_save(c, p):
+            saves_at.append(len(c["items"]))
+            original_save(c, p)
+
+        with patch("esphome_kpis.github._fetch_stream", side_effect=self._make_stream([page1, page2])):
+            with patch("esphome_kpis.github.save_cache", side_effect=tracking_save):
+                update_cache(cache, cache_path=cache_path)
+
+        # saved after page1 (1 item), after page2 (2 items), and final save
+        assert saves_at[0] == 1
+        assert saves_at[1] == 2
+
+    def test_no_cache_path_does_not_save_mid_run(self):
+        items = [_make_raw(1, False, ["wifi"])]
+        cache = {"last_fetched_at": None, "items": {}}
+
+        with patch("esphome_kpis.github._fetch_stream", side_effect=self._make_stream([items])):
+            with patch("esphome_kpis.github.save_cache") as mock_save:
+                update_cache(cache, cache_path=None)
+
+        mock_save.assert_not_called()

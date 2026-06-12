@@ -5,8 +5,9 @@ from __future__ import annotations
 import json
 import os
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Generator
 
 import requests
 
@@ -14,8 +15,7 @@ GITHUB_API = "https://api.github.com"
 ESPHOME_REPO = "esphome/esphome"
 
 _COMPONENT_PREFIX = "component: "
-_EMPTY_COUNTS = {"open_issues": 0, "closed_issues": 0, "open_prs": 0, "closed_prs": 0}
-_CLOSED_RETENTION_DAYS = 365
+_EMPTY_COUNTS = {"open_issues": 0, "open_prs": 0}
 
 
 def _session() -> requests.Session:
@@ -77,20 +77,20 @@ def releases() -> list[dict]:
 # Issue / PR cache
 # ---------------------------------------------------------------------------
 
-def _cutoff_iso() -> str:
-    """ISO timestamp for now minus _CLOSED_RETENTION_DAYS."""
-    return (datetime.now(timezone.utc) - timedelta(days=_CLOSED_RETENTION_DAYS)).isoformat()
+def _fetch_stream(repo: str, state: str, since: str | None = None) -> Generator[list[dict], None, None]:
+    """Yield pages of open issues/PRs using cursor-based pagination.
 
+    Uses item ID deduplication to handle the case where multiple items share the
+    same updated_at timestamp, which would otherwise cause the `since` cursor to
+    return the same page indefinitely.
 
-def _fetch_stream(repo: str, state: str, since: str | None = None) -> list[dict]:
-    """Fetch issues/PRs using cursor-based pagination to bypass the 1000-item cap.
-
-    Advances the `since` cursor using the last item's updated_at so each
-    request stays within GitHub's per-query limit.
+    Yields one page (list of raw API items) at a time so callers can save
+    incremental progress after each page.
     """
-    results = []
+    seen_ids: set[int] = set()
     current_since = since
     per_page = 100
+    total = 0
 
     while True:
         params: dict = {"state": state, "per_page": per_page, "sort": "updated", "direction": "asc"}
@@ -101,15 +101,23 @@ def _fetch_stream(repo: str, state: str, since: str | None = None) -> list[dict]
         if not items:
             break
 
-        results.extend(items)
-        print(f"  fetched {len(results)} items ({state}) ...", end="\r", flush=True)
+        new_items = [item for item in items if item["number"] not in seen_ids]
+        for item in items:
+            seen_ids.add(item["number"])
+
+        if new_items:
+            total += len(new_items)
+            print(f"  fetched {total} items ...", end="\r", flush=True)
+            yield new_items
 
         if len(items) < per_page:
             break
 
-        current_since = items[-1]["updated_at"]
+        # If a full page added no new items, the cursor is stuck on a shared timestamp
+        if not new_items:
+            break
 
-    return results
+        current_since = items[-1]["updated_at"]
 
 
 def _upsert(items_store: dict, raw_items: list[dict]) -> None:
@@ -122,19 +130,10 @@ def _upsert(items_store: dict, raw_items: list[dict]) -> None:
             if label.get("name", "").startswith(_COMPONENT_PREFIX)
         ]
         items_store[number] = {
-            "state": item["state"],
             "is_pr": "pull_request" in item,
             "components": components,
             "updated_at": item["updated_at"],
         }
-
-
-def _prune(items_store: dict, cutoff: str) -> int:
-    """Remove closed items older than cutoff. Returns number pruned."""
-    stale = [k for k, v in items_store.items() if v["state"] == "closed" and v["updated_at"] < cutoff]
-    for k in stale:
-        del items_store[k]
-    return len(stale)
 
 
 def load_cache(path: Path) -> dict:
@@ -150,54 +149,45 @@ def save_cache(cache: dict, path: Path) -> None:
     path.write_text(json.dumps(cache, indent=2))
 
 
-def update_cache(cache: dict, repo: str = ESPHOME_REPO) -> dict:
-    """Fetch new/changed items from GitHub and merge into cache.
+def update_cache(cache: dict, cache_path: Path | None = None, repo: str = ESPHOME_REPO) -> dict:
+    """Fetch open issues/PRs from GitHub and merge into cache.
 
-    Cold start (no last_fetched_at):
-      - Fetch all open items (no time limit)
-      - Fetch closed items updated in the last 365 days
+    Only open items are tracked. Saves incrementally after each page if
+    cache_path is provided, so progress survives a kill or rate-limit timeout.
 
-    Incremental (cache exists):
-      - Fetch all items (open + closed) updated since last_fetched_at
-        This catches state changes (open -> closed) as well as new items.
-
-    After fetching, prune closed items older than 365 days and record
-    last_fetched_at = now.
+    Cold start (no last_fetched_at): fetches all open items.
+    Incremental: fetches open items updated since last_fetched_at.
     """
-    cutoff = _cutoff_iso()
     items_store = cache.setdefault("items", {})
     last_fetched = cache.get("last_fetched_at")
 
     if last_fetched is None:
         print("  cold start: fetching all open items ...")
-        open_items = _fetch_stream(repo, "open")
-        print(f"  fetched {len(open_items)} open items         ")
-
-        print("  cold start: fetching closed items (last 365 days) ...")
-        closed_items = _fetch_stream(repo, "closed", since=cutoff)
-        print(f"  fetched {len(closed_items)} closed items        ")
-
-        _upsert(items_store, open_items + closed_items)
+        since = None
     else:
         print(f"  incremental fetch since {last_fetched[:10]} ...")
-        updated = _fetch_stream(repo, "all", since=last_fetched)
-        print(f"  fetched {len(updated)} updated items         ")
-        _upsert(items_store, updated)
+        since = last_fetched
 
-    pruned = _prune(items_store, cutoff)
-    if pruned:
-        print(f"  pruned {pruned} closed items older than 365 days")
+    total = 0
+    for page in _fetch_stream(repo, "open", since=since):
+        _upsert(items_store, page)
+        total += len(page)
+        if cache_path:
+            save_cache(cache, cache_path)
+
+    print(f"  fetched {total} open items         ")
 
     cache["last_fetched_at"] = datetime.now(timezone.utc).isoformat()
+    if cache_path:
+        save_cache(cache, cache_path)
     return cache
 
 
 def counts_from_cache(cache: dict) -> dict[str, dict]:
-    """Derive per-component open/closed issue/PR counts from the local cache."""
+    """Derive per-component open issue/PR counts from the local cache."""
     counts: dict[str, dict] = {}
     for item in cache.get("items", {}).values():
-        state = item["state"]
-        key = f"{state}_{'prs' if item['is_pr'] else 'issues'}"
+        key = "open_prs" if item["is_pr"] else "open_issues"
         for component in item["components"]:
             if component not in counts:
                 counts[component] = dict(_EMPTY_COUNTS)

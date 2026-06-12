@@ -31,7 +31,7 @@ def collect(esphome_root: Path, cache_path: Path, component_filter: list[str] | 
 
     print("Updating GitHub issue/PR cache ...")
     cache = github.load_cache(cache_path)
-    github.update_cache(cache)
+    github.update_cache(cache, cache_path=cache_path)
     github.save_cache(cache, cache_path)
     print(f"  cache saved to {cache_path} ({len(cache['items'])} items)")
 
