@@ -103,7 +103,11 @@ _FOOTER = """\
           component. Attribution uses (in order): <code>component:&nbsp;&lt;name&gt;</code>
           labels, <code>[component_name]</code> bracket notation in the title,
           underscore-containing component names found anywhere in the title, and
-          short component names found at the very start of the title.</dd>
+          short component names found at the very start of the title.
+          The count is a clickable link to a GitHub search filtered by the
+          <code>component:&nbsp;&lt;name&gt;</code> label only — the search result
+          may show fewer items than the count when some issues were attributed
+          via title heuristics rather than a label.</dd>
     </dl>
   </details>
 
