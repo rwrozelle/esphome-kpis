@@ -5,6 +5,25 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from urllib.parse import quote
+
+_GH_ISSUES = "https://github.com/esphome/esphome/issues?q={q}"
+
+
+def _gh_link(name: str, kind: str, count: int | str) -> str:
+    """Wrap count in a GitHub search link approximating all four attribution strategies."""
+    if not count:
+        return ""
+    parts = [
+        f'is:{kind} is:open label:"component: {name}"',
+        f'"[{name}]" in:title',
+    ]
+    if "_" in name:
+        parts.append(f"{name} in:title")
+    else:
+        parts.append(f'"{name}:" in:title')
+    q = quote(" OR ".join(parts))
+    return f'<a href="{_GH_ISSUES.format(q=q)}">{count}</a>'
 
 
 def _row(name: str, data: dict) -> str:
@@ -14,8 +33,8 @@ def _row(name: str, data: dict) -> str:
     owners_display = " ".join(owners_list) or "N/A"
 
     test_count = data.get("test_file_count", 0) or ""
-    issues = data.get("open_issues") or ""
-    prs = data.get("open_prs") or ""
+    issues = _gh_link(name, "issue", data.get("open_issues") or "")
+    prs = _gh_link(name, "pr", data.get("open_prs") or "")
 
     return (
         f'<tr data-name="{name}" data-type="{types}" '
