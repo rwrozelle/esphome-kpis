@@ -45,9 +45,7 @@ jobs:
             github-api-cache-
 
       - name: Clone esphome (full history)
-        run: |
-          git clone https://github.com/esphome/esphome.git esphome-src
-          git -C esphome-src fetch --unshallow
+        run: git clone https://github.com/esphome/esphome.git esphome-src
 
       - name: Collect KPIs
         env:
