@@ -131,6 +131,7 @@ def _upsert(items_store: dict, raw_items: list[dict]) -> None:
         ]
         items_store[number] = {
             "is_pr": "pull_request" in item,
+            "title": item.get("title", ""),
             "components": components,
             "updated_at": item["updated_at"],
         }

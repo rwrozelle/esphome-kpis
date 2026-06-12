@@ -155,7 +155,9 @@ def component_tests(esphome_root: Path, component: str) -> dict:
 
 def codeowners_info(esphome_root: Path, component: str) -> dict:
     """Return CODEOWNERS presence and owner count for this component."""
-    codeowners_path = esphome_root / ".github" / "CODEOWNERS"
+    codeowners_path = esphome_root / "CODEOWNERS"
+    if not codeowners_path.exists():
+        codeowners_path = esphome_root / ".github" / "CODEOWNERS"
     if not codeowners_path.exists():
         return {"has_codeowners": False, "codeowners_count": 0, "codeowners": []}
 
@@ -166,7 +168,7 @@ def codeowners_info(esphome_root: Path, component: str) -> dict:
         if not line or line.startswith("#"):
             continue
         parts = line.split()
-        if parts and parts[0].rstrip("/") == pattern:
+        if parts and parts[0].rstrip("/*") == pattern:
             owners = parts[1:]
             break
 

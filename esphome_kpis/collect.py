@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -11,6 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import github, repo
+
+_BRACKET_RE = re.compile(r"\[([^\]]+)\]")
 
 ESPHOME_REPO_URL = "https://github.com/esphome/esphome.git"
 DEFAULT_CACHE = Path("data/github_cache.json")
@@ -23,6 +26,25 @@ def _clone_esphome(dest: Path) -> None:
         check=True,
     )
     subprocess.run(["git", "fetch", "--unshallow"], cwd=dest, check=True)
+
+
+def _resolve_components_from_titles(cache: dict, known: set[str]) -> int:
+    """Fill in missing components from title brackets for unlabeled items.
+
+    Validates extracted names against the known component set from the local
+    esphome repo — never infers external or unknown component names.
+    Returns number of items updated.
+    """
+    updated = 0
+    for item in cache.get("items", {}).values():
+        if item["components"]:
+            continue
+        title = item.get("title", "")
+        found = [m.lower() for m in _BRACKET_RE.findall(title) if m.lower() in known]
+        if found:
+            item["components"] = found
+            updated += 1
+    return updated
 
 
 def _load_previous(output_path: Path | None) -> tuple[dict, str | None]:
@@ -51,9 +73,13 @@ def collect(
     github.save_cache(cache, cache_path)
     print(f"  cache saved to {cache_path} ({len(cache['items'])} items)")
 
-    issue_counts = github.counts_from_cache(cache)
-
     components = repo.component_names(esphome_root)
+    known = set(components)
+    resolved = _resolve_components_from_titles(cache, known)
+    if resolved:
+        print(f"  resolved {resolved} unlabeled items from title brackets")
+
+    issue_counts = github.counts_from_cache(cache)
     if component_filter:
         components = [c for c in components if c in component_filter]
 

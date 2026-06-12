@@ -38,8 +38,8 @@ class TestDateToVersion:
 
 class TestCodeownersInfo:
     def test_component_with_owners(self, tmp_path):
-        codeowners = tmp_path / ".github" / "CODEOWNERS"
-        codeowners.parent.mkdir(parents=True)
+        codeowners = tmp_path / "CODEOWNERS"
+        codeowners.parent.mkdir(parents=True, exist_ok=True)
         codeowners.write_text(
             "esphome/components/wifi @user1 @user2\n"
             "esphome/components/mqtt @user3\n"
@@ -50,8 +50,8 @@ class TestCodeownersInfo:
         assert result["codeowners"] == ["@user1", "@user2"]
 
     def test_component_not_in_codeowners(self, tmp_path):
-        codeowners = tmp_path / ".github" / "CODEOWNERS"
-        codeowners.parent.mkdir(parents=True)
+        codeowners = tmp_path / "CODEOWNERS"
+        codeowners.parent.mkdir(parents=True, exist_ok=True)
         codeowners.write_text("esphome/components/wifi @user1\n")
         result = codeowners_info(tmp_path, "mqtt")
         assert result["has_codeowners"] is False
@@ -62,8 +62,8 @@ class TestCodeownersInfo:
         assert result["has_codeowners"] is False
 
     def test_skips_comments_and_blank_lines(self, tmp_path):
-        codeowners = tmp_path / ".github" / "CODEOWNERS"
-        codeowners.parent.mkdir(parents=True)
+        codeowners = tmp_path / "CODEOWNERS"
+        codeowners.parent.mkdir(parents=True, exist_ok=True)
         codeowners.write_text(
             "# This is a comment\n\nesphome/components/wifi @user1\n"
         )
