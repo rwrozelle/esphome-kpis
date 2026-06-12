@@ -11,7 +11,6 @@ def _row(name: str, data: dict) -> str:
     types = ", ".join(data.get("type", [name]))
     platforms = " ".join(data.get("supported_platforms", [])) or "any"
     owners_list = data.get("codeowners", [])
-    owners_str = " ".join(owners_list)
     owners_display = " ".join(owners_list) or "N/A"
 
     test_count = data.get("test_file_count", 0) or ""
@@ -20,7 +19,7 @@ def _row(name: str, data: dict) -> str:
 
     return (
         f'<tr data-name="{name}" data-type="{types}" '
-        f'data-platforms="{platforms}" data-owners="{owners_str}">\n'
+        f'data-platforms="{platforms}" data-owners="{owners_display}">\n'
         f'  <td>{name}</td>\n'
         f'  <td>{types}</td>\n'
         f'  <td>{data.get("version_created") or ""}</td>\n'
@@ -202,8 +201,7 @@ _HTML_TEMPLATE = """\
       const rOwners = row.dataset.owners.toLowerCase();
 
       const nameOk  = !name  || rName.includes(name)  || rType.includes(name);
-      // "any" = unrestricted; always matches a platform search
-      const platOk  = !plat  || rPlats === 'any' || rPlats.includes(plat);
+      const platOk  = !plat  || rPlats.includes(plat);
       const ownerOk = !owner || rOwners.includes(owner);
 
       const show = nameOk && platOk && ownerOk;
