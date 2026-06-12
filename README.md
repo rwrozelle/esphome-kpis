@@ -5,7 +5,7 @@ An automated dashboard that tracks health metrics for every component in the
 
 **[View the live table →](https://rwrozelle.github.io/esphome-kpis/)**
 
-Updated weekly by GitHub Actions.
+Updated nightly by GitHub Actions.
 
 ## What it tracks
 
