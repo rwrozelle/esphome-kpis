@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T18:57:12.604550+00:00",
+  "generated_at": "2026-06-12T19:30:31.279830+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1219,10 +1219,10 @@
     "known_issues": 127,
     "new_comp_issues": 0,
     "unattr_issues": 75,
-    "total_prs": 419,
+    "total_prs": 420,
     "known_prs": 292,
     "new_comp_prs": 109,
-    "unattr_prs": 18
+    "unattr_prs": 19
   },
   "components": {
     "a01nyub": {
