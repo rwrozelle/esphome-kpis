@@ -7,7 +7,6 @@ from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 from esphome_kpis.github import (
-    _fetch_docs_tree,
     _upsert,
     counts_from_cache,
     docs_component_types,
