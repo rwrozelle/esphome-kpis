@@ -11,18 +11,10 @@ _GH_ISSUES = "https://github.com/esphome/esphome/issues?q={q}"
 
 
 def _gh_link(name: str, kind: str, count: int | str) -> str:
-    """Wrap count in a GitHub search link approximating all four attribution strategies."""
+    """Wrap count in a GitHub search link filtered to component: <name> label."""
     if not count:
         return ""
-    parts = [
-        f'is:{kind} is:open label:"component: {name}"',
-        f'"[{name}]" in:title',
-    ]
-    if "_" in name:
-        parts.append(f"{name} in:title")
-    else:
-        parts.append(f'"{name}:" in:title')
-    q = quote(" OR ".join(parts))
+    q = quote(f'is:{kind} is:open label:"component: {name}"')
     return f'<a href="{_GH_ISSUES.format(q=q)}">{count}</a>'
 
 
