@@ -2,7 +2,7 @@ name: Collect KPIs
 
 on:
   schedule:
-    - cron: "0 3 * * 0"  # weekly, Sunday 03:00 UTC
+    - cron: "0 3 * * *"  # nightly 03:00 UTC
   workflow_dispatch:
     inputs:
       components:
