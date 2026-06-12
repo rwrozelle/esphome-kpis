@@ -25,7 +25,23 @@ def _clone_esphome(dest: Path) -> None:
     subprocess.run(["git", "fetch", "--unshallow"], cwd=dest, check=True)
 
 
-def collect(esphome_root: Path, cache_path: Path, component_filter: list[str] | None = None) -> dict:
+def _load_previous(output_path: Path | None) -> tuple[dict, str | None]:
+    """Load previous output JSON. Returns (components dict, generated_at timestamp)."""
+    if output_path and output_path.exists():
+        try:
+            prev = json.loads(output_path.read_text())
+            return prev.get("components", {}), prev.get("generated_at")
+        except Exception:
+            pass
+    return {}, None
+
+
+def collect(
+    esphome_root: Path,
+    cache_path: Path,
+    output_path: Path | None = None,
+    component_filter: list[str] | None = None,
+) -> dict:
     print("Fetching release list from GitHub ...")
     releases = github.releases()
 
@@ -41,15 +57,45 @@ def collect(esphome_root: Path, cache_path: Path, component_filter: list[str] | 
     if component_filter:
         components = [c for c in components if c in component_filter]
 
+    # Load previous run to skip git work for unchanged components
+    prev_components, prev_generated_at = _load_previous(output_path)
+    if prev_generated_at and not component_filter:
+        changed = repo.changed_components_since(esphome_root, prev_generated_at)
+        if changed is None:
+            print("  CODEOWNERS changed — recomputing codeowners for all components")
+            codeowners_changed = True
+            changed = set()  # will be populated per-component via git log
+        else:
+            codeowners_changed = False
+        reuse_count = sum(1 for c in components if c in prev_components and c not in changed)
+        print(f"  {len(changed)} components changed since last run, reusing {reuse_count} unchanged")
+    else:
+        changed = None  # first run or filtered run — compute everything
+        codeowners_changed = False
+
     print(f"Collecting KPIs for {len(components)} components ...")
     results = {}
 
     for i, component in enumerate(components, 1):
+        prev = prev_components.get(component, {})
+        gh_counts = issue_counts.get(component, dict(github._EMPTY_COUNTS))
+
+        # Reuse all cached git/file values if component hasn't changed
+        if changed is not None and component not in changed and prev:
+            print(f"  [{i}/{len(components)}] {component} (cached)", flush=True)
+            results[component] = {
+                **prev,
+                **gh_counts,
+            }
+            # Re-run codeowners if that file changed
+            if codeowners_changed:
+                results[component].update(repo.codeowners_info(esphome_root, component))
+            continue
+
         print(f"  [{i}/{len(components)}] {component}", flush=True)
 
         first_date = repo.first_commit_date(esphome_root, component)
         last_date = repo.last_commit_date(esphome_root, component)
-        gh_counts = issue_counts.get(component, dict(github._EMPTY_COUNTS))
 
         results[component] = {
             "version_created": repo.date_to_version(first_date, releases),
@@ -107,7 +153,7 @@ def main() -> None:
         print(f"Error: {esphome_root} does not look like an esphome repo", file=sys.stderr)
         sys.exit(1)
 
-    data = collect(esphome_root, args.cache, component_filter=args.components)
+    data = collect(esphome_root, args.cache, output_path=args.output, component_filter=args.components)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(data, indent=2))

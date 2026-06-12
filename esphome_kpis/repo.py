@@ -27,6 +27,30 @@ def component_names(esphome_root: Path) -> list[str]:
     )
 
 
+def changed_components_since(esphome_root: Path, since: str) -> set[str] | None:
+    """Return set of component names with commits since `since` (ISO timestamp).
+
+    Also returns None if CODEOWNERS changed (caller should recompute all codeowners).
+    Returns an empty set if nothing changed.
+    """
+    out = _git(
+        ["log", f"--since={since}", "--name-only", "--format="],
+        esphome_root,
+    )
+    components: set[str] = set()
+    codeowners_changed = False
+    for line in out.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if line == ".github/CODEOWNERS":
+            codeowners_changed = True
+        parts = line.split("/")
+        if len(parts) >= 3 and parts[0] == "esphome" and parts[1] == "components":
+            components.add(parts[2])
+    return None if codeowners_changed else components
+
+
 def first_commit_date(esphome_root: Path, component: str) -> str | None:
     """Return ISO date of the first commit touching this component."""
     path = f"esphome/components/{component}"
