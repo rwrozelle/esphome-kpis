@@ -46,14 +46,14 @@ jobs:
 
       - name: Clone esphome (full history)
         run: |
-          git clone https://github.com/esphome/esphome.git /tmp/esphome
-          git -C /tmp/esphome fetch --unshallow
+          git clone https://github.com/esphome/esphome.git esphome-src
+          git -C esphome-src fetch --unshallow
 
       - name: Collect KPIs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ARGS="--esphome-root /tmp/esphome --output data/components.json --cache data/github_cache.json"
+          ARGS="--esphome-root esphome-src --output data/components.json --cache data/github_cache.json"
           if [ -n "${{ github.event.inputs.components }}" ]; then
             ARGS="$ARGS --components ${{ github.event.inputs.components }}"
           fi
