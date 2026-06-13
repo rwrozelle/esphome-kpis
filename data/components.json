@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T19:56:09.303835+00:00",
+  "generated_at": "2026-06-13T06:44:47.389401+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1215,8 +1215,8 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 202,
-    "known_issues": 127,
+    "total_issues": 211,
+    "known_issues": 136,
     "new_comp_issues": 0,
     "unattr_issues": 75,
     "total_prs": 420,
@@ -2409,7 +2409,7 @@
         "@dan-s-github",
         "@tobias-"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "bl0942": {
@@ -7916,7 +7916,7 @@
       "codeowners": [
         "@dudanov"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 2
     },
     "midea_ac": {
@@ -9484,7 +9484,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "pzemac": {
@@ -9766,7 +9766,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "remote_base": {
@@ -9887,7 +9887,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "rgb": {
@@ -10402,7 +10402,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "seeed_mr24hpc1": {
@@ -10615,7 +10615,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "sensirion_common": {
@@ -10795,7 +10795,7 @@
         "@edge90",
         "@rnauber"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "sht3xd": {
@@ -11026,7 +11026,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "sml": {
