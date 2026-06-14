@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T06:44:47.389401+00:00",
+  "generated_at": "2026-06-14T07:13:07.504996+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1215,13 +1215,13 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 211,
-    "known_issues": 136,
+    "total_issues": 212,
+    "known_issues": 137,
     "new_comp_issues": 0,
     "unattr_issues": 75,
-    "total_prs": 420,
-    "known_prs": 292,
-    "new_comp_prs": 109,
+    "total_prs": 424,
+    "known_prs": 295,
+    "new_comp_prs": 110,
     "unattr_prs": 19
   },
   "components": {
@@ -4031,7 +4031,7 @@
         "@Tomer27cz"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "dps310": {
       "version_created": "2022.8.1",
@@ -4370,7 +4370,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 14
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -5527,7 +5527,7 @@
       "codeowners": [
         "@paveldn"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "havells_solar": {
@@ -7163,7 +7163,7 @@
     "lvgl": {
       "version_created": "2024.7.2",
       "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-03",
+      "last_commit_date": "2026-06-13",
       "type": [
         "binary_sensor",
         "light",
@@ -8679,8 +8679,8 @@
     },
     "online_image": {
       "version_created": "2024.8.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-08",
+      "version_last_modified": "2026.5.3",
+      "last_commit_date": "2026-06-14",
       "type": [
         "display"
       ],
@@ -8694,7 +8694,7 @@
         "@guillempages"
       ],
       "open_issues": 2,
-      "open_prs": 2
+      "open_prs": 3
     },
     "opentherm": {
       "version_created": "2024.9.0",
@@ -10164,8 +10164,8 @@
     },
     "runtime_image": {
       "version_created": "2026.2.0",
-      "version_last_modified": "2026.4.1",
-      "last_commit_date": "2026-04-18",
+      "version_last_modified": "2026.5.3",
+      "last_commit_date": "2026-06-14",
       "type": [
         "display"
       ],
@@ -10180,7 +10180,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "runtime_stats": {
       "version_created": "2025.7.0",
