@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T08:46:05.059243+00:00",
+  "generated_at": "2026-06-16T08:37:12.381387+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1215,14 +1215,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 212,
-    "known_issues": 137,
+    "total_issues": 214,
+    "known_issues": 139,
     "new_comp_issues": 0,
     "unattr_issues": 75,
-    "total_prs": 448,
-    "known_prs": 306,
-    "new_comp_prs": 111,
-    "unattr_prs": 31
+    "total_prs": 457,
+    "known_prs": 308,
+    "new_comp_prs": 112,
+    "unattr_prs": 37
   },
   "components": {
     "a01nyub": {
@@ -2043,7 +2043,7 @@
     "audio": {
       "version_created": "2024.10.1",
       "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "last_commit_date": "2026-06-16",
       "type": [
         "audio"
       ],
@@ -4480,7 +4480,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 11,
+      "open_issues": 12,
       "open_prs": 10
     },
     "esp32_ble": {
@@ -8057,7 +8057,7 @@
         "@crnjan"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "mixer": {
       "version_created": "2025.2.0",
@@ -8724,7 +8724,7 @@
     "openthread": {
       "version_created": "2025.6.0",
       "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "last_commit_date": "2026-06-16",
       "type": [
         "network"
       ],
@@ -8743,8 +8743,8 @@
     },
     "openthread_info": {
       "version_created": "2025.6.0",
-      "version_last_modified": "2026.3.3",
-      "last_commit_date": "2026-04-06",
+      "version_last_modified": "2026.5.3",
+      "last_commit_date": "2026-06-16",
       "type": [
         "text_sensor"
       ],
@@ -9267,7 +9267,7 @@
         "@jesserockz",
         "@kbx81"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "pn7160_i2c": {
@@ -10184,8 +10184,8 @@
     },
     "runtime_stats": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.4.2",
-      "last_commit_date": "2026-04-21",
+      "version_last_modified": "2026.5.3",
+      "last_commit_date": "2026-06-16",
       "type": [
         "core"
       ],
@@ -10313,8 +10313,8 @@
     },
     "script": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-12",
+      "version_last_modified": "2026.5.3",
+      "last_commit_date": "2026-06-16",
       "type": [
         "core"
       ],
@@ -12765,7 +12765,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 4
+      "open_prs": 5
     },
     "udp": {
       "version_created": "2024.8.3",
@@ -12964,7 +12964,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 3
+      "open_prs": 4
     },
     "valve": {
       "version_created": "2024.4.2",
