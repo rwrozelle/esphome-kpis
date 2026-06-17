@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T08:37:12.381387+00:00",
+  "generated_at": "2026-06-17T08:19:12.137675+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1215,14 +1215,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 214,
-    "known_issues": 139,
+    "total_issues": 216,
+    "known_issues": 140,
     "new_comp_issues": 0,
-    "unattr_issues": 75,
-    "total_prs": 457,
-    "known_prs": 308,
+    "unattr_issues": 76,
+    "total_prs": 465,
+    "known_prs": 315,
     "new_comp_prs": 112,
-    "unattr_prs": 37
+    "unattr_prs": 38
   },
   "components": {
     "a01nyub": {
@@ -1861,7 +1861,7 @@
         "@ximex"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "as3935": {
       "version_created": "1.14.0",
@@ -4481,7 +4481,7 @@
         "@esphome/core"
       ],
       "open_issues": 12,
-      "open_prs": 10
+      "open_prs": 13
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -4503,7 +4503,7 @@
         "@Rapsssito"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "esp32_ble_beacon": {
       "version_created": "1.13.1",
@@ -4521,7 +4521,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esp32_ble_client": {
       "version_created": "2022.9.3",
@@ -4564,7 +4564,7 @@
         "@Rapsssito"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
@@ -4584,7 +4584,7 @@
         "@bdraco"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -4679,7 +4679,7 @@
     "esp32_hosted": {
       "version_created": "2025.6.2",
       "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "last_commit_date": "2026-06-16",
       "type": [
         "update"
       ],
@@ -4884,7 +4884,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "ethernet_info": {
       "version_created": "2022.10.1",
@@ -6798,7 +6798,7 @@
         "@sebcaps"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "ld2412": {
       "version_created": "2025.8.0",
@@ -8184,7 +8184,7 @@
       "codeowners": [
         "@martgras"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 10
     },
     "modbus_server": {
@@ -8778,7 +8778,7 @@
     "ota": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-04",
+      "last_commit_date": "2026-06-16",
       "type": [
         "ota"
       ],
@@ -12765,7 +12765,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 5
+      "open_prs": 8
     },
     "udp": {
       "version_created": "2024.8.3",
@@ -12926,7 +12926,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 6
     },
     "usb_host": {
       "version_created": "2025.5.1",
@@ -12964,7 +12964,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 4
+      "open_prs": 6
     },
     "valve": {
       "version_created": "2024.4.2",
@@ -13259,7 +13259,7 @@
         "@DrCoolZic"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 4
     },
     "weikai_i2c": {
       "version_created": "2024.4.2",
@@ -13370,7 +13370,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "wifi_info": {
       "version_created": "1.13.1",
