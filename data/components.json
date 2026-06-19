@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T07:24:16.135884+00:00",
+  "generated_at": "2026-06-19T08:23:48.807169+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1214,19 +1214,23 @@
       "date": "2026-06-05"
     },
     {
+      "tag": "2026.6.1",
+      "date": "2026-06-18"
+    },
+    {
       "tag": "2026.6.0",
       "date": "2026-06-18"
     }
   ],
   "issue_stats": {
-    "total_issues": 217,
-    "known_issues": 140,
+    "total_issues": 223,
+    "known_issues": 142,
     "new_comp_issues": 0,
-    "unattr_issues": 77,
-    "total_prs": 471,
-    "known_prs": 321,
+    "unattr_issues": 81,
+    "total_prs": 477,
+    "known_prs": 325,
     "new_comp_prs": 111,
-    "unattr_prs": 39
+    "unattr_prs": 41
   },
   "components": {
     "a01nyub": {
@@ -1949,7 +1953,7 @@
         "@mrgnr"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "async_tcp": {
       "version_created": "1.14.0",
@@ -3154,7 +3158,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 2
     },
     "cc1101": {
       "version_created": "2025.11.3",
@@ -4470,7 +4474,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-17",
+      "last_commit_date": "2026-06-19",
       "type": [
         "platform"
       ],
@@ -7046,8 +7050,8 @@
     },
     "logger": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-04",
+      "version_last_modified": "2026.6.0",
+      "last_commit_date": "2026-06-19",
       "type": [
         "logger"
       ],
@@ -7971,7 +7975,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "mipi_dsi": {
       "version_created": "2025.7.4",
@@ -8024,7 +8028,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 2
     },
     "mitsubishi": {
@@ -8851,7 +8855,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "partition": {
@@ -10490,8 +10494,8 @@
     },
     "select": {
       "version_created": "1.20.4",
-      "version_last_modified": "2026.4.3",
-      "last_commit_date": "2026-04-27",
+      "version_last_modified": "2026.6.0",
+      "last_commit_date": "2026-06-19",
       "type": [
         "select"
       ],
@@ -10562,8 +10566,8 @@
     },
     "sen6x": {
       "version_created": "2026.2.3",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-19",
+      "version_last_modified": "2026.6.0",
+      "last_commit_date": "2026-06-19",
       "type": [
         "sensor"
       ],
@@ -10571,11 +10575,10 @@
       "has_tests": true,
       "test_file_count": 4,
       "has_codeowners": true,
-      "codeowners_count": 4,
+      "codeowners_count": 3,
       "codeowners": [
         "@martgras",
         "@mebner86",
-        "@mikelawrence",
         "@tuct"
       ],
       "open_issues": 0,
@@ -11136,7 +11139,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 8
     },
     "sonoff_d1": {
       "version_created": "2022.4.0",
@@ -12767,7 +12770,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 8
+      "open_prs": 9
     },
     "udp": {
       "version_created": "2024.8.3",
@@ -12916,8 +12919,8 @@
     },
     "uptime": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-15",
+      "version_last_modified": "2026.6.1",
+      "last_commit_date": "2026-06-18",
       "type": [
         "sensor",
         "text_sensor"
@@ -13112,7 +13115,7 @@
         "@kahrendt"
       ],
       "open_issues": 6,
-      "open_prs": 1
+      "open_prs": 2
     },
     "voltage_sampler": {
       "version_created": "1.13.1",
@@ -13374,7 +13377,7 @@
     },
     "wifi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.0",
+      "version_last_modified": "2026.6.1",
       "last_commit_date": "2026-06-18",
       "type": [
         "wifi"
