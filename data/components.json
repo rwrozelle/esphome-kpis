@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T06:52:30.079558+00:00",
+  "generated_at": "2026-06-20T15:47:14.595401+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1223,14 +1223,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 228,
+    "total_issues": 231,
     "known_issues": 147,
     "new_comp_issues": 0,
-    "unattr_issues": 81,
-    "total_prs": 484,
-    "known_prs": 331,
+    "unattr_issues": 84,
+    "total_prs": 488,
+    "known_prs": 334,
     "new_comp_prs": 111,
-    "unattr_prs": 42
+    "unattr_prs": 43
   },
   "components": {
     "a01nyub": {
@@ -3409,7 +3409,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -7847,7 +7847,7 @@
         "@kahrendt"
       ],
       "open_issues": 4,
-      "open_prs": 2
+      "open_prs": 3
     },
     "micronova": {
       "version_created": "2023.11.0",
@@ -8631,7 +8631,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 6
+      "open_prs": 7
     },
     "ntc": {
       "version_created": "1.13.1",
