@@ -134,6 +134,7 @@ def collect(
             results[component] = {
                 **prev,
                 **gh_counts,
+                "docs_url": docs_urls.get(component),
             }
             # Re-run codeowners if that file changed
             if codeowners_changed:
