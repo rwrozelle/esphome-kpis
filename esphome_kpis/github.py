@@ -17,6 +17,8 @@ ESPHOME_REPO = "esphome/esphome"
 ESPHOME_IO_REPO = "esphome/esphome.io"
 
 _DOCS_PATH_RE = re.compile(r"^src/content/docs/components/([^/]+)/([^/]+)\.mdx?$")
+_DOCS_TOP_RE = re.compile(r"^src/content/docs/components/([^/]+)\.mdx?$")
+_ESPHOME_IO_COMPONENTS = "https://esphome.io/components"
 _DOCS_TTL_DAYS = 7
 
 _COMPONENT_PREFIX = "component: "
@@ -205,10 +207,18 @@ def counts_from_cache(cache: dict) -> dict[str, dict]:
 # esphome.io docs tree — component → category mapping
 # ---------------------------------------------------------------------------
 
-def _fetch_docs_tree(repo: str) -> dict[str, list[str]]:
-    """Fetch {component: [category, ...]} from the esphome.io docs directory tree.
+def _fetch_docs_tree(repo: str) -> tuple[dict[str, list[str]], dict[str, str]]:
+    """Fetch docs metadata from the esphome.io directory tree.
 
-    Parses paths matching 'docs/components/<category>/<name>.(rst|md)'.
+    Returns:
+      component_types: {component: [category, ...]}
+      component_urls:  {component: "https://esphome.io/components/..."}
+
+    Handles three path forms:
+      components/<cat>/<name>.mdx  → name at URL components/<cat>/<name>
+      components/<cat>/index.mdx   → <cat> itself at URL components/<cat>
+      components/<name>.mdx        → name at URL components/<name>
+
     Requires 3 API calls: repo info → branch → recursive tree.
     """
     repo_info = get(f"repos/{repo}")
@@ -222,17 +232,26 @@ def _fetch_docs_tree(repo: str) -> dict[str, list[str]]:
         print(f"  warning: docs tree was truncated for {repo}")
 
     component_types: dict[str, list[str]] = {}
+    component_urls: dict[str, str] = {}
     for item in tree.get("tree", []):
-        m = _DOCS_PATH_RE.match(item.get("path", ""))
-        if not m:
+        path = item.get("path", "")
+        m = _DOCS_PATH_RE.match(path)
+        if m:
+            category, name = m.group(1), m.group(2)
+            if name == "index":
+                # category/index.mdx — the category component's own docs page
+                component_urls.setdefault(category, f"{_ESPHOME_IO_COMPONENTS}/{category}")
+            else:
+                if category not in component_types.setdefault(name, []):
+                    component_types[name].append(category)
+                component_urls.setdefault(name, f"{_ESPHOME_IO_COMPONENTS}/{category}/{name}")
             continue
-        category, name = m.group(1), m.group(2)
-        if name == "index":
-            continue
-        if category not in component_types.setdefault(name, []):
-            component_types[name].append(category)
+        m = _DOCS_TOP_RE.match(path)
+        if m:
+            name = m.group(1)
+            component_urls.setdefault(name, f"{_ESPHOME_IO_COMPONENTS}/{name}")
 
-    return component_types
+    return component_types, component_urls
 
 
 def update_docs_cache(
@@ -247,7 +266,7 @@ def update_docs_cache(
     docs = cache.setdefault("docs_tree", {})
     fetched_at = docs.get("fetched_at")
 
-    if fetched_at:
+    if fetched_at and "component_urls" in docs:
         age_days = (datetime.now(timezone.utc) - datetime.fromisoformat(fetched_at)).days
         if age_days < _DOCS_TTL_DAYS:
             print(f"  docs tree cache is {age_days}d old (TTL={_DOCS_TTL_DAYS}d), skipping fetch")
@@ -255,13 +274,14 @@ def update_docs_cache(
 
     print(f"  fetching docs tree from {repo} ...")
     try:
-        component_types = _fetch_docs_tree(repo)
+        component_types, component_urls = _fetch_docs_tree(repo)
     except Exception as e:
         print(f"  warning: could not fetch docs tree: {e}")
         return cache
 
     docs["fetched_at"] = datetime.now(timezone.utc).isoformat()
     docs["component_types"] = component_types
+    docs["component_urls"] = component_urls
     print(f"  docs tree: {len(component_types)} documented components")
 
     if cache_path:
@@ -272,3 +292,8 @@ def update_docs_cache(
 def docs_component_types(cache: dict) -> dict[str, list[str]]:
     """Return the cached docs component→type mapping (empty dict if not yet fetched)."""
     return cache.get("docs_tree", {}).get("component_types", {})
+
+
+def docs_component_urls(cache: dict) -> dict[str, str]:
+    """Return the cached docs component→esphome.io URL mapping (empty dict if not yet fetched)."""
+    return cache.get("docs_tree", {}).get("component_urls", {})

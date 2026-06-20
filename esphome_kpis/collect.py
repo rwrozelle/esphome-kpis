@@ -93,6 +93,7 @@ def collect(
     print("Updating esphome.io docs tree cache ...")
     github.update_docs_cache(cache, cache_path=cache_path)
     docs_types = github.docs_component_types(cache)
+    docs_urls = github.docs_component_urls(cache)
 
     components = repo.component_names(esphome_root)
     known = set(components)
@@ -149,6 +150,7 @@ def collect(
             "version_last_modified": repo.date_to_version(last_date, releases),
             "last_commit_date": last_date,
             "type": repo.component_type(esphome_root, component, docs_types),
+            "docs_url": docs_urls.get(component),
             **repo.platform_info(esphome_root, component),
             **repo.component_tests(esphome_root, component),
             **repo.codeowners_info(esphome_root, component),

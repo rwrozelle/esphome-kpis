@@ -31,10 +31,16 @@ def _row(name: str, data: dict) -> str:
     issues = _gh_link(name, "issue", data.get("open_issues") or "")
     prs = _gh_link(name, "pr", data.get("open_prs") or "")
 
+    docs_url = data.get("docs_url")
+    name_cell = (
+        f'<a href="{docs_url}" target="_blank" rel="noopener">{name}</a>'
+        if docs_url else name
+    )
+
     return (
         f'<tr data-name="{name}" data-type="{types}" '
         f'data-platforms="{platforms}" data-owners="{owners_display}">\n'
-        f'  <td>{name}</td>\n'
+        f'  <td>{name_cell}</td>\n'
         f'  <td>{types}</td>\n'
         f'  <td>{data.get("version_created") or ""}</td>\n'
         f'  <td>{data.get("version_last_modified") or ""}</td>\n'
