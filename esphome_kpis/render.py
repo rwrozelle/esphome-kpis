@@ -11,10 +11,13 @@ _GH_ISSUES = "https://github.com/esphome/esphome/issues?q={q}"
 
 
 def _gh_link(name: str, kind: str, count: int | str) -> str:
-    """Wrap count in a GitHub search link using component name as text search."""
+    """Wrap count in a GitHub search link. Issues use text search; PRs use label."""
     if not count:
         return ""
-    q = quote(f'is:{kind} is:open {name}')
+    if kind == "issue":
+        q = quote(f'is:issue is:open {name}')
+    else:
+        q = quote(f'is:pr is:open label:"component: {name}"')
     return f'<a href="{_GH_ISSUES.format(q=q)}" target="_blank" rel="noopener">{count}</a>'
 
 
@@ -104,8 +107,10 @@ _FOOTER = """\
           labels, <code>[component_name]</code> bracket notation in the title,
           underscore-containing component names found anywhere in the title, and
           short component names found at the very start of the title.
-          The count is a clickable link to a broad GitHub text search for the component
-          name — the search result may show more or fewer items than the count.</dd>
+          Issue counts link to a broad text search for the component name.
+          PR counts link to a search filtered by <code>component:&nbsp;&lt;name&gt;</code>
+          label — the PR search result may show fewer items than the count when some
+          were attributed via title heuristics rather than a label.</dd>
     </dl>
   </details>
 
