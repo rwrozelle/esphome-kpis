@@ -298,7 +298,13 @@ class TestUpdateDocsCache:
 
     def test_skips_when_fresh(self):
         fresh = datetime.now(timezone.utc).isoformat()
-        cache = {"docs_tree": {"fetched_at": fresh, "component_types": {"dht": ["sensor"]}}}
+        cache = {
+            "docs_tree": {
+                "fetched_at": fresh,
+                "component_types": {"dht": ["sensor"]},
+                "component_urls": {"dht": "https://esphome.io/components/sensor/dht"},
+            }
+        }
         with patch("esphome_kpis.github.get") as mock_get:
             update_docs_cache(cache)
         mock_get.assert_not_called()
