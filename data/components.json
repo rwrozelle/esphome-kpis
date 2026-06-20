@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T08:23:48.807169+00:00",
+  "generated_at": "2026-06-20T06:52:30.079558+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1223,14 +1223,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 223,
-    "known_issues": 142,
+    "total_issues": 228,
+    "known_issues": 147,
     "new_comp_issues": 0,
     "unattr_issues": 81,
-    "total_prs": 477,
-    "known_prs": 325,
+    "total_prs": 484,
+    "known_prs": 331,
     "new_comp_prs": 111,
-    "unattr_prs": 41
+    "unattr_prs": 42
   },
   "components": {
     "a01nyub": {
@@ -2481,7 +2481,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "ble_presence": {
       "version_created": "1.13.1",
@@ -3859,7 +3859,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 5
+      "open_prs": 6
     },
     "delonghi": {
       "version_created": "2022.5.0",
@@ -4488,8 +4488,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 12,
-      "open_prs": 14
+      "open_issues": 13,
+      "open_prs": 15
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -4799,7 +4799,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esp8266_pwm": {
       "version_created": "1.13.1",
@@ -4852,7 +4852,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 6,
+      "open_issues": 7,
       "open_prs": 0
     },
     "espnow": {
@@ -5046,8 +5046,8 @@
     },
     "fastled_base": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "version_last_modified": "2026.6.0",
+      "last_commit_date": "2026-06-19",
       "type": [
         "light"
       ],
@@ -5350,7 +5350,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "gpio_expander": {
       "version_created": "2024.9.1",
@@ -7924,7 +7924,7 @@
       "codeowners": [
         "@dudanov"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 2
     },
     "midea_ac": {
@@ -8028,7 +8028,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 5,
+      "open_issues": 7,
       "open_prs": 2
     },
     "mitsubishi": {
@@ -8533,7 +8533,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 10
     },
     "nextion": {
       "version_created": "1.13.1",
@@ -8841,8 +8841,8 @@
     },
     "packet_transport": {
       "version_created": "2025.4.2",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.0",
+      "last_commit_date": "2026-06-19",
       "type": [
         "binary_sensor",
         "sensor"
@@ -10278,7 +10278,7 @@
         "@paulmonigatti"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "scd30": {
       "version_created": "1.14.0",
@@ -11309,7 +11309,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "spi_device": {
       "version_created": "2023.9.0",
@@ -12950,7 +12950,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 5
     },
     "usb_host": {
       "version_created": "2025.5.1",
@@ -13394,7 +13394,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -14215,7 +14215,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -14233,7 +14233,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "zephyr_mcumgr": {
       "version_created": "2026.3.0",
