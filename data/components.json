@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T16:09:02.046600+00:00",
+  "generated_at": "2026-06-21T07:22:40.298347+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1220,16 +1220,20 @@
     {
       "tag": "2026.6.0",
       "date": "2026-06-18"
+    },
+    {
+      "tag": "2026.6.2",
+      "date": "2026-06-20"
     }
   ],
   "issue_stats": {
-    "total_issues": 231,
-    "known_issues": 147,
+    "total_issues": 234,
+    "known_issues": 149,
     "new_comp_issues": 0,
-    "unattr_issues": 84,
-    "total_prs": 488,
-    "known_prs": 334,
-    "new_comp_prs": 111,
+    "unattr_issues": 85,
+    "total_prs": 492,
+    "known_prs": 336,
+    "new_comp_prs": 113,
     "unattr_prs": 43
   },
   "components": {
@@ -5253,11 +5257,12 @@
     },
     "fastled_base": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.0",
+      "version_last_modified": "2026.6.2",
       "last_commit_date": "2026-06-19",
       "type": [
         "light"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -5267,8 +5272,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": null
+      "open_prs": 0
     },
     "fastled_clockless": {
       "version_created": "1.13.1",
@@ -5940,7 +5944,7 @@
         "@rob-deutsch"
       ],
       "open_issues": 0,
-      "open_prs": 3,
+      "open_prs": 4,
       "docs_url": null
     },
     "hitachi_ac344": {
@@ -8436,7 +8440,7 @@
       "codeowners": [
         "@crnjan"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 6,
       "docs_url": "https://esphome.io/components/climate/mitsubishi_cn105"
     },
@@ -9034,7 +9038,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 7,
+      "open_prs": 8,
       "docs_url": "https://esphome.io/components/nrf52"
     },
     "ntc": {
@@ -9256,12 +9260,13 @@
     },
     "packet_transport": {
       "version_created": "2025.4.2",
-      "version_last_modified": "2026.6.0",
+      "version_last_modified": "2026.6.2",
       "last_commit_date": "2026-06-19",
       "type": [
         "binary_sensor",
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/binary_sensor/packet_transport",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 6,
@@ -9271,8 +9276,7 @@
         "@clydebarrow"
       ],
       "open_issues": 1,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/binary_sensor/packet_transport"
+      "open_prs": 1
     },
     "partition": {
       "version_created": "1.13.1",
@@ -13764,7 +13768,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 6,
+      "open_issues": 7,
       "open_prs": 2,
       "docs_url": "https://esphome.io/components/voice_assistant"
     },
