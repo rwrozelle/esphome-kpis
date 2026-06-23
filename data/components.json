@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T08:48:23.429401+00:00",
+  "generated_at": "2026-06-23T06:37:17.827686+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1227,14 +1227,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 235,
-    "known_issues": 149,
+    "total_issues": 237,
+    "known_issues": 150,
     "new_comp_issues": 0,
-    "unattr_issues": 86,
-    "total_prs": 498,
-    "known_prs": 342,
-    "new_comp_prs": 113,
-    "unattr_prs": 43
+    "unattr_issues": 87,
+    "total_prs": 508,
+    "known_prs": 346,
+    "new_comp_prs": 115,
+    "unattr_prs": 47
   },
   "components": {
     "a01nyub": {
@@ -1831,7 +1831,7 @@
         "@buxtronix"
       ],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/climate/anova"
     },
     "apds9306": {
@@ -2536,11 +2536,12 @@
     },
     "ble_nus": {
       "version_created": "2025.10.2",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-22",
       "type": [
         "bluetooth"
       ],
+      "docs_url": "https://esphome.io/components/ble_nus",
       "supported_platforms": [
         "zephyr"
       ],
@@ -2552,8 +2553,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/ble_nus"
+      "open_prs": 2
     },
     "ble_presence": {
       "version_created": "1.13.1",
@@ -2571,7 +2571,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 0,
       "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
     },
     "ble_rssi": {
@@ -2590,7 +2590,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/sensor/ble_rssi"
     },
     "ble_scanner": {
@@ -2610,7 +2610,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -3126,7 +3126,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "button": {
       "version_created": "2021.12.0",
@@ -3268,7 +3268,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 0
     },
     "cc1101": {
       "version_created": "2025.11.3",
@@ -4197,7 +4197,7 @@
         "@Tomer27cz"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "dps310": {
       "version_created": "2022.8.1",
@@ -4274,7 +4274,7 @@
         "@PolarGoose"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "duty_cycle": {
       "version_created": "1.13.1",
@@ -4758,7 +4758,7 @@
         "@jesserockz",
         "@Rapsssito"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 1
     },
     "esp32_ble_tracker": {
@@ -8443,7 +8443,7 @@
         "@crnjan"
       ],
       "open_issues": 1,
-      "open_prs": 6,
+      "open_prs": 7,
       "docs_url": "https://esphome.io/components/climate/mitsubishi_cn105"
     },
     "mixer": {
@@ -8844,7 +8844,7 @@
         "@e28eta"
       ],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/sensor/ms8607"
     },
     "msa3xx": {
@@ -11122,7 +11122,7 @@
         "@kahrendt"
       ],
       "open_issues": 2,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/media_player/sendspin"
     },
     "senseair": {
@@ -12544,11 +12544,12 @@
     },
     "sx126x": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-29",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-22",
       "type": [
         "rf"
       ],
+      "docs_url": "https://esphome.io/components/packet_transport/sx126x",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -12558,8 +12559,7 @@
         "@swoboda1337"
       ],
       "open_issues": 0,
-      "open_prs": 3,
-      "docs_url": "https://esphome.io/components/packet_transport/sx126x"
+      "open_prs": 3
     },
     "sx127x": {
       "version_created": "2025.6.3",
