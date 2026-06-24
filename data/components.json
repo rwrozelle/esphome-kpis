@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T06:37:17.827686+00:00",
+  "generated_at": "2026-06-24T06:34:24.155174+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1227,13 +1227,13 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 237,
-    "known_issues": 150,
+    "total_issues": 239,
+    "known_issues": 152,
     "new_comp_issues": 0,
     "unattr_issues": 87,
-    "total_prs": 508,
-    "known_prs": 346,
-    "new_comp_prs": 115,
+    "total_prs": 517,
+    "known_prs": 352,
+    "new_comp_prs": 118,
     "unattr_prs": 47
   },
   "components": {
@@ -1887,7 +1887,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 11
+      "open_prs": 12
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2571,7 +2571,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
     },
     "ble_rssi": {
@@ -2590,7 +2590,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/sensor/ble_rssi"
     },
     "ble_scanner": {
@@ -2610,7 +2610,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -2728,7 +2728,7 @@
     "bme680_bsec": {
       "version_created": "1.17.0",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
@@ -2749,11 +2749,12 @@
     },
     "bme68x_bsec2": {
       "version_created": "2024.8.0",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-26",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/bme68x_bsec2",
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -2764,8 +2765,7 @@
         "@neffs"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/bme68x_bsec2"
+      "open_prs": 0
     },
     "bme68x_bsec2_i2c": {
       "version_created": "2024.8.0",
@@ -3126,7 +3126,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "button": {
       "version_created": "2021.12.0",
@@ -3518,11 +3518,12 @@
     },
     "const": {
       "version_created": "2025.4.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-10",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "const"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -3532,8 +3533,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8,
-      "docs_url": null
+      "open_prs": 8
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4153,7 +4153,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 5
     },
     "display_menu_base": {
@@ -4180,7 +4180,7 @@
     "dlms_meter": {
       "version_created": "2026.1.4",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "last_commit_date": "2026-06-24",
       "type": [
         "sensor"
       ],
@@ -4259,7 +4259,7 @@
     "dsmr": {
       "version_created": "2021.8.0",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "last_commit_date": "2026-06-24",
       "type": [
         "sensor"
       ],
@@ -4540,11 +4540,12 @@
     },
     "epaper_spi": {
       "version_created": "2025.10.0",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-15",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "display"
       ],
+      "docs_url": "https://esphome.io/components/display/epaper_spi",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 1,
@@ -4554,8 +4555,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 14,
-      "docs_url": "https://esphome.io/components/display/epaper_spi"
+      "open_prs": 14
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4656,7 +4656,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "last_commit_date": "2026-06-23",
       "type": [
         "platform"
       ],
@@ -4741,7 +4741,7 @@
     "esp32_ble_server": {
       "version_created": "1.19.0",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "last_commit_date": "2026-06-23",
       "type": [
         "bluetooth"
       ],
@@ -4916,7 +4916,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esp32_rmt": {
       "version_created": "2024.4.0",
@@ -5812,8 +5812,8 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
-      "open_prs": 0
+      "open_issues": 1,
+      "open_prs": 1
     },
     "hc8": {
       "version_created": "2025.11.1",
@@ -8349,7 +8349,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "mipi_dsi": {
       "version_created": "2025.7.4",
@@ -8391,11 +8391,12 @@
     },
     "mipi_spi": {
       "version_created": "2025.5.0",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-15",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "display"
       ],
+      "docs_url": "https://esphome.io/components/display/mipi_spi",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 6,
@@ -8405,8 +8406,7 @@
         "@clydebarrow"
       ],
       "open_issues": 7,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/display/mipi_spi"
+      "open_prs": 3
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -8849,11 +8849,12 @@
     },
     "msa3xx": {
       "version_created": "2025.2.2",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-26",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/msa3xx",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -8863,16 +8864,16 @@
         "@latonita"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/msa3xx"
+      "open_prs": 0
     },
     "my9231": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "output"
       ],
+      "docs_url": "https://esphome.io/components/output/my9231",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -8880,16 +8881,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/output/my9231"
+      "open_prs": 0
     },
     "nau7802": {
       "version_created": "2024.10.0",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-04",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/nau7802",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -8899,8 +8900,7 @@
         "@cujomalainey"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/nau7802"
+      "open_prs": 0
     },
     "neopixelbus": {
       "version_created": "1.13.1",
@@ -8921,11 +8921,12 @@
     },
     "network": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-28",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "network"
       ],
+      "docs_url": "https://esphome.io/components/network",
       "supported_platforms": [
         "esp32"
       ],
@@ -8937,13 +8938,12 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 10,
-      "docs_url": "https://esphome.io/components/network"
+      "open_prs": 10
     },
     "nextion": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-14",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "binary_sensor",
         "display",
@@ -8951,6 +8951,7 @@
         "switch",
         "text_sensor"
       ],
+      "docs_url": "https://esphome.io/components/binary_sensor/nextion",
       "supported_platforms": [
         "esp32"
       ],
@@ -8963,16 +8964,16 @@
         "@senexcrenshaw"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/binary_sensor/nextion"
+      "open_prs": 1
     },
     "nfc": {
       "version_created": "1.16.0",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-26",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "binary_sensor"
       ],
+      "docs_url": "https://esphome.io/components/binary_sensor/nfc",
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -8983,16 +8984,16 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/binary_sensor/nfc"
+      "open_prs": 1
     },
     "noblex": {
       "version_created": "2023.10.3",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "climate"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -9002,16 +9003,16 @@
         "@AGalfra"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": null
+      "open_prs": 0
     },
     "npi19": {
       "version_created": "2024.10.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/npi19",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -9021,16 +9022,16 @@
         "@bakerkj"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/npi19"
+      "open_prs": 0
     },
     "nrf52": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-17",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "platform"
       ],
+      "docs_url": "https://esphome.io/components/nrf52",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9040,16 +9041,16 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 9,
-      "docs_url": "https://esphome.io/components/nrf52"
+      "open_prs": 9
     },
     "ntc": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/ntc",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9057,16 +9058,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/ntc"
+      "open_prs": 0
     },
     "number": {
       "version_created": "1.20.0",
-      "version_last_modified": "2026.4.3",
-      "last_commit_date": "2026-04-27",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "number"
       ],
+      "docs_url": "https://esphome.io/components/number",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -9076,8 +9077,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/number"
+      "open_prs": 0
     },
     "one_wire": {
       "version_created": "2024.6.0",
@@ -9100,11 +9100,12 @@
     },
     "online_image": {
       "version_created": "2024.8.0",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-14",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "display"
       ],
+      "docs_url": "https://esphome.io/components/online_image",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 8,
@@ -9115,13 +9116,12 @@
         "@guillempages"
       ],
       "open_issues": 2,
-      "open_prs": 3,
-      "docs_url": "https://esphome.io/components/online_image"
+      "open_prs": 3
     },
     "opentherm": {
       "version_created": "2024.9.0",
-      "version_last_modified": "2026.5.2",
-      "last_commit_date": "2026-05-26",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "binary_sensor",
         "number",
@@ -9129,6 +9129,7 @@
         "sensor",
         "switch"
       ],
+      "docs_url": "https://esphome.io/components/opentherm",
       "supported_platforms": [
         "esp32",
         "esp8266"
@@ -9141,16 +9142,16 @@
         "@olegtarasov"
       ],
       "open_issues": 1,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/opentherm"
+      "open_prs": 2
     },
     "openthread": {
       "version_created": "2025.6.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "network"
       ],
+      "docs_url": "https://esphome.io/components/openthread",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -9160,8 +9161,7 @@
         "@mrene"
       ],
       "open_issues": 4,
-      "open_prs": 9,
-      "docs_url": "https://esphome.io/components/openthread"
+      "open_prs": 9
     },
     "openthread_info": {
       "version_created": "2025.6.0",
@@ -9182,11 +9182,12 @@
     },
     "opt3001": {
       "version_created": "2025.6.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/opt3001",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9196,8 +9197,7 @@
         "@ccutrer"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/opt3001"
+      "open_prs": 0
     },
     "ota": {
       "version_created": "1.13.1",
@@ -9226,11 +9226,12 @@
     },
     "output": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "output"
       ],
+      "docs_url": "https://esphome.io/components/button/output",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9240,8 +9241,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/button/output"
+      "open_prs": 0
     },
     "packages": {
       "version_created": "1.15.0",
@@ -9282,11 +9282,12 @@
     },
     "partition": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "light"
       ],
+      "docs_url": "https://esphome.io/components/light/partition",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9294,16 +9295,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/light/partition"
+      "open_prs": 0
     },
     "pca6416a": {
       "version_created": "2023.4.3",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "gpio_expander"
       ],
+      "docs_url": "https://esphome.io/components/pca6416a",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9313,16 +9314,16 @@
         "@Mat931"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/pca6416a"
+      "open_prs": 0
     },
     "pca9554": {
       "version_created": "2022.12.4",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "gpio_expander"
       ],
+      "docs_url": "https://esphome.io/components/pca9554",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9334,16 +9335,16 @@
         "@hwstar"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/pca9554"
+      "open_prs": 1
     },
     "pca9685": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "output"
       ],
+      "docs_url": "https://esphome.io/components/output/pca9685",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9351,16 +9352,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/output/pca9685"
+      "open_prs": 0
     },
     "pcd8544": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "display"
       ],
+      "docs_url": "https://esphome.io/components/display/pcd8544",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9368,16 +9369,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/display/pcd8544"
+      "open_prs": 0
     },
     "pcf85063": {
       "version_created": "2022.12.4",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "time"
       ],
+      "docs_url": "https://esphome.io/components/time/pcf85063",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9387,16 +9388,16 @@
         "@brogon"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/time/pcf85063"
+      "open_prs": 0
     },
     "pcf8563": {
       "version_created": "2023.7.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "time"
       ],
+      "docs_url": "https://esphome.io/components/time/pcf8563",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9406,16 +9407,16 @@
         "@KoenBreeman"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/time/pcf8563"
+      "open_prs": 0
     },
     "pcf8574": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "gpio_expander"
       ],
+      "docs_url": "https://esphome.io/components/pcf8574",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9423,16 +9424,16 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/pcf8574"
+      "open_prs": 0
     },
     "pcm5122": {
-      "version_created": "2026.5.3",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-09",
+      "version_created": "2026.6.1",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "audio"
       ],
+      "docs_url": "https://esphome.io/components/audio_dac/pcm5122",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9442,16 +9443,16 @@
         "@remcom"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/audio_dac/pcm5122"
+      "open_prs": 0
     },
     "pi4ioe5v6408": {
       "version_created": "2025.6.3",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "gpio_expander"
       ],
+      "docs_url": "https://esphome.io/components/pi4ioe5v6408",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -9461,16 +9462,16 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/pi4ioe5v6408"
+      "open_prs": 0
     },
     "pid": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "climate"
       ],
+      "docs_url": "https://esphome.io/components/climate/pid",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9480,13 +9481,12 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/climate/pid"
+      "open_prs": 2
     },
     "pipsolar": {
       "version_created": "2021.8.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "binary_sensor",
         "output",
@@ -9494,6 +9494,7 @@
         "switch",
         "text_sensor"
       ],
+      "docs_url": "https://esphome.io/components/pipsolar",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -9503,16 +9504,16 @@
         "@andreashergert1984"
       ],
       "open_issues": 1,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/pipsolar"
+      "open_prs": 1
     },
     "pm1006": {
       "version_created": "1.20.2",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/pm1006",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9522,16 +9523,16 @@
         "@habbie"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/pm1006"
+      "open_prs": 0
     },
     "pm2005": {
       "version_created": "2025.4.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-23",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/pm2005",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -9541,8 +9542,7 @@
         "@andrewjswan"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/pm2005"
+      "open_prs": 0
     },
     "pmsa003i": {
       "version_created": "2021.8.0",
@@ -10071,7 +10071,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0,
       "docs_url": "https://esphome.io/components/display/qspi_dbi"
     },
@@ -10263,7 +10263,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 11
     },
     "remote_receiver": {
       "version_created": "1.13.1",
@@ -13365,7 +13365,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 4,
+      "open_prs": 5,
       "docs_url": "https://esphome.io/components/binary_sensor/tuya"
     },
     "tx20": {
@@ -14065,7 +14065,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 8,
+      "open_prs": 9,
       "docs_url": "https://esphome.io/components/wifi"
     },
     "wifi_info": {
