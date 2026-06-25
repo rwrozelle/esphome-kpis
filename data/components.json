@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T06:34:24.155174+00:00",
+  "generated_at": "2026-06-25T06:37:37.703166+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1227,14 +1227,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 239,
-    "known_issues": 152,
+    "total_issues": 240,
+    "known_issues": 153,
     "new_comp_issues": 0,
     "unattr_issues": 87,
-    "total_prs": 517,
-    "known_prs": 352,
-    "new_comp_prs": 118,
-    "unattr_prs": 47
+    "total_prs": 523,
+    "known_prs": 357,
+    "new_comp_prs": 117,
+    "unattr_prs": 49
   },
   "components": {
     "a01nyub": {
@@ -1351,11 +1351,12 @@
     },
     "adc": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/adc",
       "supported_platforms": [
         "esp32",
         "esp8266",
@@ -1371,8 +1372,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/sensor/adc"
+      "open_prs": 2
     },
     "adc128s102": {
       "version_created": "2022.10.1",
@@ -4656,7 +4656,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-23",
+      "last_commit_date": "2026-06-24",
       "type": [
         "platform"
       ],
@@ -6395,11 +6395,12 @@
     },
     "i2c": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-03",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "i2c"
       ],
+      "docs_url": "https://esphome.io/components/i2c",
       "supported_platforms": [
         "esp32",
         "esp8266",
@@ -6416,8 +6417,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/i2c"
+      "open_prs": 1
     },
     "i2c_device": {
       "version_created": "2024.10.2",
@@ -6759,7 +6759,7 @@
         "@JosipKuci"
       ],
       "open_issues": 0,
-      "open_prs": 3,
+      "open_prs": 4,
       "docs_url": "https://esphome.io/components/display/inkplate"
     },
     "inkplate6": {
@@ -7815,7 +7815,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "mcp23s08": {
       "version_created": "1.16.0",
@@ -8337,7 +8337,7 @@
     "mipi": {
       "version_created": "2025.7.4",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "last_commit_date": "2026-06-24",
       "type": [
         "display"
       ],
@@ -8349,7 +8349,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "mipi_dsi": {
       "version_created": "2025.7.4",
@@ -8406,7 +8406,7 @@
         "@clydebarrow"
       ],
       "open_issues": 7,
-      "open_prs": 3
+      "open_prs": 4
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -8553,8 +8553,8 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 1,
-      "open_prs": 12
+      "open_issues": 2,
+      "open_prs": 13
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8598,7 +8598,7 @@
         "@exciton"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "monochromatic": {
       "version_created": "1.13.1",
@@ -8922,7 +8922,7 @@
     "network": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-23",
+      "last_commit_date": "2026-06-24",
       "type": [
         "network"
       ],
@@ -9121,7 +9121,7 @@
     "opentherm": {
       "version_created": "2024.9.0",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-23",
+      "last_commit_date": "2026-06-24",
       "type": [
         "binary_sensor",
         "number",
@@ -9147,7 +9147,7 @@
     "openthread": {
       "version_created": "2025.6.0",
       "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-23",
+      "last_commit_date": "2026-06-24",
       "type": [
         "network"
       ],
@@ -9818,11 +9818,12 @@
     },
     "psram": {
       "version_created": "2022.1.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-15",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "core"
       ],
+      "docs_url": "https://esphome.io/components/psram",
       "supported_platforms": [
         "esp32"
       ],
@@ -9834,8 +9835,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/psram"
+      "open_prs": 0
     },
     "pulse_counter": {
       "version_created": "1.13.1",
@@ -11846,11 +11846,12 @@
     },
     "spi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-11",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "spi"
       ],
+      "docs_url": "https://esphome.io/components/spi",
       "supported_platforms": [
         "esp32",
         "esp8266",
@@ -11865,8 +11866,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/spi"
+      "open_prs": 2
     },
     "spi_device": {
       "version_created": "2023.9.0",
@@ -12954,11 +12954,12 @@
     },
     "tinyusb": {
       "version_created": "2025.10.4",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "usb"
       ],
+      "docs_url": "https://esphome.io/components/tinyusb",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -12968,8 +12969,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/tinyusb"
+      "open_prs": 1
     },
     "tlc59208f": {
       "version_created": "1.14.0",
@@ -13583,11 +13583,12 @@
     },
     "usb_cdc_acm": {
       "version_created": "2025.11.5",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "usb"
       ],
+      "docs_url": "https://esphome.io/components/usb_cdc_acm",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -13597,16 +13598,16 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 5,
-      "docs_url": "https://esphome.io/components/usb_cdc_acm"
+      "open_prs": 5
     },
     "usb_host": {
       "version_created": "2025.5.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-05",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "usb"
       ],
+      "docs_url": "https://esphome.io/components/usb_host",
       "supported_platforms": [
         "esp32"
       ],
@@ -13618,16 +13619,16 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/usb_host"
+      "open_prs": 1
     },
     "usb_uart": {
       "version_created": "2025.5.1",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-10",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "usb"
       ],
+      "docs_url": "https://esphome.io/components/usb_uart",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -13637,8 +13638,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 6,
-      "docs_url": "https://esphome.io/components/usb_uart"
+      "open_prs": 6
     },
     "valve": {
       "version_created": "2024.4.2",
@@ -13868,6 +13868,26 @@
       "open_prs": 9,
       "docs_url": "https://esphome.io/components/display/waveshare_epaper"
     },
+    "waveshare_io_ch32v003": {
+      "version_created": "2026.6.2",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
+      "type": [
+        "output",
+        "sensor"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@latonita"
+      ],
+      "open_issues": 0,
+      "open_prs": 1
+    },
     "web_server": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.2",
@@ -14048,11 +14068,12 @@
     },
     "wifi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.1",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-24",
       "type": [
         "wifi"
       ],
+      "docs_url": "https://esphome.io/components/wifi",
       "supported_platforms": [
         "esp32",
         "esp8266",
@@ -14065,8 +14086,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 9,
-      "docs_url": "https://esphome.io/components/wifi"
+      "open_prs": 9
     },
     "wifi_info": {
       "version_created": "1.13.1",
