@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T06:42:29.938504+00:00",
+  "generated_at": "2026-06-27T06:18:54.953763+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1227,14 +1227,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 242,
-    "known_issues": 154,
+    "total_issues": 247,
+    "known_issues": 156,
     "new_comp_issues": 0,
-    "unattr_issues": 88,
-    "total_prs": 523,
-    "known_prs": 358,
-    "new_comp_prs": 116,
-    "unattr_prs": 49
+    "unattr_issues": 91,
+    "total_prs": 535,
+    "known_prs": 365,
+    "new_comp_prs": 115,
+    "unattr_prs": 55
   },
   "components": {
     "a01nyub": {
@@ -1887,7 +1887,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 12
+      "open_prs": 13
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2571,7 +2571,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 3,
       "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
     },
     "ble_rssi": {
@@ -2590,7 +2590,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 4,
       "docs_url": "https://esphome.io/components/sensor/ble_rssi"
     },
     "ble_scanner": {
@@ -2610,7 +2610,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 4
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -3126,7 +3126,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 3
     },
     "button": {
       "version_created": "2021.12.0",
@@ -4651,7 +4651,7 @@
         "@P4uLT"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32": {
       "version_created": "2021.9.1",
@@ -4672,7 +4672,7 @@
         "@esphome/core"
       ],
       "open_issues": 13,
-      "open_prs": 15
+      "open_prs": 16
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -8405,7 +8405,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 7,
+      "open_issues": 9,
       "open_prs": 4
     },
     "mitsubishi": {
@@ -8938,7 +8938,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 11
     },
     "nextion": {
       "version_created": "1.13.1",
@@ -9481,7 +9481,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "pipsolar": {
       "version_created": "2021.8.0",
@@ -11307,7 +11307,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": null
     },
     "shelly_dimmer": {
@@ -11672,22 +11672,22 @@
     },
     "socket": {
       "version_created": "2021.9.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-11",
+      "version_last_modified": "2026.6.2",
+      "last_commit_date": "2026-06-26",
       "type": [
         "socket"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 8,
+      "test_file_count": 11,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8,
-      "docs_url": null
+      "open_prs": 7
     },
     "sonoff_d1": {
       "version_created": "2022.4.0",
