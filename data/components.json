@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T07:19:53.334529+00:00",
+  "generated_at": "2026-06-30T06:43:13.480842+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1224,17 +1224,21 @@
     {
       "tag": "2026.6.2",
       "date": "2026-06-20"
+    },
+    {
+      "tag": "2026.6.3",
+      "date": "2026-06-29"
     }
   ],
   "issue_stats": {
-    "total_issues": 249,
-    "known_issues": 158,
+    "total_issues": 253,
+    "known_issues": 161,
     "new_comp_issues": 0,
-    "unattr_issues": 91,
-    "total_prs": 546,
-    "known_prs": 377,
-    "new_comp_prs": 113,
-    "unattr_prs": 56
+    "unattr_issues": 92,
+    "total_prs": 559,
+    "known_prs": 387,
+    "new_comp_prs": 111,
+    "unattr_prs": 61
   },
   "components": {
     "a01nyub": {
@@ -2099,8 +2103,8 @@
     },
     "audio": {
       "version_created": "2024.10.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "audio"
       ],
@@ -2412,11 +2416,12 @@
     },
     "bk72xx": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.4.3",
-      "last_commit_date": "2026-04-26",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "platform"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -2426,8 +2431,7 @@
         "@kuba2k2"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": null
+      "open_prs": 0
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -2630,8 +2634,8 @@
         "@bdraco",
         "@jesserockz"
       ],
-      "open_issues": 4,
-      "open_prs": 2,
+      "open_issues": 5,
+      "open_prs": 3,
       "docs_url": "https://esphome.io/components/bluetooth_proxy"
     },
     "bm8563": {
@@ -3533,7 +3537,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 7
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -3694,6 +3698,25 @@
       ],
       "open_issues": 0,
       "open_prs": 0
+    },
+    "cst9220": {
+      "version_created": "2026.6.3",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-30",
+      "type": [
+        "touchscreen"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@clydebarrow"
+      ],
+      "open_issues": 0,
+      "open_prs": 1
     },
     "ct_clamp": {
       "version_created": "1.13.1",
@@ -4555,7 +4578,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 14
+      "open_prs": 15
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4655,7 +4678,7 @@
     },
     "esp32": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-27",
       "type": [
         "platform"
@@ -4740,7 +4763,7 @@
     },
     "esp32_ble_server": {
       "version_created": "1.19.0",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-23",
       "type": [
         "bluetooth"
@@ -5059,7 +5082,7 @@
     },
     "espnow": {
       "version_created": "2025.7.5",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-28",
       "type": [
         "network"
@@ -5076,12 +5099,12 @@
         "@jesserockz"
       ],
       "open_issues": 2,
-      "open_prs": 1
+      "open_prs": 2
     },
     "ethernet": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "ethernet"
       ],
@@ -5798,7 +5821,7 @@
     },
     "hbridge": {
       "version_created": "1.16.0",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-25",
       "type": [
         "fan",
@@ -7237,8 +7260,8 @@
     },
     "libretiny": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "platform"
       ],
@@ -7355,11 +7378,12 @@
     },
     "ln882x": {
       "version_created": "2025.6.3",
-      "version_last_modified": "2026.4.1",
-      "last_commit_date": "2026-04-16",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "platform"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -7369,8 +7393,7 @@
         "@lamauny"
       ],
       "open_issues": 1,
-      "open_prs": 0,
-      "docs_url": null
+      "open_prs": 0
     },
     "lock": {
       "version_created": "2022.1.4",
@@ -7458,7 +7481,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "ltr390": {
       "version_created": "2021.9.2",
@@ -8357,7 +8380,7 @@
     },
     "mipi": {
       "version_created": "2025.7.4",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-25",
       "type": [
         "display"
@@ -8412,7 +8435,7 @@
     },
     "mipi_spi": {
       "version_created": "2025.5.0",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-25",
       "type": [
         "display"
@@ -8426,7 +8449,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 9,
+      "open_issues": 10,
       "open_prs": 5
     },
     "mitsubishi": {
@@ -8575,7 +8598,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 13
+      "open_prs": 14
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8812,7 +8835,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 3,
-      "open_prs": 13
+      "open_prs": 14
     },
     "mqtt_subscribe": {
       "version_created": "1.13.1",
@@ -8942,8 +8965,8 @@
     },
     "network": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-27",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "network"
       ],
@@ -9047,8 +9070,8 @@
     },
     "nrf52": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-27",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "platform"
       ],
@@ -9141,7 +9164,7 @@
     },
     "opentherm": {
       "version_created": "2024.9.0",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-28",
       "type": [
         "binary_sensor",
@@ -9198,7 +9221,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/text_sensor/openthread_info"
     },
     "opt3001": {
@@ -9525,6 +9548,26 @@
         "@andreashergert1984"
       ],
       "open_issues": 1,
+      "open_prs": 1
+    },
+    "pixoo": {
+      "version_created": "2026.6.3",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-30",
+      "type": [
+        "display",
+        "light"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@jesserockz"
+      ],
+      "open_issues": 0,
       "open_prs": 1
     },
     "pm1006": {
@@ -10021,6 +10064,25 @@
       "codeowners": [],
       "open_issues": 0,
       "open_prs": 0
+    },
+    "qmi8658": {
+      "version_created": "2026.6.3",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-30",
+      "type": [
+        "sensor"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 3,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@clydebarrow"
+      ],
+      "open_issues": 0,
+      "open_prs": 1
     },
     "qmp6988": {
       "version_created": "2022.3.0",
@@ -10646,11 +10708,12 @@
     },
     "rtl87xx": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.4.1",
-      "last_commit_date": "2026-04-16",
+      "version_last_modified": "2026.6.3",
+      "last_commit_date": "2026-06-29",
       "type": [
         "platform"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": false,
       "test_file_count": 0,
@@ -10660,8 +10723,7 @@
         "@kuba2k2"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": null
+      "open_prs": 0
     },
     "rtttl": {
       "version_created": "1.15.0",
@@ -12803,7 +12865,7 @@
       "codeowners": [
         "@0hax"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1,
       "docs_url": "https://esphome.io/components/sensor/teleinfo"
     },
@@ -13989,7 +14051,7 @@
         "@DrCoolZic"
       ],
       "open_issues": 0,
-      "open_prs": 4,
+      "open_prs": 5,
       "docs_url": "https://esphome.io/components/weikai"
     },
     "weikai_i2c": {
@@ -14089,7 +14151,7 @@
     },
     "wifi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
+      "version_last_modified": "2026.6.3",
       "last_commit_date": "2026-06-28",
       "type": [
         "wifi"
