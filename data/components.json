@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:01:14.979082+00:00",
+  "generated_at": "2026-07-02T06:28:01.012333+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1235,14 +1235,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 258,
-    "known_issues": 164,
+    "total_issues": 260,
+    "known_issues": 165,
     "new_comp_issues": 0,
-    "unattr_issues": 94,
-    "total_prs": 567,
-    "known_prs": 394,
-    "new_comp_prs": 112,
-    "unattr_prs": 61
+    "unattr_issues": 95,
+    "total_prs": 581,
+    "known_prs": 402,
+    "new_comp_prs": 116,
+    "unattr_prs": 63
   },
   "components": {
     "a01nyub": {
@@ -4699,7 +4699,7 @@
         "@esphome/core"
       ],
       "open_issues": 14,
-      "open_prs": 17
+      "open_prs": 20
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5008,8 +5008,8 @@
     },
     "esp8266": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-01",
       "type": [
         "platform"
       ],
@@ -7862,7 +7862,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "mcp23s08": {
@@ -8454,7 +8454,7 @@
         "@clydebarrow"
       ],
       "open_issues": 11,
-      "open_prs": 5
+      "open_prs": 6
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -8602,7 +8602,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 15
+      "open_prs": 16
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8627,12 +8627,12 @@
         "@martgras"
       ],
       "open_issues": 3,
-      "open_prs": 9
+      "open_prs": 10
     },
     "modbus_server": {
       "version_created": "2026.4.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-01",
       "type": [
         "modbus"
       ],
@@ -9832,8 +9832,8 @@
     },
     "power_supply": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "power_supply"
       ],
@@ -13454,7 +13454,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 5
+      "open_prs": 6
     },
     "tx20": {
       "version_created": "1.14.0",
@@ -13628,7 +13628,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/update"
     },
     "uponor_smatrix": {
@@ -13711,8 +13711,8 @@
     },
     "usb_uart": {
       "version_created": "2025.5.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-24",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "usb"
       ],
@@ -15039,7 +15039,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 9,
+      "open_prs": 10,
       "docs_url": null
     },
     "zephyr_ble_server": {
