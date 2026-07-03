@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T06:28:01.012333+00:00",
+  "generated_at": "2026-07-03T06:19:05.191644+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1235,14 +1235,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 260,
-    "known_issues": 165,
+    "total_issues": 262,
+    "known_issues": 167,
     "new_comp_issues": 0,
     "unattr_issues": 95,
-    "total_prs": 581,
-    "known_prs": 402,
-    "new_comp_prs": 116,
-    "unattr_prs": 63
+    "total_prs": 596,
+    "known_prs": 414,
+    "new_comp_prs": 117,
+    "unattr_prs": 65
   },
   "components": {
     "a01nyub": {
@@ -1880,8 +1880,8 @@
     },
     "api": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-27",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "api"
       ],
@@ -2579,7 +2579,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
     },
     "ble_rssi": {
@@ -2598,7 +2598,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 4,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/sensor/ble_rssi"
     },
     "ble_scanner": {
@@ -2618,7 +2618,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 2
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -3134,7 +3134,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 1
     },
     "button": {
       "version_created": "2021.12.0",
@@ -4567,8 +4567,8 @@
     },
     "epaper_spi": {
       "version_created": "2025.10.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-23",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "display"
       ],
@@ -4698,8 +4698,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 14,
-      "open_prs": 20
+      "open_issues": 15,
+      "open_prs": 21
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5081,7 +5081,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 7,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/esphome"
     },
     "espnow": {
@@ -5103,7 +5103,7 @@
         "@jesserockz"
       ],
       "open_issues": 3,
-      "open_prs": 2
+      "open_prs": 3
     },
     "ethernet": {
       "version_created": "1.13.1",
@@ -7445,7 +7445,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8,
+      "open_prs": 9,
       "docs_url": "https://esphome.io/components/logger"
     },
     "lps22": {
@@ -8602,7 +8602,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 16
+      "open_prs": 19
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -9075,8 +9075,8 @@
     },
     "nrf52": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-29",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "platform"
       ],
@@ -9090,7 +9090,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 3,
-      "open_prs": 15
+      "open_prs": 16
     },
     "ntc": {
       "version_created": "1.13.1",
@@ -9553,7 +9553,7 @@
         "@andreashergert1984"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 3
     },
     "pixoo": {
       "version_created": "2026.6.3",
@@ -12312,6 +12312,25 @@
       "open_prs": 1,
       "docs_url": null
     },
+    "st7123": {
+      "version_created": "2026.6.4",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
+      "type": [
+        "touchscreen"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@miniskipper"
+      ],
+      "open_issues": 0,
+      "open_prs": 2
+    },
     "st7567_base": {
       "version_created": "2023.12.6",
       "version_last_modified": "2026.5.0",
@@ -13707,7 +13726,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 3
     },
     "usb_uart": {
       "version_created": "2025.5.1",
@@ -13726,7 +13745,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 7
+      "open_prs": 9
     },
     "valve": {
       "version_created": "2024.4.2",
@@ -14174,7 +14193,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 11
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -15023,11 +15042,12 @@
     },
     "zephyr": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-02",
       "type": [
         "platform"
       ],
+      "docs_url": null,
       "supported_platforms": [
         "zephyr"
       ],
@@ -15039,8 +15059,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 10,
-      "docs_url": null
+      "open_prs": 11
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -15075,7 +15094,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3,
+      "open_prs": 5,
       "docs_url": "https://esphome.io/components/ota/zephyr_mcumgr"
     },
     "zhlt01": {
@@ -15117,7 +15136,7 @@
         "@luar123",
         "@tomaszduda23"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 3
     },
     "zio_ultrasonic": {
