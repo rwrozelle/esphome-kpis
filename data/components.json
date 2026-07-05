@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T06:07:57.800740+00:00",
+  "generated_at": "2026-07-05T06:28:00.800480+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1235,14 +1235,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 262,
-    "known_issues": 167,
+    "total_issues": 265,
+    "known_issues": 169,
     "new_comp_issues": 0,
-    "unattr_issues": 95,
-    "total_prs": 599,
-    "known_prs": 420,
-    "new_comp_prs": 116,
-    "unattr_prs": 63
+    "unattr_issues": 96,
+    "total_prs": 616,
+    "known_prs": 432,
+    "new_comp_prs": 118,
+    "unattr_prs": 66
   },
   "components": {
     "a01nyub": {
@@ -3925,7 +3925,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0,
       "docs_url": null
     },
@@ -4321,7 +4321,7 @@
         "@PolarGoose"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "duty_cycle": {
       "version_created": "1.13.1",
@@ -4702,8 +4702,8 @@
     },
     "esp32": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-27",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-05",
       "type": [
         "platform"
       ],
@@ -4719,7 +4719,7 @@
         "@esphome/core"
       ],
       "open_issues": 15,
-      "open_prs": 21
+      "open_prs": 22
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5029,7 +5029,7 @@
     "esp8266": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-01",
+      "last_commit_date": "2026-07-05",
       "type": [
         "platform"
       ],
@@ -5045,7 +5045,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp8266_pwm": {
       "version_created": "1.13.1",
@@ -6381,7 +6381,7 @@
       "codeowners": [
         "@stuartparmenter"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 2
     },
     "hx711": {
@@ -7000,7 +7000,7 @@
         "@cfeenstra1024"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 3
     },
     "key_collector": {
       "version_created": "2022.12.4",
@@ -8417,7 +8417,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "mipi_dsi": {
       "version_created": "2025.7.4",
@@ -8435,7 +8435,7 @@
         "@clydebarrow"
       ],
       "open_issues": 1,
-      "open_prs": 3,
+      "open_prs": 4,
       "docs_url": "https://esphome.io/components/display/mipi_dsi"
     },
     "mipi_rgb": {
@@ -8454,7 +8454,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 2,
+      "open_prs": 3,
       "docs_url": "https://esphome.io/components/display/mipi_rgb"
     },
     "mipi_spi": {
@@ -8474,7 +8474,7 @@
         "@clydebarrow"
       ],
       "open_issues": 11,
-      "open_prs": 6
+      "open_prs": 8
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -8622,7 +8622,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 21
+      "open_prs": 22
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -9110,7 +9110,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 3,
-      "open_prs": 17
+      "open_prs": 19
     },
     "ntc": {
       "version_created": "1.13.1",
@@ -9871,22 +9871,22 @@
     },
     "preferences": {
       "version_created": "2021.9.2",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-05",
       "type": [
         "core"
       ],
+      "docs_url": null,
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 1,
+      "test_file_count": 2,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": null
+      "open_prs": 1
     },
     "prometheus": {
       "version_created": "1.15.0",
@@ -10870,15 +10870,15 @@
     },
     "safe_mode": {
       "version_created": "2021.9.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-05",
       "type": [
         "core"
       ],
       "docs_url": "https://esphome.io/components/button/safe_mode",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 5,
+      "test_file_count": 6,
       "has_codeowners": true,
       "codeowners_count": 3,
       "codeowners": [
@@ -14037,7 +14037,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 3,
-      "open_prs": 6
+      "open_prs": 7
     },
     "web_server_base": {
       "version_created": "1.13.6",
@@ -14076,7 +14076,7 @@
         "@dentra"
       ],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 3,
       "docs_url": null
     },
     "weikai": {
@@ -14195,8 +14195,8 @@
     },
     "wifi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.6.4",
+      "last_commit_date": "2026-07-05",
       "type": [
         "wifi"
       ],
@@ -14208,7 +14208,7 @@
         "rp2040"
       ],
       "has_tests": true,
-      "test_file_count": 11,
+      "test_file_count": 13,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -15079,7 +15079,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 11
+      "open_prs": 13
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -15157,7 +15157,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 3
+      "open_prs": 5
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
