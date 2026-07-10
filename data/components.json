@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T06:41:41.779411+00:00",
+  "generated_at": "2026-07-10T06:30:57.943472+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1239,14 +1239,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 272,
-    "known_issues": 173,
+    "total_issues": 278,
+    "known_issues": 178,
     "new_comp_issues": 0,
-    "unattr_issues": 99,
-    "total_prs": 633,
-    "known_prs": 448,
-    "new_comp_prs": 118,
-    "unattr_prs": 67
+    "unattr_issues": 100,
+    "total_prs": 646,
+    "known_prs": 457,
+    "new_comp_prs": 121,
+    "unattr_prs": 68
   },
   "components": {
     "a01nyub": {
@@ -1898,7 +1898,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 16
+      "open_prs": 17
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2066,7 +2066,7 @@
         "@ahpohl"
       ],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": null
     },
     "atm90e26": {
@@ -3543,7 +3543,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 10
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4032,7 +4032,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "deep_sleep": {
       "version_created": "1.13.1",
@@ -4431,7 +4431,7 @@
         "@ellull"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "emmeti": {
       "version_created": "2024.3.0",
@@ -4720,7 +4720,7 @@
         "@esphome/core"
       ],
       "open_issues": 15,
-      "open_prs": 21
+      "open_prs": 22
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5143,7 +5143,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 7
     },
     "ethernet_info": {
       "version_created": "2022.10.1",
@@ -5320,7 +5320,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "fastled_clockless": {
       "version_created": "1.13.1",
@@ -5860,7 +5860,7 @@
         "@paveldn"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "havells_solar": {
       "version_created": "1.20.0",
@@ -8093,8 +8093,8 @@
     },
     "mcp4461": {
       "version_created": "2025.4.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-09",
       "type": [
         "output"
       ],
@@ -8239,7 +8239,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 7
     },
     "media_player": {
       "version_created": "2022.6.0",
@@ -8398,7 +8398,7 @@
         "@dudanov"
       ],
       "open_issues": 3,
-      "open_prs": 2
+      "open_prs": 3
     },
     "midea_ac": {
       "version_created": "1.17.0",
@@ -8469,7 +8469,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 1,
+      "open_issues": 3,
       "open_prs": 5
     },
     "mipi_rgb": {
@@ -8507,7 +8507,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 11,
+      "open_issues": 13,
       "open_prs": 7
     },
     "mitsubishi": {
@@ -8526,7 +8526,7 @@
       "codeowners": [
         "@RubyBailey"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 3
     },
     "mitsubishi_cn105": {
@@ -8656,7 +8656,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 26
+      "open_prs": 27
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8700,7 +8700,7 @@
         "@exciton"
       ],
       "open_issues": 0,
-      "open_prs": 9
+      "open_prs": 10
     },
     "monochromatic": {
       "version_created": "1.13.1",
@@ -10232,7 +10232,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 0
     },
     "qwiic_pir": {
@@ -10678,7 +10678,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "rp2040_ble": {
       "version_created": "2026.3.0",
@@ -10697,7 +10697,7 @@
         "@bdraco"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "rp2040_pio_led_strip": {
       "version_created": "2023.5.3",
@@ -10716,7 +10716,7 @@
         "@Papa-DMan"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "rp2040_pwm": {
       "version_created": "2022.10.1",
@@ -13791,7 +13791,7 @@
     "usb_uart": {
       "version_created": "2025.5.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-08",
+      "last_commit_date": "2026-07-09",
       "type": [
         "usb"
       ],
@@ -13805,7 +13805,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 11
     },
     "valve": {
       "version_created": "2024.4.2",
@@ -14057,8 +14057,8 @@
     },
     "web_server": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-09",
       "type": [
         "web_server"
       ],
@@ -14251,7 +14251,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 14
+      "open_prs": 15
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -14310,7 +14310,7 @@
         "@thomas0bernard"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "wk2132_i2c": {
       "version_created": "2024.4.2",
@@ -14497,7 +14497,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": null
     },
     "wts01": {
