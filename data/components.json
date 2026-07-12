@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T05:30:23.339170+00:00",
+  "generated_at": "2026-07-12T05:46:48.004409+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1239,12 +1239,12 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 280,
-    "known_issues": 179,
+    "total_issues": 281,
+    "known_issues": 180,
     "new_comp_issues": 0,
     "unattr_issues": 101,
-    "total_prs": 655,
-    "known_prs": 464,
+    "total_prs": 659,
+    "known_prs": 468,
     "new_comp_prs": 121,
     "unattr_prs": 70
   },
@@ -4036,8 +4036,8 @@
     },
     "deep_sleep": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-27",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-11",
       "type": [
         "core"
       ],
@@ -5045,7 +5045,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 2
     },
     "esp8266_pwm": {
@@ -7500,7 +7500,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "lps22": {
       "version_created": "2025.7.0",
@@ -8224,15 +8224,15 @@
     },
     "mdns": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-11",
       "type": [
         "network"
       ],
       "docs_url": "https://esphome.io/components/mdns",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 9,
+      "test_file_count": 11,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -8439,7 +8439,7 @@
     "mipi": {
       "version_created": "2025.7.4",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-10",
+      "last_commit_date": "2026-07-11",
       "type": [
         "display"
       ],
@@ -8456,7 +8456,7 @@
     "mipi_dsi": {
       "version_created": "2025.7.4",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-10",
+      "last_commit_date": "2026-07-11",
       "type": [
         "display"
       ],
@@ -8494,7 +8494,7 @@
     "mipi_spi": {
       "version_created": "2025.5.0",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-10",
+      "last_commit_date": "2026-07-11",
       "type": [
         "display"
       ],
@@ -11273,7 +11273,7 @@
         "@kahrendt"
       ],
       "open_issues": 2,
-      "open_prs": 2
+      "open_prs": 4
     },
     "senseair": {
       "version_created": "1.14.0",
@@ -14058,7 +14058,7 @@
     "web_server": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-09",
+      "last_commit_date": "2026-07-11",
       "type": [
         "web_server"
       ],
@@ -15195,7 +15195,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 8
+      "open_prs": 9
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
