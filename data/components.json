@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T05:46:48.004409+00:00",
+  "generated_at": "2026-07-13T05:56:47.605151+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1239,14 +1239,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 281,
-    "known_issues": 180,
+    "total_issues": 283,
+    "known_issues": 181,
     "new_comp_issues": 0,
-    "unattr_issues": 101,
-    "total_prs": 659,
-    "known_prs": 468,
+    "unattr_issues": 102,
+    "total_prs": 667,
+    "known_prs": 475,
     "new_comp_prs": 121,
-    "unattr_prs": 70
+    "unattr_prs": 71
   },
   "components": {
     "a01nyub": {
@@ -1884,7 +1884,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-08",
+      "last_commit_date": "2026-07-13",
       "type": [
         "api"
       ],
@@ -2387,11 +2387,12 @@
     },
     "binary_sensor": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "binary_sensor"
       ],
+      "docs_url": "https://esphome.io/components/binary_sensor",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 8,
@@ -2401,8 +2402,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/binary_sensor"
+      "open_prs": 1
     },
     "binary_sensor_map": {
       "version_created": "1.13.1",
@@ -3141,8 +3141,8 @@
     },
     "button": {
       "version_created": "2021.12.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "button"
       ],
@@ -3595,8 +3595,8 @@
     },
     "cover": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "cover"
       ],
@@ -3648,7 +3648,7 @@
         "@berfenger"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "cse7766": {
       "version_created": "1.13.1",
@@ -4032,7 +4032,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "deep_sleep": {
       "version_created": "1.13.1",
@@ -4603,7 +4603,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 15
+      "open_prs": 16
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4704,7 +4704,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-09",
+      "last_commit_date": "2026-07-13",
       "type": [
         "platform"
       ],
@@ -4713,7 +4713,7 @@
         "esp32"
       ],
       "has_tests": true,
-      "test_file_count": 9,
+      "test_file_count": 10,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -5166,8 +5166,8 @@
     },
     "event": {
       "version_created": "2024.4.2",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "event"
       ],
@@ -6961,7 +6961,7 @@
         "@Passific"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "jsn_sr04t": {
       "version_created": "2024.3.1",
@@ -8225,7 +8225,7 @@
     "mdns": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-11",
+      "last_commit_date": "2026-07-13",
       "type": [
         "network"
       ],
@@ -8315,7 +8315,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 3
     },
     "micronova": {
@@ -9165,8 +9165,8 @@
     },
     "number": {
       "version_created": "1.20.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-03",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "number"
       ],
@@ -10831,7 +10831,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 4,
+      "open_prs": 5,
       "docs_url": null
     },
     "runtime_stats": {
@@ -11313,8 +11313,8 @@
     },
     "sensor": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-03",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "sensor"
       ],
@@ -12015,7 +12015,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "spi_device": {
       "version_created": "2023.9.0",
@@ -12693,8 +12693,8 @@
     },
     "switch": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "switch"
       ],
@@ -13027,8 +13027,8 @@
     },
     "text_sensor": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "text_sensor"
       ],
@@ -13693,8 +13693,8 @@
     },
     "update": {
       "version_created": "2024.6.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "update"
       ],
@@ -13809,8 +13809,8 @@
     },
     "valve": {
       "version_created": "2024.4.2",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-12",
       "type": [
         "valve"
       ],
@@ -14058,7 +14058,7 @@
     "web_server": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-11",
+      "last_commit_date": "2026-07-13",
       "type": [
         "web_server"
       ],
@@ -14076,7 +14076,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 4,
-      "open_prs": 10
+      "open_prs": 11
     },
     "web_server_base": {
       "version_created": "1.13.6",
@@ -14095,7 +14095,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "web_server_idf": {
       "version_created": "2023.7.0",
@@ -14116,7 +14116,7 @@
         "@dentra"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "weikai": {
       "version_created": "2024.4.2",
@@ -15177,7 +15177,7 @@
     "zigbee": {
       "version_created": "2025.12.5",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-08",
+      "last_commit_date": "2026-07-12",
       "type": [
         "zigbee"
       ],
@@ -15218,8 +15218,8 @@
     },
     "zwave_proxy": {
       "version_created": "2025.9.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-13",
       "type": [
         "zwave"
       ],
