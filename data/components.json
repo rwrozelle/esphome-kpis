@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T05:56:47.605151+00:00",
+  "generated_at": "2026-07-14T05:19:04.363694+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1239,13 +1239,13 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 283,
-    "known_issues": 181,
+    "total_issues": 285,
+    "known_issues": 182,
     "new_comp_issues": 0,
-    "unattr_issues": 102,
-    "total_prs": 667,
-    "known_prs": 475,
-    "new_comp_prs": 121,
+    "unattr_issues": 103,
+    "total_prs": 673,
+    "known_prs": 480,
+    "new_comp_prs": 122,
     "unattr_prs": 71
   },
   "components": {
@@ -1993,11 +1993,12 @@
     },
     "as7341": {
       "version_created": "2023.3.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/as7341",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -2007,8 +2008,7 @@
         "@mrgnr"
       ],
       "open_issues": 0,
-      "open_prs": 3,
-      "docs_url": "https://esphome.io/components/sensor/as7341"
+      "open_prs": 3
     },
     "async_tcp": {
       "version_created": "1.14.0",
@@ -3213,7 +3213,7 @@
       "codeowners": [
         "@DT-art1"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "canbus": {
@@ -4603,7 +4603,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 16
+      "open_prs": 17
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4846,7 +4846,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 2
     },
     "esp32_camera_web_server": {
@@ -7320,7 +7320,7 @@
     "libretiny": {
       "version_created": "2023.8.3",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-09",
+      "last_commit_date": "2026-07-14",
       "type": [
         "platform"
       ],
@@ -7563,8 +7563,8 @@
     },
     "ltr501": {
       "version_created": "2024.9.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "sensor"
       ],
@@ -7902,8 +7902,8 @@
     },
     "mcp23017": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "gpio_expander"
       ],
@@ -8545,7 +8545,7 @@
         "@crnjan"
       ],
       "open_issues": 1,
-      "open_prs": 8,
+      "open_prs": 9,
       "docs_url": "https://esphome.io/components/climate/mitsubishi_cn105"
     },
     "mixer": {
@@ -9045,8 +9045,8 @@
     },
     "nextion": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "binary_sensor",
         "display",
@@ -13004,7 +13004,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "text": {
       "version_created": "2023.10.4",
@@ -13382,7 +13382,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "total_daily_energy": {
       "version_created": "1.13.1",
@@ -13863,12 +13863,12 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "veml7700": {
       "version_created": "2024.3.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "sensor"
       ],
@@ -14058,7 +14058,7 @@
     "web_server": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-13",
+      "last_commit_date": "2026-07-14",
       "type": [
         "web_server"
       ],
@@ -14071,7 +14071,7 @@
         "rtl87xx"
       ],
       "has_tests": true,
-      "test_file_count": 14,
+      "test_file_count": 15,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14080,8 +14080,8 @@
     },
     "web_server_base": {
       "version_created": "1.13.6",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "web_server"
       ],
@@ -14099,8 +14099,8 @@
     },
     "web_server_idf": {
       "version_created": "2023.7.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-08",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-14",
       "type": [
         "web_server"
       ],
