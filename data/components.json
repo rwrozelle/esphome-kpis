@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T05:19:04.363694+00:00",
+  "generated_at": "2026-07-15T05:20:03.413242+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1239,14 +1239,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 285,
-    "known_issues": 182,
+    "total_issues": 286,
+    "known_issues": 183,
     "new_comp_issues": 0,
     "unattr_issues": 103,
-    "total_prs": 673,
-    "known_prs": 480,
+    "total_prs": 683,
+    "known_prs": 488,
     "new_comp_prs": 122,
-    "unattr_prs": 71
+    "unattr_prs": 73
   },
   "components": {
     "a01nyub": {
@@ -1898,7 +1898,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 17
+      "open_prs": 18
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -1918,7 +1918,7 @@
         "@ximex"
       ],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/sensor/aqi"
     },
     "as3935": {
@@ -2050,11 +2050,12 @@
     },
     "atc_mithermometer": {
       "version_created": "1.16.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.6.5",
+      "last_commit_date": "2026-07-15",
       "type": [
         "sensor"
       ],
+      "docs_url": null,
       "supported_platforms": [
         "esp32"
       ],
@@ -2066,8 +2067,7 @@
         "@ahpohl"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": null
+      "open_prs": 1
     },
     "atm90e26": {
       "version_created": "2023.7.0",
@@ -4055,7 +4055,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 6
+      "open_prs": 7
     },
     "delonghi": {
       "version_created": "2022.5.0",
@@ -4603,7 +4603,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 17
+      "open_prs": 18
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4743,7 +4743,7 @@
         "@Rapsssito"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "esp32_ble_beacon": {
       "version_created": "1.13.1",
@@ -4807,7 +4807,7 @@
         "@Rapsssito"
       ],
       "open_issues": 2,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
@@ -6143,7 +6143,7 @@
         "@freekode"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "hmac_md5": {
       "version_created": "2024.8.0",
@@ -8108,7 +8108,7 @@
         "@p1ngb4ck"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "mcp4725": {
       "version_created": "1.16.1",
@@ -8544,7 +8544,7 @@
       "codeowners": [
         "@crnjan"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 9,
       "docs_url": "https://esphome.io/components/climate/mitsubishi_cn105"
     },
@@ -10351,7 +10351,7 @@
         "@glmnet"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "rc522_spi": {
       "version_created": "1.16.0",
@@ -13651,7 +13651,7 @@
         "@ljungqvist"
       ],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": null
     },
     "uln2003": {
@@ -15177,7 +15177,7 @@
     "zigbee": {
       "version_created": "2025.12.5",
       "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-12",
+      "last_commit_date": "2026-07-14",
       "type": [
         "zigbee"
       ],
