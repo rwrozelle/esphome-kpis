@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T05:31:24.690751+00:00",
+  "generated_at": "2026-07-18T05:15:23.186908+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1243,14 +1243,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 295,
+    "total_issues": 301,
     "known_issues": 190,
     "new_comp_issues": 0,
-    "unattr_issues": 105,
-    "total_prs": 700,
-    "known_prs": 502,
-    "new_comp_prs": 123,
-    "unattr_prs": 75
+    "unattr_issues": 111,
+    "total_prs": 705,
+    "known_prs": 507,
+    "new_comp_prs": 122,
+    "unattr_prs": 76
   },
   "components": {
     "a01nyub": {
@@ -1888,7 +1888,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "last_commit_date": "2026-07-17",
       "type": [
         "api"
       ],
@@ -4307,6 +4307,25 @@
       ],
       "open_issues": 0,
       "open_prs": 1
+    },
+    "ds248x": {
+      "version_created": "2026.7.0",
+      "version_last_modified": "2026.7.0",
+      "last_commit_date": "2026-07-17",
+      "type": [
+        "ds248x"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 5,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@tomwellnitz"
+      ],
+      "open_issues": 0,
+      "open_prs": 3
     },
     "dsmr": {
       "version_created": "2021.8.0",
@@ -7380,7 +7399,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 6
+      "open_prs": 7
     },
     "lightwaverf": {
       "version_created": "2023.9.0",
@@ -8493,7 +8512,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 3
+      "open_prs": 4
     },
     "mipi_spi": {
       "version_created": "2025.5.0",
@@ -9050,7 +9069,7 @@
     "nextion": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "last_commit_date": "2026-07-17",
       "type": [
         "binary_sensor",
         "display",
@@ -9060,7 +9079,8 @@
       ],
       "docs_url": "https://esphome.io/components/binary_sensor/nextion",
       "supported_platforms": [
-        "esp32"
+        "esp32",
+        "esp8266"
       ],
       "has_tests": true,
       "test_file_count": 7,
@@ -9133,8 +9153,8 @@
     },
     "nrf52": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-09",
+      "version_last_modified": "2026.7.0",
+      "last_commit_date": "2026-07-17",
       "type": [
         "platform"
       ],
@@ -12652,7 +12672,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/substitutions"
     },
     "sun": {
