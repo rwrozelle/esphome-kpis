@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T05:40:01.629495+00:00",
+  "generated_at": "2026-07-20T05:57:28.424524+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1243,14 +1243,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 308,
-    "known_issues": 193,
+    "total_issues": 311,
+    "known_issues": 194,
     "new_comp_issues": 0,
-    "unattr_issues": 115,
-    "total_prs": 717,
-    "known_prs": 518,
-    "new_comp_prs": 120,
-    "unattr_prs": 79
+    "unattr_issues": 117,
+    "total_prs": 726,
+    "known_prs": 523,
+    "new_comp_prs": 121,
+    "unattr_prs": 82
   },
   "components": {
     "a01nyub": {
@@ -4702,7 +4702,7 @@
         "@kahrendt",
         "@kroimon"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "es8388": {
@@ -4743,7 +4743,7 @@
         "@esphome/core"
       ],
       "open_issues": 16,
-      "open_prs": 23
+      "open_prs": 24
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -4851,7 +4851,7 @@
         "@bdraco"
       ],
       "open_issues": 1,
-      "open_prs": 5
+      "open_prs": 6
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -7384,8 +7384,8 @@
     },
     "light": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.7.0",
+      "last_commit_date": "2026-07-20",
       "type": [
         "light"
       ],
@@ -8322,7 +8322,7 @@
     "micro_wake_word": {
       "version_created": "2024.2.0",
       "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "last_commit_date": "2026-07-20",
       "type": [
         "audio"
       ],
@@ -9168,7 +9168,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 3,
-      "open_prs": 20
+      "open_prs": 21
     },
     "ntc": {
       "version_created": "1.13.1",
@@ -10953,7 +10953,7 @@
         "@paulmonigatti"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "scd30": {
       "version_created": "1.14.0",
@@ -12156,8 +12156,8 @@
     },
     "ssd1306_i2c": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.0",
+      "last_commit_date": "2026-07-20",
       "type": [
         "display"
       ],
@@ -12173,8 +12173,8 @@
     },
     "ssd1306_spi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.0",
+      "last_commit_date": "2026-07-20",
       "type": [
         "display"
       ],
@@ -15225,7 +15225,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 11
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
