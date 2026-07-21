@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T05:57:28.424524+00:00",
+  "generated_at": "2026-07-21T05:39:16.111564+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1240,17 +1240,21 @@
     {
       "tag": "2026.7.0",
       "date": "2026-07-16"
+    },
+    {
+      "tag": "2026.7.1",
+      "date": "2026-07-20"
     }
   ],
   "issue_stats": {
-    "total_issues": 311,
+    "total_issues": 312,
     "known_issues": 194,
     "new_comp_issues": 0,
-    "unattr_issues": 117,
-    "total_prs": 726,
-    "known_prs": 523,
-    "new_comp_prs": 121,
-    "unattr_prs": 82
+    "unattr_issues": 118,
+    "total_prs": 747,
+    "known_prs": 533,
+    "new_comp_prs": 122,
+    "unattr_prs": 92
   },
   "components": {
     "a01nyub": {
@@ -1629,7 +1633,7 @@
         "@jeromelaban"
       ],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 0,
       "docs_url": "https://esphome.io/components/sensor/airthings_ble"
     },
     "airthings_wave_base": {
@@ -1816,7 +1820,7 @@
       "type": [
         "display"
       ],
-      "docs_url": "https://esphome.io/components/animation",
+      "docs_url": "https://esphome.io/components/image/animation",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -1887,7 +1891,7 @@
     },
     "api": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-17",
       "type": [
         "api"
@@ -2071,7 +2075,7 @@
         "@ahpohl"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 1
     },
     "atm90e26": {
       "version_created": "2023.7.0",
@@ -2251,7 +2255,7 @@
         "@rbaron"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "ballu": {
       "version_created": "1.20.0",
@@ -2309,7 +2313,7 @@
         "@jhansche"
       ],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 0,
       "docs_url": "https://esphome.io/components/climate/bedjet"
     },
     "beken_spi_led_strip": {
@@ -2546,7 +2550,7 @@
         "@clydebarrow"
       ],
       "open_issues": 2,
-      "open_prs": 2,
+      "open_prs": 0,
       "docs_url": "https://esphome.io/components/ble_client"
     },
     "ble_nus": {
@@ -2586,7 +2590,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 0,
       "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
     },
     "ble_rssi": {
@@ -2605,7 +2609,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/sensor/ble_rssi"
     },
     "ble_scanner": {
@@ -2625,7 +2629,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 1
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -3141,7 +3145,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "button": {
       "version_created": "2021.12.0",
@@ -3547,7 +3551,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 13
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -3698,7 +3702,7 @@
         "binary_sensor",
         "touchscreen"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/touchscreen/cst328",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -3736,7 +3740,7 @@
       "type": [
         "touchscreen"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/touchscreen/cst9220",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -4626,7 +4630,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 18
+      "open_prs": 20
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4726,7 +4730,7 @@
     },
     "esp32": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-18",
       "type": [
         "platform"
@@ -4766,7 +4770,7 @@
         "@Rapsssito"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "esp32_ble_beacon": {
       "version_created": "1.13.1",
@@ -4807,7 +4811,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "esp32_ble_server": {
       "version_created": "1.19.0",
@@ -4830,7 +4834,7 @@
         "@Rapsssito"
       ],
       "open_issues": 2,
-      "open_prs": 4
+      "open_prs": 2
     },
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
@@ -4965,7 +4969,7 @@
         "@swoboda1337"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_improv": {
       "version_created": "1.19.0",
@@ -5052,8 +5056,8 @@
     },
     "esp8266": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-09",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-21",
       "type": [
         "platform"
       ],
@@ -5069,7 +5073,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 2
+      "open_prs": 3
     },
     "esp8266_pwm": {
       "version_created": "1.13.1",
@@ -5147,7 +5151,7 @@
         "@jesserockz"
       ],
       "open_issues": 3,
-      "open_prs": 3
+      "open_prs": 4
     },
     "ethernet": {
       "version_created": "1.13.1",
@@ -5225,7 +5229,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "external_components": {
       "version_created": "1.17.2",
@@ -5405,7 +5409,7 @@
       "type": [
         "file"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/image/file",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -5829,7 +5833,7 @@
       "type": [
         "touchscreen"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/touchscreen/gsl3670",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 1,
@@ -6325,7 +6329,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 3
     },
     "hrxl_maxsonar_wr": {
       "version_created": "1.20.2",
@@ -6367,8 +6371,8 @@
     },
     "http_request": {
       "version_created": "1.14.3",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-20",
       "type": [
         "ota",
         "update"
@@ -6846,7 +6850,7 @@
         "@fkirill"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "inkplate": {
       "version_created": "2025.8.4",
@@ -6972,7 +6976,7 @@
       "type": [
         "display"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/display/it8951",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 1,
@@ -7359,7 +7363,7 @@
         "@kuba2k2"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 3
     },
     "libretiny_pwm": {
       "version_created": "2023.8.3",
@@ -7384,7 +7388,7 @@
     },
     "light": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-20",
       "type": [
         "light"
@@ -8321,7 +8325,7 @@
     },
     "micro_wake_word": {
       "version_created": "2024.2.0",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-20",
       "type": [
         "audio"
@@ -8762,7 +8766,7 @@
         "@spbrogan"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "mopeka_pro_check": {
       "version_created": "2022.2.6",
@@ -8783,7 +8787,7 @@
         "@spbrogan"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "mopeka_std_check": {
       "version_created": "2023.2.4",
@@ -8802,7 +8806,7 @@
         "@Fabian-Schmidt"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 0
     },
     "motion": {
       "version_created": "2026.6.1",
@@ -9047,8 +9051,8 @@
     },
     "network": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-20",
       "type": [
         "network"
       ],
@@ -9064,7 +9068,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 11
     },
     "nextion": {
       "version_created": "1.13.1",
@@ -9153,8 +9157,8 @@
     },
     "nrf52": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-17",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-20",
       "type": [
         "platform"
       ],
@@ -9232,7 +9236,7 @@
       "type": [
         "display"
       ],
-      "docs_url": "https://esphome.io/components/online_image",
+      "docs_url": "https://esphome.io/components/image/online_image",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 9,
@@ -9640,7 +9644,7 @@
         "display",
         "light"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/display/pixoo",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -9969,7 +9973,7 @@
       "type": [
         "provisioning"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/provisioning",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -10076,7 +10080,7 @@
         "@pasiz"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "pylontech": {
       "version_created": "2023.12.0",
@@ -10173,7 +10177,7 @@
       "type": [
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/motion/qmi8658",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -10316,7 +10320,7 @@
         "@jeffeb3"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "radon_eye_rd200": {
       "version_created": "2022.1.4",
@@ -10692,7 +10696,7 @@
       "type": [
         "rp2"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/rp2",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -10702,7 +10706,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "rp2040_ble": {
       "version_created": "2026.3.0",
@@ -10894,7 +10898,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "ruuvitag": {
       "version_created": "1.14.3",
@@ -10913,7 +10917,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "rx8130": {
       "version_created": "2025.10.5",
@@ -11252,7 +11256,7 @@
         "@martgras"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "sen6x": {
       "version_created": "2026.2.3",
@@ -11273,7 +11277,7 @@
         "@tuct"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "sendspin": {
       "version_created": "2026.4.2",
@@ -11463,7 +11467,7 @@
         "@SenexCrenshaw"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "sha256": {
       "version_created": "2025.9.2",
@@ -12156,7 +12160,7 @@
     },
     "ssd1306_i2c": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-20",
       "type": [
         "display"
@@ -12173,7 +12177,7 @@
     },
     "ssd1306_spi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.7.0",
+      "version_last_modified": "2026.7.1",
       "last_commit_date": "2026-07-20",
       "type": [
         "display"
@@ -12404,7 +12408,7 @@
       "type": [
         "touchscreen"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/touchscreen/st7123",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -13085,7 +13089,7 @@
         "@sittner"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "thermostat": {
       "version_created": "1.15.0",
@@ -13676,7 +13680,7 @@
       ],
       "open_issues": 0,
       "open_prs": 2,
-      "docs_url": null
+      "docs_url": "https://esphome.io/components/ufm01"
     },
     "uln2003": {
       "version_created": "1.13.1",
@@ -14067,7 +14071,7 @@
         "output",
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/waveshare_io_ch32v003",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -14315,8 +14319,8 @@
     },
     "wireguard": {
       "version_created": "2023.9.0",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-15",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-20",
       "type": [
         "binary_sensor",
         "sensor",
@@ -14623,7 +14627,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_cgd1": {
       "version_created": "1.14.4",
@@ -14641,7 +14645,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
+      "open_prs": 0,
       "docs_url": null
     },
     "xiaomi_cgdk2": {
@@ -14661,7 +14665,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_cgg1": {
       "version_created": "1.14.0",
@@ -14680,7 +14684,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_cgpr1": {
       "version_created": "2021.8.0",
@@ -14699,7 +14703,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_gcls002": {
       "version_created": "1.14.4",
@@ -14718,7 +14722,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_hhccjcy01": {
       "version_created": "1.14.0",
@@ -14737,7 +14741,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_hhccjcy10": {
       "version_created": "2024.4.0",
@@ -14758,7 +14762,7 @@
         "@fariouche"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_hhccpot002": {
       "version_created": "1.14.4",
@@ -14777,7 +14781,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_jqjcy01ym": {
       "version_created": "1.14.4",
@@ -14796,7 +14800,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_lywsd02": {
       "version_created": "1.14.0",
@@ -14815,7 +14819,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_lywsd02mmc": {
       "version_created": "2024.8.0",
@@ -14836,7 +14840,7 @@
         "@juanluss31"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_lywsd03mmc": {
       "version_created": "1.14.4",
@@ -14857,7 +14861,7 @@
         "@ahpohl"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_lywsdcgq": {
       "version_created": "1.14.0",
@@ -14876,7 +14880,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_mhoc303": {
       "version_created": "2022.1.3",
@@ -14897,7 +14901,7 @@
         "@drug123"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_mhoc401": {
       "version_created": "1.16.0",
@@ -14918,7 +14922,7 @@
         "@vevsvevs"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_miscale": {
       "version_created": "1.17.0",
@@ -14937,7 +14941,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_miscale2": {
       "version_created": "1.17.0",
@@ -14973,7 +14977,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_mue4094rt": {
       "version_created": "1.14.4",
@@ -14992,7 +14996,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_rtcgq02lm": {
       "version_created": "2022.4.0",
@@ -15014,7 +15018,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_wx08zm": {
       "version_created": "1.14.4",
@@ -15033,7 +15037,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xiaomi_xmwsdj04mmc": {
       "version_created": "2025.6.0",
@@ -15054,7 +15058,7 @@
         "@medusalix"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 0
     },
     "xl9535": {
       "version_created": "2023.6.1",
