@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T05:39:16.111564+00:00",
+  "generated_at": "2026-07-22T05:37:48.075266+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1247,14 +1247,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 312,
-    "known_issues": 194,
+    "total_issues": 320,
+    "known_issues": 199,
     "new_comp_issues": 0,
-    "unattr_issues": 118,
-    "total_prs": 747,
-    "known_prs": 533,
+    "unattr_issues": 121,
+    "total_prs": 757,
+    "known_prs": 542,
     "new_comp_prs": 122,
-    "unattr_prs": 92
+    "unattr_prs": 93
   },
   "components": {
     "a01nyub": {
@@ -1905,7 +1905,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 19
     },
     "aqi": {
@@ -2552,6 +2552,25 @@
       "open_issues": 2,
       "open_prs": 0,
       "docs_url": "https://esphome.io/components/ble_client"
+    },
+    "ble_device_base": {
+      "version_created": "2026.7.1",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-21",
+      "type": [
+        "ble_device_base"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 0,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@Bl00d-B0b"
+      ],
+      "open_issues": 0,
+      "open_prs": 4
     },
     "ble_nus": {
       "version_created": "2025.10.2",
@@ -4630,7 +4649,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 20
+      "open_prs": 21
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4747,12 +4766,12 @@
         "@esphome/core"
       ],
       "open_issues": 16,
-      "open_prs": 24
+      "open_prs": 26
     },
     "esp32_ble": {
       "version_created": "1.19.0",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-21",
       "type": [
         "bluetooth"
       ],
@@ -4838,8 +4857,8 @@
     },
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-21",
       "type": [
         "bluetooth"
       ],
@@ -5129,7 +5148,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 9,
+      "open_issues": 10,
       "open_prs": 3
     },
     "espnow": {
@@ -6569,7 +6588,7 @@
         "@jesserockz"
       ],
       "open_issues": 5,
-      "open_prs": 3
+      "open_prs": 5
     },
     "iaqcore": {
       "version_created": "2023.10.3",
@@ -7341,7 +7360,7 @@
       "codeowners": [
         "@OttoWinter"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "libretiny": {
@@ -8342,7 +8361,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 5,
+      "open_issues": 6,
       "open_prs": 3
     },
     "micronova": {
@@ -8535,7 +8554,7 @@
         "@clydebarrow"
       ],
       "open_issues": 13,
-      "open_prs": 10
+      "open_prs": 11
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -9094,8 +9113,8 @@
         "@edwardtfn",
         "@senexcrenshaw"
       ],
-      "open_issues": 0,
-      "open_prs": 2
+      "open_issues": 1,
+      "open_prs": 3
     },
     "nfc": {
       "version_created": "1.16.0",
@@ -11241,8 +11260,8 @@
     },
     "sen5x": {
       "version_created": "2022.5.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.1",
+      "last_commit_date": "2026-07-21",
       "type": [
         "sensor"
       ],
@@ -13966,7 +13985,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 8,
+      "open_issues": 9,
       "open_prs": 2
     },
     "voltage_sampler": {
@@ -14279,7 +14298,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 15
+      "open_prs": 16
     },
     "wifi_info": {
       "version_created": "1.13.1",
