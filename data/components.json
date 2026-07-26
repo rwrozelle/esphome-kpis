@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:33:03.685808+00:00",
+  "generated_at": "2026-07-26T05:48:52.172664+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1251,14 +1251,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 331,
-    "known_issues": 205,
+    "total_issues": 335,
+    "known_issues": 206,
     "new_comp_issues": 0,
-    "unattr_issues": 126,
-    "total_prs": 806,
-    "known_prs": 569,
-    "new_comp_prs": 139,
-    "unattr_prs": 98
+    "unattr_issues": 129,
+    "total_prs": 809,
+    "known_prs": 570,
+    "new_comp_prs": 140,
+    "unattr_prs": 99
   },
   "components": {
     "a01nyub": {
@@ -3595,7 +3595,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 12
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4774,8 +4774,8 @@
     },
     "esp32": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.7.1",
-      "last_commit_date": "2026-07-18",
+      "version_last_modified": "2026.7.2",
+      "last_commit_date": "2026-07-25",
       "type": [
         "platform"
       ],
@@ -5313,8 +5313,8 @@
     },
     "ezo_pmp": {
       "version_created": "2022.10.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.7.2",
+      "last_commit_date": "2026-07-26",
       "type": [
         "binary_sensor",
         "sensor",
@@ -5868,7 +5868,7 @@
         "@leeuwte"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "gsl3670": {
       "version_created": "2026.6.5",
@@ -5950,7 +5950,7 @@
         "@sourabhjaiswal"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "hbridge": {
       "version_created": "1.16.0",
@@ -7180,7 +7180,7 @@
         "@ssieb"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "lc709203f": {
       "version_created": "2025.5.2",
@@ -7694,7 +7694,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 22
+      "open_prs": 23
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8727,7 +8727,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 34
+      "open_prs": 35
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8752,7 +8752,7 @@
         "@martgras"
       ],
       "open_issues": 3,
-      "open_prs": 18
+      "open_prs": 19
     },
     "modbus_server": {
       "version_created": "2026.4.3",
@@ -8964,7 +8964,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 14
     },
     "mqtt_subscribe": {
@@ -9295,8 +9295,8 @@
     },
     "opentherm": {
       "version_created": "2024.9.0",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-16",
+      "version_last_modified": "2026.7.2",
+      "last_commit_date": "2026-07-26",
       "type": [
         "binary_sensor",
         "number",
@@ -9432,7 +9432,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "packet_transport": {
       "version_created": "2025.4.2",
@@ -10178,7 +10178,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "pzemdc": {
       "version_created": "1.14.0",
@@ -10195,7 +10195,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "qmc5883l": {
       "version_created": "1.14.4",
@@ -11103,7 +11103,7 @@
         "@polyfaces"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "sdp3x": {
       "version_created": "1.20.2",
@@ -11224,7 +11224,7 @@
         "@sourabhjaiswal"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "select": {
       "version_created": "1.20.4",
