@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T05:29:15.319595+00:00",
+  "generated_at": "2026-07-31T05:54:10.580500+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1255,14 +1255,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 361,
+    "total_issues": 367,
     "known_issues": 216,
     "new_comp_issues": 0,
-    "unattr_issues": 145,
-    "total_prs": 835,
-    "known_prs": 595,
-    "new_comp_prs": 139,
-    "unattr_prs": 101
+    "unattr_issues": 151,
+    "total_prs": 844,
+    "known_prs": 603,
+    "new_comp_prs": 138,
+    "unattr_prs": 103
   },
   "components": {
     "a01nyub": {
@@ -1900,7 +1900,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-29",
+      "last_commit_date": "2026-07-30",
       "type": [
         "api"
       ],
@@ -2083,7 +2083,7 @@
         "@ahpohl"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "atm90e26": {
       "version_created": "2023.7.0",
@@ -2580,14 +2580,15 @@
     },
     "ble_client": {
       "version_created": "1.17.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-30",
       "type": [
         "output",
         "sensor",
         "switch",
         "text_sensor"
       ],
+      "docs_url": "https://esphome.io/components/ble_client",
       "supported_platforms": [
         "esp32"
       ],
@@ -2600,8 +2601,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/ble_client"
+      "open_prs": 3
     },
     "ble_device_base": {
       "version_created": "2026.7.2",
@@ -3214,7 +3214,7 @@
         "@nagyrobi"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "button": {
       "version_created": "2021.12.0",
@@ -3620,7 +3620,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 12
+      "open_prs": 13
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4800,7 +4800,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-29",
+      "last_commit_date": "2026-07-30",
       "type": [
         "platform"
       ],
@@ -4816,7 +4816,7 @@
         "@esphome/core"
       ],
       "open_issues": 17,
-      "open_prs": 33
+      "open_prs": 34
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -4862,8 +4862,8 @@
     },
     "esp32_ble_client": {
       "version_created": "2022.9.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-30",
       "type": [
         "bluetooth"
       ],
@@ -5142,7 +5142,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 3
+      "open_prs": 4
     },
     "esp8266_pwm": {
       "version_created": "1.13.1",
@@ -7596,7 +7596,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 14
     },
     "lps22": {
       "version_created": "2025.7.0",
@@ -8835,7 +8835,7 @@
         "@spbrogan"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "mopeka_pro_check": {
       "version_created": "2022.2.6",
@@ -8856,7 +8856,7 @@
         "@spbrogan"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "mopeka_std_check": {
       "version_created": "2023.2.4",
@@ -8875,7 +8875,7 @@
         "@Fabian-Schmidt"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 1
     },
     "motion": {
       "version_created": "2026.6.1",
@@ -9421,7 +9421,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 3
+      "open_prs": 4
     },
     "output": {
       "version_created": "1.11.0",
@@ -9444,8 +9444,8 @@
     },
     "packages": {
       "version_created": "1.15.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-30",
       "type": [
         "core"
       ],
@@ -10149,7 +10149,7 @@
         "@pasiz"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "pylontech": {
       "version_created": "2023.12.0",
@@ -15298,7 +15298,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 12
+      "open_prs": 13
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
