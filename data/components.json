@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T05:54:10.580500+00:00",
+  "generated_at": "2026-08-01T05:44:08.342966+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1255,14 +1255,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 367,
-    "known_issues": 216,
+    "total_issues": 373,
+    "known_issues": 218,
     "new_comp_issues": 0,
-    "unattr_issues": 151,
-    "total_prs": 844,
-    "known_prs": 603,
-    "new_comp_prs": 138,
-    "unattr_prs": 103
+    "unattr_issues": 155,
+    "total_prs": 854,
+    "known_prs": 615,
+    "new_comp_prs": 135,
+    "unattr_prs": 104
   },
   "components": {
     "a01nyub": {
@@ -1900,7 +1900,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-30",
+      "last_commit_date": "2026-07-31",
       "type": [
         "api"
       ],
@@ -1914,7 +1914,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 23
+      "open_prs": 24
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2496,7 +2496,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -3271,7 +3271,7 @@
         "@DT-art1"
       ],
       "open_issues": 0,
-      "open_prs": 0,
+      "open_prs": 1,
       "docs_url": "https://esphome.io/components/camera"
     },
     "camera_encoder": {
@@ -3470,8 +3470,8 @@
       "codeowners": [
         "@kkosik20"
       ],
-      "open_issues": 0,
-      "open_prs": 0
+      "open_issues": 1,
+      "open_prs": 1
     },
     "climate": {
       "version_created": "1.13.1",
@@ -4699,7 +4699,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 21
+      "open_prs": 23
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -6126,8 +6126,8 @@
       "codeowners": [
         "@rob-deutsch"
       ],
-      "open_issues": 0,
-      "open_prs": 4
+      "open_issues": 1,
+      "open_prs": 5
     },
     "hitachi_ac344": {
       "version_created": "1.16.0",
@@ -7531,6 +7531,27 @@
       "open_issues": 0,
       "open_prs": 0
     },
+    "ln882h_ble": {
+      "version_created": "2026.7.3",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-31",
+      "type": [
+        "ln882h_ble"
+      ],
+      "docs_url": null,
+      "supported_platforms": [
+        "ln882x"
+      ],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@Bl00d-B0b"
+      ],
+      "open_issues": 0,
+      "open_prs": 4
+    },
     "ln882x": {
       "version_created": "2025.6.3",
       "version_last_modified": "2026.6.3",
@@ -7719,7 +7740,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 24
+      "open_prs": 25
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -9141,8 +9162,8 @@
     },
     "nextion": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-17",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-31",
       "type": [
         "binary_sensor",
         "display",
@@ -9365,11 +9386,12 @@
     },
     "openthread_info": {
       "version_created": "2025.6.0",
-      "version_last_modified": "2026.5.3",
-      "last_commit_date": "2026-06-16",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-31",
       "type": [
         "text_sensor"
       ],
+      "docs_url": "https://esphome.io/components/text_sensor/openthread_info",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 1,
@@ -9377,8 +9399,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/text_sensor/openthread_info"
+      "open_prs": 2
     },
     "opt3001": {
       "version_created": "2025.6.1",
@@ -11429,8 +11450,8 @@
     },
     "serial_proxy": {
       "version_created": "2026.3.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-31",
       "type": [
         "serial_proxy"
       ],
@@ -15279,8 +15300,8 @@
     },
     "zigbee": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-18",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-07-31",
       "type": [
         "zigbee"
       ],
