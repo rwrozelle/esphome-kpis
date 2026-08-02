@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T05:44:08.342966+00:00",
+  "generated_at": "2026-08-02T05:44:55.661210+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1255,14 +1255,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 373,
-    "known_issues": 218,
+    "total_issues": 377,
+    "known_issues": 221,
     "new_comp_issues": 0,
-    "unattr_issues": 155,
-    "total_prs": 854,
-    "known_prs": 615,
-    "new_comp_prs": 135,
-    "unattr_prs": 104
+    "unattr_issues": 156,
+    "total_prs": 867,
+    "known_prs": 624,
+    "new_comp_prs": 138,
+    "unattr_prs": 105
   },
   "components": {
     "a01nyub": {
@@ -2024,7 +2024,7 @@
         "@mrgnr"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 5
     },
     "async_tcp": {
       "version_created": "1.14.0",
@@ -2496,7 +2496,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -2620,7 +2620,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "ble_nus": {
       "version_created": "2025.10.2",
@@ -4924,7 +4924,7 @@
         "@bdraco"
       ],
       "open_issues": 2,
-      "open_prs": 5
+      "open_prs": 6
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -6112,8 +6112,8 @@
     },
     "heatpumpir": {
       "version_created": "2021.10.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-01",
       "type": [
         "climate"
       ],
@@ -7740,7 +7740,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 25
+      "open_prs": 26
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8605,7 +8605,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 5,
+      "open_issues": 6,
       "open_prs": 4
     },
     "mipi_spi": {
@@ -8760,8 +8760,8 @@
     },
     "modbus": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.7.2",
-      "last_commit_date": "2026-07-27",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-01",
       "type": [
         "modbus"
       ],
@@ -8772,13 +8772,13 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 3,
-      "open_prs": 37
+      "open_issues": 4,
+      "open_prs": 38
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
-      "version_last_modified": "2026.7.2",
-      "last_commit_date": "2026-07-27",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-01",
       "type": [
         "binary_sensor",
         "number",
@@ -9184,7 +9184,7 @@
         "@edwardtfn",
         "@senexcrenshaw"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 4
     },
     "nfc": {
@@ -10815,7 +10815,7 @@
         "@bdraco"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "rp2040_pio_led_strip": {
       "version_created": "2023.5.3",
@@ -10888,7 +10888,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "rtl87xx": {
@@ -15319,7 +15319,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 13
+      "open_prs": 16
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
