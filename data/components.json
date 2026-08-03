@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T05:44:55.661210+00:00",
+  "generated_at": "2026-08-03T06:01:47.331772+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1255,14 +1255,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 377,
+    "total_issues": 379,
     "known_issues": 221,
     "new_comp_issues": 0,
-    "unattr_issues": 156,
-    "total_prs": 867,
-    "known_prs": 624,
+    "unattr_issues": 158,
+    "total_prs": 874,
+    "known_prs": 630,
     "new_comp_prs": 138,
-    "unattr_prs": 105
+    "unattr_prs": 106
   },
   "components": {
     "a01nyub": {
@@ -1379,8 +1379,8 @@
     },
     "adc": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-02",
       "type": [
         "sensor"
       ],
@@ -1914,7 +1914,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 24
+      "open_prs": 25
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2480,7 +2480,7 @@
     "bk72xx_ble_tracker": {
       "version_created": "2026.7.3",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-28",
+      "last_commit_date": "2026-08-03",
       "type": [
         "bk72xx_ble_tracker"
       ],
@@ -2496,7 +2496,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -2606,7 +2606,7 @@
     "ble_device_base": {
       "version_created": "2026.7.2",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-28",
+      "last_commit_date": "2026-08-02",
       "type": [
         "ble_device_base"
       ],
@@ -4908,7 +4908,7 @@
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-28",
+      "last_commit_date": "2026-08-02",
       "type": [
         "bluetooth"
       ],
@@ -5023,8 +5023,8 @@
     },
     "esp32_hosted": {
       "version_created": "2025.6.2",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-07",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-02",
       "type": [
         "update"
       ],
@@ -5102,7 +5102,7 @@
         "@jesserockz"
       ],
       "open_issues": 4,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esp32_touch": {
       "version_created": "1.13.1",
@@ -5220,7 +5220,7 @@
         "@jesserockz"
       ],
       "open_issues": 3,
-      "open_prs": 4
+      "open_prs": 5
     },
     "ethernet": {
       "version_created": "1.13.1",
@@ -5893,7 +5893,7 @@
         "@leeuwte"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 6
     },
     "gsl3670": {
       "version_created": "2026.6.5",
@@ -5975,7 +5975,7 @@
         "@sourabhjaiswal"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 5
     },
     "hbridge": {
       "version_created": "1.16.0",
@@ -7205,7 +7205,7 @@
         "@ssieb"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 5
     },
     "lc709203f": {
       "version_created": "2025.5.2",
@@ -7740,7 +7740,7 @@
         "@clydebarrow"
       ],
       "open_issues": 3,
-      "open_prs": 26
+      "open_prs": 28
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8761,7 +8761,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-01",
+      "last_commit_date": "2026-08-02",
       "type": [
         "modbus"
       ],
@@ -8773,7 +8773,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 4,
-      "open_prs": 38
+      "open_prs": 37
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8798,7 +8798,7 @@
         "@martgras"
       ],
       "open_issues": 3,
-      "open_prs": 19
+      "open_prs": 18
     },
     "modbus_server": {
       "version_created": "2026.4.3",
@@ -9399,7 +9399,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "opt3001": {
       "version_created": "2025.6.1",
@@ -10224,7 +10224,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 6
     },
     "pzemdc": {
       "version_created": "1.14.0",
@@ -10241,7 +10241,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 5
     },
     "qmc5883l": {
       "version_created": "1.14.4",
@@ -11149,7 +11149,7 @@
         "@polyfaces"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 6
     },
     "sdp3x": {
       "version_created": "1.20.2",
@@ -11270,7 +11270,7 @@
         "@sourabhjaiswal"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 6
     },
     "select": {
       "version_created": "1.20.4",
@@ -15224,8 +15224,8 @@
     },
     "zephyr": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.7.2",
-      "last_commit_date": "2026-07-27",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-02",
       "type": [
         "platform"
       ],
@@ -15241,7 +15241,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 15
+      "open_prs": 16
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -15278,6 +15278,27 @@
       "codeowners": [],
       "open_issues": 0,
       "open_prs": 5
+    },
+    "zephyr_pwm": {
+      "version_created": "2026.7.3",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-02",
+      "type": [
+        "output"
+      ],
+      "docs_url": null,
+      "supported_platforms": [
+        "zephyr"
+      ],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@wiomoc"
+      ],
+      "open_issues": 0,
+      "open_prs": 1
     },
     "zhlt01": {
       "version_created": "2023.10.3",
