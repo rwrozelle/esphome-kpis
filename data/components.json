@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T05:36:34.042937+00:00",
+  "generated_at": "2026-08-05T05:35:03.363218+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,10 +1259,10 @@
     "known_issues": 224,
     "new_comp_issues": 0,
     "unattr_issues": 159,
-    "total_prs": 888,
-    "known_prs": 642,
+    "total_prs": 900,
+    "known_prs": 652,
     "new_comp_prs": 138,
-    "unattr_prs": 108
+    "unattr_prs": 110
   },
   "components": {
     "a01nyub": {
@@ -1838,7 +1838,7 @@
         "@syndlex"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "anova": {
       "version_created": "1.20.0",
@@ -1914,7 +1914,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 26
+      "open_prs": 25
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2439,8 +2439,8 @@
     },
     "bk72xx": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-29",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -2480,7 +2480,7 @@
     "bk72xx_ble_tracker": {
       "version_created": "2026.7.3",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-04",
+      "last_commit_date": "2026-08-05",
       "type": [
         "bk72xx_ble_tracker"
       ],
@@ -2606,7 +2606,7 @@
     "ble_device_base": {
       "version_created": "2026.7.2",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-02",
+      "last_commit_date": "2026-08-05",
       "type": [
         "ble_device_base"
       ],
@@ -2620,7 +2620,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "ble_nus": {
       "version_created": "2025.10.2",
@@ -2702,8 +2702,8 @@
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
-      "version_last_modified": "2026.7.2",
-      "last_commit_date": "2026-07-27",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-05",
       "type": [
         "bluetooth"
       ],
@@ -2853,7 +2853,7 @@
         "@neffs"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "bme68x_bsec2_i2c": {
       "version_created": "2024.8.0",
@@ -3199,8 +3199,8 @@
     },
     "bthome_mithermometer": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-04",
       "type": [
         "sensor"
       ],
@@ -3620,7 +3620,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 14
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4699,7 +4699,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 23
+      "open_prs": 25
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4800,7 +4800,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -4816,12 +4816,12 @@
         "@esphome/core"
       ],
       "open_issues": 17,
-      "open_prs": 35
+      "open_prs": 36
     },
     "esp32_ble": {
       "version_created": "1.19.0",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-05",
       "type": [
         "bluetooth"
       ],
@@ -4908,7 +4908,7 @@
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-02",
+      "last_commit_date": "2026-08-05",
       "type": [
         "bluetooth"
       ],
@@ -4924,7 +4924,7 @@
         "@bdraco"
       ],
       "open_issues": 2,
-      "open_prs": 8
+      "open_prs": 10
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -5126,7 +5126,7 @@
     "esp8266": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -5488,7 +5488,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "fingerprint_grow": {
       "version_created": "1.17.0",
@@ -5530,7 +5530,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "fs3000": {
       "version_created": "2023.3.0",
@@ -5912,7 +5912,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "gt911": {
       "version_created": "2023.12.0",
@@ -6638,7 +6638,7 @@
         "@jesserockz"
       ],
       "open_issues": 6,
-      "open_prs": 5
+      "open_prs": 6
     },
     "iaqcore": {
       "version_created": "2023.10.3",
@@ -7416,7 +7416,7 @@
     "libretiny": {
       "version_created": "2023.8.3",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -7534,7 +7534,7 @@
     "ln882h_ble": {
       "version_created": "2026.7.3",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "ln882h_ble"
       ],
@@ -7550,12 +7550,34 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 4
+    },
+    "ln882h_ble_tracker": {
+      "version_created": "2026.7.3",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-05",
+      "type": [
+        "ln882h_ble_tracker"
+      ],
+      "docs_url": null,
+      "supported_platforms": [
+        "libretiny",
+        "ln882x"
+      ],
+      "has_tests": true,
+      "test_file_count": 4,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@Bl00d-B0b"
+      ],
+      "open_issues": 0,
+      "open_prs": 4
     },
     "ln882x": {
       "version_created": "2025.6.3",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-29",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -7719,7 +7741,7 @@
     "lvgl": {
       "version_created": "2024.7.2",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-29",
+      "last_commit_date": "2026-08-05",
       "type": [
         "binary_sensor",
         "light",
@@ -8433,7 +8455,7 @@
         "@kahrendt"
       ],
       "open_issues": 6,
-      "open_prs": 4
+      "open_prs": 5
     },
     "micronova": {
       "version_created": "2023.11.0",
@@ -8761,7 +8783,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-02",
+      "last_commit_date": "2026-08-04",
       "type": [
         "modbus"
       ],
@@ -8773,7 +8795,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 4,
-      "open_prs": 37
+      "open_prs": 40
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -8798,7 +8820,7 @@
         "@martgras"
       ],
       "open_issues": 3,
-      "open_prs": 18
+      "open_prs": 23
     },
     "modbus_server": {
       "version_created": "2026.4.3",
@@ -8992,7 +9014,7 @@
     "mqtt": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "mqtt"
       ],
@@ -9262,7 +9284,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 3,
-      "open_prs": 23
+      "open_prs": 24
     },
     "ntc": {
       "version_created": "1.13.1",
@@ -9466,7 +9488,7 @@
     "packages": {
       "version_created": "1.15.0",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-30",
+      "last_commit_date": "2026-08-04",
       "type": [
         "core"
       ],
@@ -10801,7 +10823,7 @@
     "rp2040_ble": {
       "version_created": "2026.3.0",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-04",
       "type": [
         "bluetooth"
       ],
@@ -10858,7 +10880,7 @@
     "rp2_ble_tracker": {
       "version_created": "2026.7.3",
       "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "last_commit_date": "2026-08-05",
       "type": [
         "rp2_ble_tracker"
       ],
@@ -10912,8 +10934,8 @@
     },
     "rtl87xx": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.6.3",
-      "last_commit_date": "2026-06-29",
+      "version_last_modified": "2026.7.3",
+      "last_commit_date": "2026-08-04",
       "type": [
         "platform"
       ],
@@ -11617,7 +11639,7 @@
         "@rnauber"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "sht3xd": {
       "version_created": "1.13.1",
@@ -15317,7 +15339,7 @@
         "@wiomoc"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "zhlt01": {
       "version_created": "2023.10.3",
