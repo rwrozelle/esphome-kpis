@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T05:37:01.079878+00:00",
+  "generated_at": "2026-08-07T04:45:29.732475+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,14 +1259,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 387,
-    "known_issues": 225,
+    "total_issues": 390,
+    "known_issues": 227,
     "new_comp_issues": 0,
-    "unattr_issues": 162,
-    "total_prs": 907,
-    "known_prs": 662,
+    "unattr_issues": 163,
+    "total_prs": 916,
+    "known_prs": 670,
     "new_comp_prs": 133,
-    "unattr_prs": 112
+    "unattr_prs": 113
   },
   "components": {
     "a01nyub": {
@@ -2484,7 +2484,7 @@
     "bk72xx_ble_tracker": {
       "version_created": "2026.7.3",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "bk72xx_ble_tracker"
       ],
@@ -2500,7 +2500,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 7
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -2610,7 +2610,7 @@
     "ble_device_base": {
       "version_created": "2026.7.2",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "ble_device_base"
       ],
@@ -2624,7 +2624,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "ble_nus": {
       "version_created": "2025.10.2",
@@ -2687,8 +2687,8 @@
     },
     "ble_scanner": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.7.2",
-      "last_commit_date": "2026-07-27",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "text_sensor"
       ],
@@ -2707,7 +2707,7 @@
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "bluetooth"
       ],
@@ -2724,7 +2724,7 @@
         "@jesserockz"
       ],
       "open_issues": 5,
-      "open_prs": 5
+      "open_prs": 9
     },
     "bm8563": {
       "version_created": "2025.11.1",
@@ -3610,7 +3610,7 @@
     "const": {
       "version_created": "2025.4.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "const"
       ],
@@ -4688,8 +4688,8 @@
     },
     "epaper_spi": {
       "version_created": "2025.10.0",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-30",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "display"
       ],
@@ -4703,7 +4703,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 25
+      "open_prs": 26
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4804,7 +4804,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "platform"
       ],
@@ -4819,7 +4819,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 17,
+      "open_issues": 18,
       "open_prs": 37
     },
     "esp32_ble": {
@@ -4884,7 +4884,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_ble_server": {
       "version_created": "1.19.0",
@@ -4912,7 +4912,7 @@
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "bluetooth"
       ],
@@ -4928,7 +4928,7 @@
         "@bdraco"
       ],
       "open_issues": 2,
-      "open_prs": 11
+      "open_prs": 10
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -5145,7 +5145,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 4
     },
     "esp8266_pwm": {
@@ -7360,11 +7360,12 @@
     },
     "ld2450": {
       "version_created": "2025.2.1",
-      "version_last_modified": "2026.4.0",
-      "last_commit_date": "2026-04-14",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "sensor"
       ],
+      "docs_url": "https://esphome.io/components/sensor/ld2450",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -7374,8 +7375,7 @@
         "@hareeshmu"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/sensor/ld2450"
+      "open_prs": 1
     },
     "ld24xx": {
       "version_created": "2025.7.4",
@@ -7399,9 +7399,10 @@
     "ld6002b": {
       "version_created": "2026.7.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
-        "binary_sensor"
+        "binary_sensor",
+        "sensor"
       ],
       "docs_url": null,
       "supported_platforms": [],
@@ -7578,7 +7579,7 @@
     "ln882h_ble_tracker": {
       "version_created": "2026.7.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "ln882h_ble_tracker"
       ],
@@ -7595,7 +7596,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 4
     },
     "ln882x": {
       "version_created": "2025.6.3",
@@ -8545,8 +8546,8 @@
     },
     "midea": {
       "version_created": "2021.9.0",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-03",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "climate"
       ],
@@ -8806,7 +8807,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "modbus"
       ],
@@ -8818,7 +8819,26 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 4,
-      "open_prs": 40
+      "open_prs": 41
+    },
+    "modbus_client": {
+      "version_created": "2026.7.4",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
+      "type": [
+        "modbus_client"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 4,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@exciton"
+      ],
+      "open_issues": 0,
+      "open_prs": 3
     },
     "modbus_controller": {
       "version_created": "2021.9.2",
@@ -9386,8 +9406,8 @@
     },
     "opentherm": {
       "version_created": "2024.9.0",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-29",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "binary_sensor",
         "number",
@@ -9487,7 +9507,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 4
+      "open_prs": 6
     },
     "output": {
       "version_created": "1.11.0",
@@ -10537,8 +10557,8 @@
     },
     "rd03d": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "sensor"
       ],
@@ -10845,8 +10865,8 @@
     },
     "rp2040_ble": {
       "version_created": "2026.3.0",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-04",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "bluetooth"
       ],
@@ -10860,7 +10880,7 @@
         "@bdraco"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "rp2040_pio_led_strip": {
       "version_created": "2023.5.3",
@@ -10901,9 +10921,9 @@
       "open_prs": 0
     },
     "rp2_ble_tracker": {
-      "version_created": "2026.7.3",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-05",
+      "version_created": "2026.7.4",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "rp2_ble_tracker"
       ],
@@ -11154,8 +11174,8 @@
     },
     "script": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "core"
       ],
@@ -13226,8 +13246,8 @@
     },
     "thermopro_ble": {
       "version_created": "2025.11.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-28",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-06",
       "type": [
         "sensor"
       ],
@@ -14214,7 +14234,7 @@
         "@clydebarrow"
       ],
       "open_issues": 1,
-      "open_prs": 9,
+      "open_prs": 10,
       "docs_url": "https://esphome.io/components/display/waveshare_epaper"
     },
     "waveshare_io_ch32v003": {
@@ -15386,7 +15406,7 @@
     "zigbee": {
       "version_created": "2025.12.5",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-06",
       "type": [
         "zigbee"
       ],
