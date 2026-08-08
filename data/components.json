@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T04:45:29.732475+00:00",
+  "generated_at": "2026-08-08T04:01:41.646672+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,12 +1259,12 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 390,
-    "known_issues": 227,
+    "total_issues": 394,
+    "known_issues": 231,
     "new_comp_issues": 0,
     "unattr_issues": 163,
-    "total_prs": 916,
-    "known_prs": 670,
+    "total_prs": 922,
+    "known_prs": 676,
     "new_comp_prs": 133,
     "unattr_prs": 113
   },
@@ -1629,24 +1629,22 @@
     },
     "airthings_ble": {
       "version_created": "2021.9.0",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
-      "supported_platforms": [
-        "esp32"
-      ],
-      "has_tests": false,
-      "test_file_count": 0,
+      "docs_url": "https://esphome.io/components/sensor/airthings_ble",
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
         "@jeromelaban"
       ],
       "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": "https://esphome.io/components/sensor/airthings_ble"
+      "open_prs": 0
     },
     "airthings_wave_base": {
       "version_created": "2023.6.1",
@@ -2070,17 +2068,15 @@
     },
     "atc_mithermometer": {
       "version_created": "1.16.0",
-      "version_last_modified": "2026.7.0",
-      "last_commit_date": "2026-07-15",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 6,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -2250,17 +2246,15 @@
     },
     "b_parasite": {
       "version_created": "1.17.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/b_parasite",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -2479,7 +2473,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "bk72xx_ble_tracker": {
       "version_created": "2026.7.3",
@@ -2500,7 +2494,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "bl0906": {
       "version_created": "2024.8.3",
@@ -2610,7 +2604,7 @@
     "ble_device_base": {
       "version_created": "2026.7.2",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "ble_device_base"
       ],
@@ -2624,7 +2618,7 @@
         "@Bl00d-B0b"
       ],
       "open_issues": 0,
-      "open_prs": 9
+      "open_prs": 11
     },
     "ble_nus": {
       "version_created": "2025.10.2",
@@ -2649,74 +2643,88 @@
     },
     "ble_presence": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "binary_sensor"
       ],
-      "supported_platforms": [
-        "esp32"
-      ],
+      "docs_url": "https://esphome.io/components/binary_sensor/ble_presence",
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2,
-      "docs_url": "https://esphome.io/components/binary_sensor/ble_presence"
+      "open_prs": 2
     },
     "ble_rssi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.0",
-      "last_commit_date": "2026-06-18",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
-      "supported_platforms": [
-        "esp32"
-      ],
+      "docs_url": "https://esphome.io/components/sensor/ble_rssi",
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
-      "has_codeowners": false,
-      "codeowners_count": 0,
-      "codeowners": [],
-      "open_issues": 0,
-      "open_prs": 3,
-      "docs_url": "https://esphome.io/components/sensor/ble_rssi"
-    },
-    "ble_scanner": {
-      "version_created": "1.14.4",
-      "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
-      "type": [
-        "text_sensor"
-      ],
-      "docs_url": "https://esphome.io/components/text_sensor/ble_scanner",
-      "supported_platforms": [
-        "esp32"
-      ],
-      "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 6,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
       "open_prs": 3
     },
-    "bluetooth_proxy": {
-      "version_created": "2022.8.1",
+    "ble_scanner": {
+      "version_created": "1.14.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
-        "bluetooth"
+        "text_sensor"
       ],
-      "docs_url": "https://esphome.io/components/bluetooth_proxy",
+      "docs_url": "https://esphome.io/components/text_sensor/ble_scanner",
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 5,
+      "has_codeowners": false,
+      "codeowners_count": 0,
+      "codeowners": [],
+      "open_issues": 0,
+      "open_prs": 3
+    },
+    "bluetooth_connection": {
+      "version_created": "2026.7.4",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
+      "type": [
+        "bluetooth_connection"
+      ],
+      "docs_url": null,
       "supported_platforms": [
         "esp32"
       ],
       "has_tests": true,
-      "test_file_count": 8,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 2,
+      "codeowners": [
+        "@bdraco",
+        "@jesserockz"
+      ],
+      "open_issues": 0,
+      "open_prs": 5
+    },
+    "bluetooth_proxy": {
+      "version_created": "2022.8.1",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
+      "type": [
+        "bluetooth"
+      ],
+      "docs_url": "https://esphome.io/components/bluetooth_proxy",
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 9,
       "has_codeowners": true,
       "codeowners_count": 2,
       "codeowners": [
@@ -2724,7 +2732,7 @@
         "@jesserockz"
       ],
       "open_issues": 5,
-      "open_prs": 9
+      "open_prs": 11
     },
     "bm8563": {
       "version_created": "2025.11.1",
@@ -3203,15 +3211,15 @@
     },
     "bthome_mithermometer": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-04",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": null,
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -4703,7 +4711,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 26
+      "open_prs": 27
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4804,7 +4812,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "platform"
       ],
@@ -4866,8 +4874,8 @@
     },
     "esp32_ble_client": {
       "version_created": "2022.9.3",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-07-30",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
@@ -4884,7 +4892,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "esp32_ble_server": {
       "version_created": "1.19.0",
@@ -5285,17 +5293,15 @@
     },
     "exposure_notifications": {
       "version_created": "1.15.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-21",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
       "docs_url": "https://esphome.io/components/exposure_notifications",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -6906,17 +6912,15 @@
     },
     "inkbird_ibsth1_mini": {
       "version_created": "1.16.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/inkbird_ibsth1_mini",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -7399,10 +7403,15 @@
     "ld6002b": {
       "version_created": "2026.7.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "binary_sensor",
-        "sensor"
+        "button",
+        "number",
+        "select",
+        "sensor",
+        "switch",
+        "text_sensor"
       ],
       "docs_url": null,
       "supported_platforms": [],
@@ -7785,7 +7794,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 28
     },
     "m5stack_8angle": {
@@ -8807,7 +8816,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "modbus"
       ],
@@ -8818,20 +8827,20 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 41
     },
     "modbus_client": {
       "version_created": "2026.7.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "modbus_client"
       ],
       "docs_url": null,
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 4,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -8882,7 +8891,7 @@
         "@exciton"
       ],
       "open_issues": 0,
-      "open_prs": 11
+      "open_prs": 12
     },
     "monochromatic": {
       "version_created": "1.13.1",
@@ -8903,17 +8912,15 @@
     },
     "mopeka_ble": {
       "version_created": "2022.2.6",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 2,
       "codeowners": [
@@ -8925,17 +8932,15 @@
     },
     "mopeka_pro_check": {
       "version_created": "2022.2.6",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/mopeka_pro_check",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -8946,15 +8951,15 @@
     },
     "mopeka_std_check": {
       "version_created": "2023.2.4",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/mopeka_std_check",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -9401,7 +9406,7 @@
         "@clydebarrow",
         "@guillempages"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 4
     },
     "opentherm": {
@@ -9488,7 +9493,7 @@
     "ota": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-07",
       "type": [
         "ota"
       ],
@@ -9507,7 +9512,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 6
+      "open_prs": 5
     },
     "output": {
       "version_created": "1.11.0",
@@ -10218,17 +10223,15 @@
     },
     "pvvx_mithermometer": {
       "version_created": "1.20.1",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "display"
       ],
       "docs_url": "https://esphome.io/components/display/pvvx_mithermometer",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -10458,17 +10461,15 @@
     },
     "radon_eye_ble": {
       "version_created": "2022.1.4",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
       "docs_url": "https://esphome.io/components/sensor/radon_eye_ble",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -10866,7 +10867,7 @@
     "rp2040_ble": {
       "version_created": "2026.3.0",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
@@ -10923,7 +10924,7 @@
     "rp2_ble_tracker": {
       "version_created": "2026.7.4",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "rp2_ble_tracker"
       ],
@@ -11057,17 +11058,15 @@
     },
     "ruuvi_ble": {
       "version_created": "1.14.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -11076,17 +11075,15 @@
     },
     "ruuvitag": {
       "version_created": "1.14.3",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/ruuvitag",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -13247,16 +13244,14 @@
     "thermopro_ble": {
       "version_created": "2025.11.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/thermopro_ble",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -14452,8 +14447,8 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 0,
-      "open_prs": 22
+      "open_issues": 1,
+      "open_prs": 24
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -14786,17 +14781,15 @@
     },
     "xiaomi_ble": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "bluetooth"
       ],
       "docs_url": "https://esphome.io/components/sensor/xiaomi_ble",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14805,36 +14798,32 @@
     },
     "xiaomi_cgd1": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-08",
-      "type": [
-        "sensor"
-      ],
-      "supported_platforms": [
-        "esp32"
-      ],
-      "has_tests": true,
-      "test_file_count": 2,
-      "has_codeowners": false,
-      "codeowners_count": 0,
-      "codeowners": [],
-      "open_issues": 0,
-      "open_prs": 0,
-      "docs_url": null
-    },
-    "xiaomi_cgdk2": {
-      "version_created": "1.19.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
+      "has_codeowners": false,
+      "codeowners_count": 0,
+      "codeowners": [],
+      "open_issues": 0,
+      "open_prs": 0
+    },
+    "xiaomi_cgdk2": {
+      "version_created": "1.19.0",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
+      "type": [
+        "sensor"
+      ],
+      "docs_url": null,
+      "supported_platforms": [],
+      "has_tests": true,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14843,17 +14832,15 @@
     },
     "xiaomi_cgg1": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14862,17 +14849,15 @@
     },
     "xiaomi_cgpr1": {
       "version_created": "2021.8.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "binary_sensor"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14881,17 +14866,15 @@
     },
     "xiaomi_gcls002": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": null,
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14900,17 +14883,15 @@
     },
     "xiaomi_hhccjcy01": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-07",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/xiaomi_hhccjcy01",
-      "supported_platforms": [
-        "esp32"
-      ],
+      "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -14936,7 +14917,7 @@
         "@fariouche"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "xiaomi_hhccpot002": {
       "version_created": "1.14.4",
@@ -14955,7 +14936,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "xiaomi_jqjcy01ym": {
       "version_created": "1.14.4",
@@ -14974,7 +14955,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "xiaomi_lywsd02": {
       "version_created": "1.14.0",
