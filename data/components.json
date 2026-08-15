@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:40:11.609799+00:00",
+  "generated_at": "2026-08-15T03:33:04.896783+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,14 +1259,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 419,
-    "known_issues": 247,
+    "total_issues": 424,
+    "known_issues": 251,
     "new_comp_issues": 0,
-    "unattr_issues": 172,
-    "total_prs": 989,
-    "known_prs": 720,
+    "unattr_issues": 173,
+    "total_prs": 999,
+    "known_prs": 727,
     "new_comp_prs": 135,
-    "unattr_prs": 134
+    "unattr_prs": 137
   },
   "components": {
     "a01nyub": {
@@ -1916,7 +1916,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 29
+      "open_prs": 30
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -4812,7 +4812,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-12",
+      "last_commit_date": "2026-08-14",
       "type": [
         "platform"
       ],
@@ -4827,7 +4827,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 28,
+      "open_issues": 29,
       "open_prs": 37
     },
     "esp32_ble": {
@@ -5137,8 +5137,8 @@
     },
     "esp8266": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-04",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-14",
       "type": [
         "platform"
       ],
@@ -5237,7 +5237,7 @@
     "ethernet": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-12",
+      "last_commit_date": "2026-08-14",
       "type": [
         "ethernet"
       ],
@@ -5251,7 +5251,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 9
+      "open_prs": 10
     },
     "ethernet_info": {
       "version_created": "2022.10.1",
@@ -5324,7 +5324,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1,
+      "open_prs": 2,
       "docs_url": "https://esphome.io/components/external_components"
     },
     "ezo": {
@@ -5498,7 +5498,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "fingerprint_grow": {
       "version_created": "1.17.0",
@@ -7469,8 +7469,8 @@
     },
     "libretiny": {
       "version_created": "2023.8.3",
-      "version_last_modified": "2026.7.3",
-      "last_commit_date": "2026-08-04",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-14",
       "type": [
         "platform"
       ],
@@ -7815,8 +7815,8 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 4,
-      "open_prs": 29
+      "open_issues": 5,
+      "open_prs": 30
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8849,7 +8849,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 5,
-      "open_prs": 42
+      "open_prs": 43
     },
     "modbus_client": {
       "version_created": "2026.7.4",
@@ -9339,7 +9339,7 @@
     "nrf52": {
       "version_created": "2025.7.0",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-05",
+      "last_commit_date": "2026-08-14",
       "type": [
         "platform"
       ],
@@ -9352,7 +9352,7 @@
       "codeowners": [
         "@tomaszduda23"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 25
     },
     "ntc": {
@@ -10869,7 +10869,7 @@
     "rp2": {
       "version_created": "2026.6.5",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-12",
+      "last_commit_date": "2026-08-14",
       "type": [
         "rp2"
       ],
@@ -11056,7 +11056,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 7
     },
     "runtime_stats": {
       "version_created": "2025.7.0",
@@ -11492,7 +11492,7 @@
       "codeowners": [
         "@kahrendt"
       ],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 5
     },
     "senseair": {
@@ -13319,7 +13319,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "time_based": {
       "version_created": "1.13.1",
@@ -14334,7 +14334,7 @@
         "@dentra"
       ],
       "open_issues": 2,
-      "open_prs": 7
+      "open_prs": 8
     },
     "weikai": {
       "version_created": "2024.4.2",
@@ -14469,7 +14469,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 25
+      "open_prs": 26
     },
     "wifi_info": {
       "version_created": "1.13.1",
