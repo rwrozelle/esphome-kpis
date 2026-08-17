@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T03:37:18.787179+00:00",
+  "generated_at": "2026-08-17T03:38:31.364494+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,12 +1259,12 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 433,
-    "known_issues": 258,
+    "total_issues": 436,
+    "known_issues": 261,
     "new_comp_issues": 0,
     "unattr_issues": 175,
-    "total_prs": 1004,
-    "known_prs": 729,
+    "total_prs": 1010,
+    "known_prs": 735,
     "new_comp_prs": 136,
     "unattr_prs": 139
   },
@@ -1902,7 +1902,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-13",
+      "last_commit_date": "2026-08-16",
       "type": [
         "api"
       ],
@@ -1916,7 +1916,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 30
+      "open_prs": 31
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2457,7 +2457,7 @@
     "bk72xx_ble": {
       "version_created": "2026.7.2",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-11",
+      "last_commit_date": "2026-08-16",
       "type": [
         "bk72xx_ble"
       ],
@@ -3268,11 +3268,12 @@
     },
     "camera": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.5.0",
-      "last_commit_date": "2026-05-07",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-16",
       "type": [
         "camera"
       ],
+      "docs_url": "https://esphome.io/components/camera",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -3283,8 +3284,7 @@
         "@DT-art1"
       ],
       "open_issues": 0,
-      "open_prs": 1,
-      "docs_url": "https://esphome.io/components/camera"
+      "open_prs": 1
     },
     "camera_encoder": {
       "version_created": "2025.8.3",
@@ -4812,7 +4812,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-14",
+      "last_commit_date": "2026-08-16",
       "type": [
         "platform"
       ],
@@ -4827,7 +4827,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 32,
+      "open_issues": 33,
       "open_prs": 36
     },
     "esp32_ble": {
@@ -5036,12 +5036,14 @@
     "esp32_hosted": {
       "version_created": "2025.6.2",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-13",
+      "last_commit_date": "2026-08-16",
       "type": [
         "update"
       ],
       "docs_url": "https://esphome.io/components/esp32_hosted",
-      "supported_platforms": [],
+      "supported_platforms": [
+        "esp32"
+      ],
       "has_tests": true,
       "test_file_count": 6,
       "has_codeowners": true,
@@ -7367,7 +7369,7 @@
     "ld2420": {
       "version_created": "2023.10.6",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-13",
+      "last_commit_date": "2026-08-16",
       "type": [
         "sensor"
       ],
@@ -7381,7 +7383,7 @@
         "@descipher"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 2
     },
     "ld2450": {
       "version_created": "2025.2.1",
@@ -7816,7 +7818,7 @@
         "@clydebarrow"
       ],
       "open_issues": 5,
-      "open_prs": 29
+      "open_prs": 30
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -10108,7 +10110,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "preferences": {
@@ -11533,8 +11535,8 @@
     },
     "sensor": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.6.5",
-      "last_commit_date": "2026-07-12",
+      "version_last_modified": "2026.7.4",
+      "last_commit_date": "2026-08-16",
       "type": [
         "sensor"
       ],
@@ -12195,7 +12197,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "speed": {
       "version_created": "1.13.1",
@@ -13793,7 +13795,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 11
     },
     "udp": {
       "version_created": "2024.8.3",
@@ -14156,7 +14158,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 10,
+      "open_issues": 11,
       "open_prs": 3
     },
     "voltage_sampler": {
@@ -15376,7 +15378,7 @@
     "zigbee": {
       "version_created": "2025.12.5",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-06",
+      "last_commit_date": "2026-08-16",
       "type": [
         "zigbee"
       ],
