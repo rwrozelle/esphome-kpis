@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T03:34:25.532932+00:00",
+  "generated_at": "2026-08-19T03:36:19.560928+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1259,13 +1259,13 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 442,
-    "known_issues": 264,
+    "total_issues": 445,
+    "known_issues": 266,
     "new_comp_issues": 0,
-    "unattr_issues": 178,
-    "total_prs": 1018,
-    "known_prs": 741,
-    "new_comp_prs": 137,
+    "unattr_issues": 179,
+    "total_prs": 1024,
+    "known_prs": 746,
+    "new_comp_prs": 138,
     "unattr_prs": 140
   },
   "components": {
@@ -1902,7 +1902,7 @@
     "api": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-17",
+      "last_commit_date": "2026-08-18",
       "type": [
         "api"
       ],
@@ -1916,7 +1916,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 32
+      "open_prs": 33
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2143,7 +2143,7 @@
         "@kahrendt"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 3
     },
     "audio_adc": {
       "version_created": "2025.2.0",
@@ -3632,7 +3632,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 14
+      "open_prs": 15
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4828,7 +4828,7 @@
         "@esphome/core"
       ],
       "open_issues": 35,
-      "open_prs": 37
+      "open_prs": 38
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5213,7 +5213,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 10,
-      "open_prs": 4
+      "open_prs": 5
     },
     "espnow": {
       "version_created": "2025.7.5",
@@ -6491,7 +6491,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 3
+      "open_prs": 7
     },
     "htu21d": {
       "version_created": "1.13.1",
@@ -8683,7 +8683,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 7,
+      "open_issues": 8,
       "open_prs": 5
     },
     "mipi_spi": {
@@ -8702,7 +8702,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 14,
+      "open_issues": 15,
       "open_prs": 12
     },
     "mitsubishi": {
@@ -8839,7 +8839,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-11",
+      "last_commit_date": "2026-08-18",
       "type": [
         "modbus"
       ],
@@ -9430,7 +9430,7 @@
         "@guillempages"
       ],
       "open_issues": 4,
-      "open_prs": 4
+      "open_prs": 5
     },
     "opentherm": {
       "version_created": "2024.9.0",
@@ -9535,7 +9535,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 7
+      "open_prs": 8
     },
     "output": {
       "version_created": "1.11.0",
@@ -11058,7 +11058,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "runtime_stats": {
       "version_created": "2025.7.0",
