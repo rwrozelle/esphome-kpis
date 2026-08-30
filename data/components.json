@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T09:27:55.563299+00:00",
+  "generated_at": "2026-08-30T08:35:33.262522+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1267,13 +1267,13 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 494,
-    "known_issues": 304,
+    "total_issues": 496,
+    "known_issues": 305,
     "new_comp_issues": 0,
-    "unattr_issues": 190,
-    "total_prs": 1189,
-    "known_prs": 877,
-    "new_comp_prs": 139,
+    "unattr_issues": 191,
+    "total_prs": 1193,
+    "known_prs": 880,
+    "new_comp_prs": 140,
     "unattr_prs": 173
   },
   "components": {
@@ -1924,7 +1924,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 38
+      "open_prs": 40
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -3640,7 +3640,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 16
+      "open_prs": 18
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4834,7 +4834,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 43,
+      "open_issues": 44,
       "open_prs": 52
     },
     "esp32_ble": {
@@ -7016,7 +7016,7 @@
     "internal_temperature": {
       "version_created": "2023.2.4",
       "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "last_commit_date": "2026-08-29",
       "type": [
         "sensor"
       ],
@@ -8721,7 +8721,7 @@
         "@RubyBailey"
       ],
       "open_issues": 3,
-      "open_prs": 3
+      "open_prs": 4
     },
     "mitsubishi_cn105": {
       "version_created": "2026.3.2",
@@ -8857,7 +8857,7 @@
     "modbus": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-28",
+      "last_commit_date": "2026-08-30",
       "type": [
         "modbus"
       ],
@@ -12294,7 +12294,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 8
     },
     "spi_device": {
       "version_created": "2023.9.0",
