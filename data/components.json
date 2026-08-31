@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T08:35:33.262522+00:00",
+  "generated_at": "2026-08-31T08:58:32.904876+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1264,17 +1264,21 @@
     {
       "tag": "2026.8.1",
       "date": "2026-08-23"
+    },
+    {
+      "tag": "2026.8.2",
+      "date": "2026-08-31"
     }
   ],
   "issue_stats": {
-    "total_issues": 496,
-    "known_issues": 305,
+    "total_issues": 501,
+    "known_issues": 308,
     "new_comp_issues": 0,
-    "unattr_issues": 191,
-    "total_prs": 1193,
-    "known_prs": 880,
+    "unattr_issues": 193,
+    "total_prs": 1203,
+    "known_prs": 886,
     "new_comp_prs": 140,
-    "unattr_prs": 173
+    "unattr_prs": 177
   },
   "components": {
     "a01nyub": {
@@ -1411,7 +1415,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "adc128s102": {
       "version_created": "2022.10.1",
@@ -1909,8 +1913,8 @@
     },
     "api": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-27",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-08-30",
       "type": [
         "api"
       ],
@@ -1924,7 +1928,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 40
+      "open_prs": 41
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -3625,8 +3629,8 @@
     },
     "const": {
       "version_created": "2025.4.1",
-      "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-18",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-08-30",
       "type": [
         "const"
       ],
@@ -3640,7 +3644,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 18
+      "open_prs": 17
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4834,8 +4838,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 44,
-      "open_prs": 52
+      "open_issues": 45,
+      "open_prs": 53
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5742,7 +5746,7 @@
     },
     "gpio": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-24",
       "type": [
         "binary_sensor",
@@ -6478,7 +6482,7 @@
     },
     "http_request": {
       "version_created": "1.14.3",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-26",
       "type": [
         "ota",
@@ -6772,15 +6776,15 @@
     },
     "improv_serial": {
       "version_created": "2021.11.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-27",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-08-30",
       "type": [
         "network"
       ],
       "docs_url": "https://esphome.io/components/improv_serial",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 16,
+      "test_file_count": 18,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -7526,7 +7530,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 10
     },
     "lightwaverf": {
@@ -7795,8 +7799,8 @@
     },
     "lvgl": {
       "version_created": "2024.7.2",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-26",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-08-30",
       "type": [
         "binary_sensor",
         "light",
@@ -7817,7 +7821,7 @@
         "@clydebarrow"
       ],
       "open_issues": 7,
-      "open_prs": 31
+      "open_prs": 32
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8418,7 +8422,7 @@
     },
     "mdns": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-28",
       "type": [
         "network"
@@ -8591,7 +8595,7 @@
       "codeowners": [
         "@dudanov"
       ],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 4
     },
     "midea_ac": {
@@ -8687,7 +8691,7 @@
     },
     "mipi_spi": {
       "version_created": "2025.5.0",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-26",
       "type": [
         "display"
@@ -8856,7 +8860,7 @@
     },
     "modbus": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-30",
       "type": [
         "modbus"
@@ -9493,7 +9497,7 @@
         "@olegtarasov"
       ],
       "open_issues": 1,
-      "open_prs": 4
+      "open_prs": 5
     },
     "openthread": {
       "version_created": "2025.6.0",
@@ -13929,7 +13933,7 @@
         "@ljungqvist"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "uln2003": {
       "version_created": "1.13.1",
@@ -14511,7 +14515,7 @@
     },
     "wifi": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
+      "version_last_modified": "2026.8.2",
       "last_commit_date": "2026-08-27",
       "type": [
         "wifi"
