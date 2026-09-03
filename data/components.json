@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T07:22:25.306627+00:00",
+  "generated_at": "2026-09-03T07:25:45.954449+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1271,14 +1271,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 509,
-    "known_issues": 314,
+    "total_issues": 511,
+    "known_issues": 316,
     "new_comp_issues": 0,
     "unattr_issues": 195,
-    "total_prs": 1212,
-    "known_prs": 894,
+    "total_prs": 1221,
+    "known_prs": 901,
     "new_comp_prs": 139,
-    "unattr_prs": 179
+    "unattr_prs": 181
   },
   "components": {
     "a01nyub": {
@@ -1928,7 +1928,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 41
+      "open_prs": 42
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -3554,8 +3554,8 @@
     },
     "cm1106": {
       "version_created": "2025.5.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -3734,8 +3734,8 @@
     },
     "cse7761": {
       "version_created": "2021.11.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -3753,8 +3753,8 @@
     },
     "cse7766": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -4071,8 +4071,8 @@
     },
     "daly_bms": {
       "version_created": "2021.9.2",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -4233,8 +4233,8 @@
     },
     "dfplayer": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-22",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "media_player"
       ],
@@ -4760,7 +4760,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 29
+      "open_prs": 30
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4779,7 +4779,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "es7243e": {
       "version_created": "2025.2.0",
@@ -4900,7 +4900,7 @@
         "@Rapsssito"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "esp32_ble_beacon": {
       "version_created": "1.13.1",
@@ -4919,7 +4919,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_ble_client": {
       "version_created": "2022.9.3",
@@ -4964,7 +4964,7 @@
         "@Rapsssito"
       ],
       "open_issues": 2,
-      "open_prs": 2
+      "open_prs": 3
     },
     "esp32_ble_tracker": {
       "version_created": "1.13.1",
@@ -5123,7 +5123,7 @@
         "@jesserockz"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "esp32_rmt": {
       "version_created": "2024.4.0",
@@ -6059,8 +6059,8 @@
     },
     "hc8": {
       "version_created": "2025.11.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -6155,7 +6155,7 @@
     "he60r": {
       "version_created": "2023.12.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-03",
       "type": [
         "cover"
       ],
@@ -6482,8 +6482,8 @@
     },
     "hrxl_maxsonar_wr": {
       "version_created": "1.20.2",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -6616,8 +6616,8 @@
     },
     "hydreon_rgxx": {
       "version_created": "2022.4.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "binary_sensor",
         "sensor"
@@ -7194,8 +7194,8 @@
     },
     "kamstrup_kmp": {
       "version_created": "2024.3.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -8269,7 +8269,7 @@
         "@danielschramm",
         "@mvturnho"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 1
     },
     "mcp3008": {
@@ -8517,8 +8517,8 @@
     },
     "mhz19": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -8802,9 +8802,9 @@
       "open_prs": 0
     },
     "mk2pvrouter": {
-      "version_created": "2026.8.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-28",
+      "version_created": "2026.8.2",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -9163,8 +9163,8 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 4,
-      "open_prs": 19
+      "open_issues": 5,
+      "open_prs": 20
     },
     "mqtt_subscribe": {
       "version_created": "1.13.1",
@@ -9920,8 +9920,8 @@
     },
     "pm1006": {
       "version_created": "1.20.2",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -9977,8 +9977,8 @@
     },
     "pmsx003": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -10345,7 +10345,7 @@
     "pylontech": {
       "version_created": "2023.12.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-08-31",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor",
         "text_sensor"
@@ -10748,7 +10748,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 4
+      "open_prs": 5
     },
     "resampler": {
       "version_created": "2025.2.0",
@@ -11293,8 +11293,8 @@
     },
     "sdl": {
       "version_created": "2024.6.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "binary_sensor",
         "display",
@@ -11305,7 +11305,7 @@
         "host"
       ],
       "has_tests": true,
-      "test_file_count": 2,
+      "test_file_count": 3,
       "has_codeowners": true,
       "codeowners_count": 2,
       "codeowners": [
@@ -11418,8 +11418,8 @@
     },
     "seeed_mr60fda2": {
       "version_created": "2024.11.2",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "binary_sensor",
         "button",
@@ -11635,7 +11635,7 @@
     "serial_proxy": {
       "version_created": "2026.3.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-08-31",
+      "last_commit_date": "2026-09-02",
       "type": [
         "serial_proxy"
       ],
@@ -11649,7 +11649,7 @@
         "@kbx81"
       ],
       "open_issues": 1,
-      "open_prs": 3
+      "open_prs": 4
     },
     "servo": {
       "version_created": "1.13.1",
@@ -12069,8 +12069,8 @@
     },
     "smt100": {
       "version_created": "2022.6.3",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -12122,6 +12122,27 @@
       "open_issues": 0,
       "open_prs": 0
     },
+    "snapshot": {
+      "version_created": "2026.8.2",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
+      "type": [
+        "display"
+      ],
+      "docs_url": null,
+      "supported_platforms": [
+        "host"
+      ],
+      "has_tests": true,
+      "test_file_count": 2,
+      "has_codeowners": true,
+      "codeowners_count": 1,
+      "codeowners": [
+        "@clydebarrow"
+      ],
+      "open_issues": 0,
+      "open_prs": 1
+    },
     "sntp": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.8.1",
@@ -12158,7 +12179,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 11
     },
     "sonoff_d1": {
       "version_created": "2022.4.0",
@@ -13127,8 +13148,8 @@
     },
     "t6615": {
       "version_created": "1.20.2",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
@@ -13258,15 +13279,15 @@
     },
     "teleinfo": {
       "version_created": "1.16.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "sensor"
       ],
       "docs_url": "https://esphome.io/components/sensor/teleinfo",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 4,
+      "test_file_count": 5,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -13667,8 +13688,8 @@
     },
     "tormatic": {
       "version_created": "2025.2.2",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "cover"
       ],
@@ -13853,7 +13874,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 8
+      "open_prs": 9
     },
     "tx20": {
       "version_created": "1.14.0",
@@ -13874,8 +13895,8 @@
     },
     "uart": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-24",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "uart"
       ],
@@ -13955,8 +13976,8 @@
     },
     "ufm01": {
       "version_created": "2026.6.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-21",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "binary_sensor",
         "sensor"
@@ -14032,7 +14053,7 @@
     "uponor_smatrix": {
       "version_created": "2024.2.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-03",
       "type": [
         "climate",
         "sensor"
@@ -14147,8 +14168,8 @@
     },
     "vbus": {
       "version_created": "2023.2.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-03",
       "type": [
         "binary_sensor",
         "sensor"
@@ -14790,7 +14811,7 @@
     "wl_134": {
       "version_created": "2022.10.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-08-31",
+      "last_commit_date": "2026-09-03",
       "type": [
         "text_sensor"
       ],
