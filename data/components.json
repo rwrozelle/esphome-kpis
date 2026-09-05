@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T07:27:59.502268+00:00",
+  "generated_at": "2026-09-05T07:09:12.360821+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1271,14 +1271,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 514,
-    "known_issues": 317,
+    "total_issues": 515,
+    "known_issues": 318,
     "new_comp_issues": 0,
     "unattr_issues": 197,
-    "total_prs": 1227,
-    "known_prs": 906,
-    "new_comp_prs": 139,
-    "unattr_prs": 182
+    "total_prs": 1230,
+    "known_prs": 907,
+    "new_comp_prs": 140,
+    "unattr_prs": 183
   },
   "components": {
     "a01nyub": {
@@ -4876,13 +4876,13 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 49,
+      "open_issues": 50,
       "open_prs": 55
     },
     "esp32_ble": {
       "version_created": "1.19.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-24",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-05",
       "type": [
         "bluetooth"
       ],
@@ -4904,8 +4904,8 @@
     },
     "esp32_ble_beacon": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-05",
       "type": [
         "bluetooth"
       ],
@@ -4945,8 +4945,8 @@
     },
     "esp32_ble_server": {
       "version_created": "1.19.0",
-      "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-18",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-05",
       "type": [
         "bluetooth"
       ],
@@ -5105,8 +5105,8 @@
     },
     "esp32_improv": {
       "version_created": "1.19.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-27",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-05",
       "type": [
         "binary_sensor",
         "output"
@@ -7569,7 +7569,7 @@
         "@esphome/core"
       ],
       "open_issues": 4,
-      "open_prs": 10
+      "open_prs": 11
     },
     "lightwaverf": {
       "version_created": "2023.9.0",
@@ -7736,7 +7736,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 17
+      "open_prs": 18
     },
     "lps22": {
       "version_created": "2025.7.0",
@@ -8687,7 +8687,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "mipi_dsi": {
       "version_created": "2025.7.4",
@@ -9535,7 +9535,7 @@
         "@olegtarasov"
       ],
       "open_issues": 1,
-      "open_prs": 5
+      "open_prs": 4
     },
     "openthread": {
       "version_created": "2025.6.0",
