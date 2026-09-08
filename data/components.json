@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T07:36:11.425397+00:00",
+  "generated_at": "2026-09-08T07:29:35.960076+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1271,14 +1271,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 526,
-    "known_issues": 327,
+    "total_issues": 531,
+    "known_issues": 331,
     "new_comp_issues": 0,
-    "unattr_issues": 199,
-    "total_prs": 1248,
-    "known_prs": 921,
+    "unattr_issues": 200,
+    "total_prs": 1257,
+    "known_prs": 927,
     "new_comp_prs": 141,
-    "unattr_prs": 186
+    "unattr_prs": 189
   },
   "components": {
     "a01nyub": {
@@ -1856,8 +1856,8 @@
     },
     "anova": {
       "version_created": "1.20.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "climate"
       ],
@@ -1928,7 +1928,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 46
+      "open_prs": 49
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2138,8 +2138,8 @@
     },
     "audio": {
       "version_created": "2024.10.1",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-25",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "audio"
       ],
@@ -2591,7 +2591,7 @@
     "ble_client": {
       "version_created": "1.17.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-08",
       "type": [
         "output",
         "sensor",
@@ -2610,7 +2610,7 @@
         "@buxtronix",
         "@clydebarrow"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 4
     },
     "ble_device_base": {
@@ -4052,8 +4052,8 @@
     },
     "dallas_temp": {
       "version_created": "2024.6.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "sensor"
       ],
@@ -4130,7 +4130,7 @@
     "debug": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-03",
+      "last_commit_date": "2026-09-08",
       "type": [
         "sensor",
         "text_sensor"
@@ -4779,7 +4779,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "es7243e": {
       "version_created": "2025.2.0",
@@ -4861,7 +4861,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-07",
       "type": [
         "platform"
       ],
@@ -4876,8 +4876,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 54,
-      "open_prs": 55
+      "open_issues": 57,
+      "open_prs": 54
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5262,7 +5262,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 12,
-      "open_prs": 10
+      "open_prs": 9
     },
     "espnow": {
       "version_created": "2025.7.5",
@@ -6699,10 +6699,9 @@
     },
     "i2s_audio": {
       "version_created": "2022.6.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-24",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
-        "media_player",
         "microphone",
         "speaker"
       ],
@@ -7711,8 +7710,8 @@
     },
     "logger": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-22",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "logger"
       ],
@@ -7838,7 +7837,7 @@
     "lvgl": {
       "version_created": "2024.7.2",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-08",
       "type": [
         "binary_sensor",
         "light",
@@ -9145,7 +9144,7 @@
     "mqtt": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-08",
       "type": [
         "mqtt"
       ],
@@ -9316,7 +9315,7 @@
     "nextion": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-03",
+      "last_commit_date": "2026-09-07",
       "type": [
         "binary_sensor",
         "display",
@@ -9337,8 +9336,8 @@
         "@edwardtfn",
         "@senexcrenshaw"
       ],
-      "open_issues": 2,
-      "open_prs": 6
+      "open_issues": 3,
+      "open_prs": 7
     },
     "nfc": {
       "version_created": "1.16.0",
@@ -9396,7 +9395,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "npi19": {
       "version_created": "2024.10.0",
@@ -10806,8 +10805,8 @@
     },
     "rf_bridge": {
       "version_created": "1.14.4",
-      "version_last_modified": "2026.6.2",
-      "last_commit_date": "2026-06-25",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "rf"
       ],
@@ -13853,7 +13852,7 @@
     "tuya": {
       "version_created": "1.14.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-08",
       "type": [
         "binary_sensor",
         "climate",
@@ -13869,7 +13868,7 @@
       "docs_url": "https://esphome.io/components/binary_sensor/tuya",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 4,
+      "test_file_count": 5,
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
@@ -13920,7 +13919,7 @@
     "udp": {
       "version_created": "2024.8.3",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-01",
+      "last_commit_date": "2026-09-08",
       "type": [
         "packet_transport"
       ],
