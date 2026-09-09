@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T07:29:35.960076+00:00",
+  "generated_at": "2026-09-09T07:36:58.746075+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1275,8 +1275,8 @@
     "known_issues": 331,
     "new_comp_issues": 0,
     "unattr_issues": 200,
-    "total_prs": 1257,
-    "known_prs": 927,
+    "total_prs": 1265,
+    "known_prs": 935,
     "new_comp_prs": 141,
     "unattr_prs": 189
   },
@@ -2118,8 +2118,8 @@
     },
     "atm90e32": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-08",
       "type": [
         "sensor"
       ],
@@ -2139,7 +2139,7 @@
     "audio": {
       "version_created": "2024.10.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-08",
+      "last_commit_date": "2026-09-09",
       "type": [
         "audio"
       ],
@@ -5250,7 +5250,7 @@
     "esphome": {
       "version_created": "2024.5.1",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-06",
+      "last_commit_date": "2026-09-09",
       "type": [
         "core"
       ],
@@ -5262,7 +5262,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 12,
-      "open_prs": 9
+      "open_prs": 10
     },
     "espnow": {
       "version_created": "2025.7.5",
@@ -6374,7 +6374,7 @@
         "@zweckj"
       ],
       "open_issues": 2,
-      "open_prs": 4
+      "open_prs": 6
     },
     "homeassistant": {
       "version_created": "1.13.1",
@@ -6700,7 +6700,7 @@
     "i2s_audio": {
       "version_created": "2022.6.0",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-08",
+      "last_commit_date": "2026-09-09",
       "type": [
         "microphone",
         "speaker"
@@ -6717,7 +6717,7 @@
         "@jesserockz"
       ],
       "open_issues": 6,
-      "open_prs": 7
+      "open_prs": 8
     },
     "iaqcore": {
       "version_created": "2023.10.3",
@@ -8533,8 +8533,8 @@
     },
     "micro_wake_word": {
       "version_created": "2024.2.0",
-      "version_last_modified": "2026.7.4",
-      "last_commit_date": "2026-08-12",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
         "audio"
       ],
@@ -8579,8 +8579,8 @@
     },
     "microphone": {
       "version_created": "2023.4.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
         "audio"
       ],
@@ -8785,8 +8785,8 @@
     },
     "mixer": {
       "version_created": "2025.2.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
         "speaker"
       ],
@@ -8910,7 +8910,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 9,
-      "open_prs": 55
+      "open_prs": 58
     },
     "modbus_client": {
       "version_created": "2026.8.0",
@@ -9381,7 +9381,7 @@
     "noise": {
       "version_created": "2026.8.2",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-07",
+      "last_commit_date": "2026-09-09",
       "type": [
         "noise"
       ],
@@ -9613,7 +9613,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 12
+      "open_prs": 13
     },
     "output": {
       "version_created": "1.11.0",
@@ -9972,7 +9972,7 @@
         "@sjtrny"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "pmsx003": {
       "version_created": "1.13.1",
@@ -10751,8 +10751,8 @@
     },
     "resampler": {
       "version_created": "2025.2.0",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
         "speaker"
       ],
@@ -11554,9 +11554,10 @@
     },
     "sendspin": {
       "version_created": "2026.4.2",
-      "version_last_modified": "2026.8.0",
-      "last_commit_date": "2026-08-20",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
+        "image",
         "media_player",
         "media_source",
         "sensor",
@@ -11567,7 +11568,7 @@
         "esp32"
       ],
       "has_tests": true,
-      "test_file_count": 16,
+      "test_file_count": 18,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -12140,7 +12141,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "sntp": {
       "version_created": "1.13.1",
@@ -12279,8 +12280,8 @@
     },
     "speaker": {
       "version_created": "2023.5.0",
-      "version_last_modified": "2026.6.4",
-      "last_commit_date": "2026-07-06",
+      "version_last_modified": "2026.8.2",
+      "last_commit_date": "2026-09-09",
       "type": [
         "speaker"
       ],
@@ -15515,7 +15516,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 22
+      "open_prs": 23
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
