@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T07:23:32.985149+00:00",
+  "generated_at": "2026-09-13T07:42:12.859398+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1271,14 +1271,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 537,
-    "known_issues": 337,
+    "total_issues": 540,
+    "known_issues": 340,
     "new_comp_issues": 0,
     "unattr_issues": 200,
-    "total_prs": 1313,
-    "known_prs": 976,
-    "new_comp_prs": 143,
-    "unattr_prs": 194
+    "total_prs": 1383,
+    "known_prs": 1041,
+    "new_comp_prs": 145,
+    "unattr_prs": 197
   },
   "components": {
     "a01nyub": {
@@ -1928,7 +1928,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 51
+      "open_prs": 53
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2428,7 +2428,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 4
+      "open_prs": 7
     },
     "binary_sensor_map": {
       "version_created": "1.13.1",
@@ -2724,7 +2724,7 @@
         "@jesserockz"
       ],
       "open_issues": 1,
-      "open_prs": 15
+      "open_prs": 17
     },
     "bluetooth_proxy": {
       "version_created": "2022.8.1",
@@ -2744,7 +2744,7 @@
         "@jesserockz"
       ],
       "open_issues": 7,
-      "open_prs": 19
+      "open_prs": 20
     },
     "bm8563": {
       "version_created": "2025.11.1",
@@ -3682,7 +3682,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 19
+      "open_prs": 18
     },
     "coolix": {
       "version_created": "1.13.1",
@@ -4798,7 +4798,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 30
+      "open_prs": 31
     },
     "es7210": {
       "version_created": "2024.12.4",
@@ -4914,8 +4914,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 57,
-      "open_prs": 58
+      "open_issues": 59,
+      "open_prs": 60
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5023,7 +5023,7 @@
         "@bdraco"
       ],
       "open_issues": 2,
-      "open_prs": 15
+      "open_prs": 16
     },
     "esp32_camera": {
       "version_created": "1.13.1",
@@ -5139,7 +5139,7 @@
         "@swoboda1337"
       ],
       "open_issues": 2,
-      "open_prs": 2
+      "open_prs": 3
     },
     "esp32_improv": {
       "version_created": "1.19.0",
@@ -5262,7 +5262,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 2
     },
     "esp_ldo": {
       "version_created": "2025.6.0",
@@ -5359,7 +5359,7 @@
         "@gtjadsonsantos"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "event": {
       "version_created": "2024.4.2",
@@ -5840,7 +5840,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 9
     },
     "gpio_expander": {
       "version_created": "2024.9.1",
@@ -6516,7 +6516,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 7
+      "open_prs": 8
     },
     "hrxl_maxsonar_wr": {
       "version_created": "1.20.2",
@@ -6576,7 +6576,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 13
     },
     "htu21d": {
       "version_created": "1.13.1",
@@ -7113,7 +7113,7 @@
         "@Mat931"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "interval": {
       "version_created": "1.13.1",
@@ -7172,7 +7172,7 @@
         "@Passific"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "jsn_sr04t": {
       "version_created": "2024.3.1",
@@ -7448,7 +7448,7 @@
         "@Rihan9"
       ],
       "open_issues": 1,
-      "open_prs": 2
+      "open_prs": 8
     },
     "ld2420": {
       "version_created": "2023.10.6",
@@ -7486,7 +7486,7 @@
         "@hareeshmu"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 8
     },
     "ld24xx": {
       "version_created": "2025.7.4",
@@ -7606,7 +7606,7 @@
         "@esphome/core"
       ],
       "open_issues": 4,
-      "open_prs": 14
+      "open_prs": 15
     },
     "lightwaverf": {
       "version_created": "2023.9.0",
@@ -7773,7 +7773,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 18
+      "open_prs": 19
     },
     "lps22": {
       "version_created": "2025.7.0",
@@ -7875,7 +7875,7 @@
     "lvgl": {
       "version_created": "2024.7.2",
       "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-11",
+      "last_commit_date": "2026-09-13",
       "type": [
         "binary_sensor",
         "light",
@@ -8530,7 +8530,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 4,
+      "open_issues": 5,
       "open_prs": 1
     },
     "media_source": {
@@ -9433,7 +9433,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 10
+      "open_prs": 12
     },
     "npi19": {
       "version_created": "2024.10.0",
@@ -9507,7 +9507,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "one_wire": {
       "version_created": "2024.6.0",
@@ -9670,7 +9670,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "packages": {
       "version_created": "1.15.0",
@@ -9764,7 +9764,7 @@
         "@hwstar"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "pca9685": {
       "version_created": "1.13.1",
@@ -9853,7 +9853,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "pcm5122": {
       "version_created": "2026.6.1",
@@ -10236,7 +10236,7 @@
       "type": [
         "core"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/preferences",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 2,
@@ -10246,7 +10246,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "prometheus": {
       "version_created": "1.15.0",
@@ -10766,7 +10766,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "remote_transmitter": {
       "version_created": "1.13.1",
@@ -10785,7 +10785,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 6
+      "open_prs": 7
     },
     "resampler": {
       "version_created": "2025.2.0",
@@ -10839,7 +10839,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 2
     },
     "rf_bridge": {
       "version_created": "1.14.4",
@@ -11268,7 +11268,7 @@
         "@paulmonigatti"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "scd30": {
       "version_created": "1.14.0",
@@ -11307,7 +11307,7 @@
         "@sjtrny"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "script": {
       "version_created": "1.13.1",
@@ -12940,7 +12940,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "status_led": {
       "version_created": "1.13.1",
@@ -13384,7 +13384,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 12
+      "open_prs": 19
     },
     "text": {
       "version_created": "2023.10.4",
@@ -13953,7 +13953,7 @@
         "@esphome/core"
       ],
       "open_issues": 2,
-      "open_prs": 16
+      "open_prs": 19
     },
     "udp": {
       "version_created": "2024.8.3",
@@ -14124,7 +14124,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "usb_cdc_acm": {
       "version_created": "2025.11.5",
@@ -14279,7 +14279,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 2
     },
     "vl53l0x": {
       "version_created": "1.14.0",
@@ -14296,7 +14296,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "voice_assistant": {
       "version_created": "2023.4.0",
@@ -14454,7 +14454,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 7,
-      "open_prs": 20
+      "open_prs": 21
     },
     "web_server_base": {
       "version_created": "1.13.6",
@@ -14473,7 +14473,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 6
     },
     "web_server_idf": {
       "version_created": "2023.7.0",
@@ -14629,7 +14629,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 33
+      "open_prs": 34
     },
     "wifi_info": {
       "version_created": "1.13.1",
