@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T07:40:38.113516+00:00",
+  "generated_at": "2026-09-19T07:35:14.855662+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1275,14 +1275,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 561,
-    "known_issues": 351,
+    "total_issues": 566,
+    "known_issues": 354,
     "new_comp_issues": 0,
-    "unattr_issues": 210,
-    "total_prs": 1451,
-    "known_prs": 1103,
+    "unattr_issues": 212,
+    "total_prs": 1460,
+    "known_prs": 1109,
     "new_comp_prs": 144,
-    "unattr_prs": 204
+    "unattr_prs": 207
   },
   "components": {
     "a01nyub": {
@@ -4147,7 +4147,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "datetime": {
       "version_created": "2024.3.0",
@@ -4918,7 +4918,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 63,
+      "open_issues": 64,
       "open_prs": 63
     },
     "esp32_ble": {
@@ -5282,7 +5282,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 12,
-      "open_prs": 12
+      "open_prs": 15
     },
     "espnow": {
       "version_created": "2025.7.5",
@@ -8521,14 +8521,14 @@
     "mdns": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.9.0",
-      "last_commit_date": "2026-09-16",
+      "last_commit_date": "2026-09-18",
       "type": [
         "network"
       ],
       "docs_url": "https://esphome.io/components/mdns",
       "supported_platforms": [],
       "has_tests": true,
-      "test_file_count": 11,
+      "test_file_count": 12,
       "has_codeowners": true,
       "codeowners_count": 1,
       "codeowners": [
@@ -8803,7 +8803,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 18,
+      "open_issues": 19,
       "open_prs": 18
     },
     "mitsubishi": {
@@ -8841,7 +8841,7 @@
       "codeowners": [
         "@crnjan"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 11
     },
     "mixer": {
@@ -9456,7 +9456,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 13
+      "open_prs": 14
     },
     "npi19": {
       "version_created": "2024.10.0",
@@ -12225,8 +12225,8 @@
     },
     "socket": {
       "version_created": "2021.9.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.9.0",
+      "last_commit_date": "2026-09-18",
       "type": [
         "socket"
       ],
@@ -14359,7 +14359,7 @@
         "@kahrendt"
       ],
       "open_issues": 11,
-      "open_prs": 4
+      "open_prs": 5
     },
     "voltage_sampler": {
       "version_created": "1.13.1",
@@ -15596,7 +15596,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 23
+      "open_prs": 24
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
