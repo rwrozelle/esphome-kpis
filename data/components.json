@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:35:14.855662+00:00",
+  "generated_at": "2026-09-20T07:57:36.945257+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1275,14 +1275,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 566,
-    "known_issues": 354,
+    "total_issues": 568,
+    "known_issues": 355,
     "new_comp_issues": 0,
-    "unattr_issues": 212,
-    "total_prs": 1460,
-    "known_prs": 1109,
+    "unattr_issues": 213,
+    "total_prs": 1466,
+    "known_prs": 1114,
     "new_comp_prs": 144,
-    "unattr_prs": 207
+    "unattr_prs": 208
   },
   "components": {
     "a01nyub": {
@@ -2041,7 +2041,7 @@
       "codeowners": [
         "@mrgnr"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 5
     },
     "async_tcp": {
@@ -2550,7 +2550,7 @@
         "@ziceva"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "bl0940": {
       "version_created": "2022.1.1",
@@ -3989,7 +3989,7 @@
       "type": [
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/sensor/d01",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -4453,7 +4453,7 @@
       "type": [
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/sensor/ds1603l",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 3,
@@ -4903,7 +4903,7 @@
     "esp32": {
       "version_created": "2021.9.1",
       "version_last_modified": "2026.9.0",
-      "last_commit_date": "2026-09-17",
+      "last_commit_date": "2026-09-19",
       "type": [
         "platform"
       ],
@@ -4919,7 +4919,7 @@
         "@esphome/core"
       ],
       "open_issues": 64,
-      "open_prs": 63
+      "open_prs": 64
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5143,7 +5143,7 @@
         "@swoboda1337"
       ],
       "open_issues": 3,
-      "open_prs": 4
+      "open_prs": 5
     },
     "esp32_rmt": {
       "version_created": "2024.4.0",
@@ -7919,7 +7919,7 @@
         "@clydebarrow"
       ],
       "open_issues": 7,
-      "open_prs": 33
+      "open_prs": 34
     },
     "m5stack_8angle": {
       "version_created": "2024.7.1",
@@ -8804,7 +8804,7 @@
         "@clydebarrow"
       ],
       "open_issues": 19,
-      "open_prs": 18
+      "open_prs": 19
     },
     "mitsubishi": {
       "version_created": "1.14.4",
@@ -8868,7 +8868,7 @@
       "type": [
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/sensor/mk2pvrouter",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 4,
@@ -11755,7 +11755,7 @@
       "type": [
         "sensor"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/sensor/sfa40",
       "supported_platforms": [],
       "has_tests": true,
       "test_file_count": 5,
@@ -12190,7 +12190,7 @@
       "type": [
         "display"
       ],
-      "docs_url": null,
+      "docs_url": "https://esphome.io/components/display/snapshot",
       "supported_platforms": [
         "host"
       ],
@@ -12202,7 +12202,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "sntp": {
       "version_created": "1.13.1",
