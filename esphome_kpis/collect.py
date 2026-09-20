@@ -45,7 +45,10 @@ def _resolve_components_from_titles(cache: dict, known: set[str]) -> int:
 
     updated = 0
     for item in cache.get("items", {}).values():
-        if item["components"]:
+        # PR counts link to a `label:"component: <name>"` search, so PRs are
+        # attributed by label only; inferring from titles would make the count
+        # larger than what the link shows.
+        if item["components"] or item["is_pr"]:
             continue
         title = item.get("title", "")
         found: set[str] = set()

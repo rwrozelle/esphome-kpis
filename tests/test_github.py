@@ -196,6 +196,24 @@ class TestUpdateCache:
 
         assert call_args[0] == last
 
+    def test_incremental_evicts_items_closed_since_last_fetch(self):
+        cache = {
+            "last_fetched_at": _iso(7),
+            "items": {
+                "1": {"is_pr": True, "title": "", "components": ["wifi"], "updated_at": _iso(9)},
+                "2": {"is_pr": True, "title": "", "components": ["wifi"], "updated_at": _iso(9)},
+            },
+        }
+
+        def fake_stream(repo, state, since=None):
+            if state == "closed":
+                yield [_make_raw(1, True, ["wifi"])]
+
+        with patch("esphome_kpis.github._fetch_stream", side_effect=fake_stream):
+            update_cache(cache)
+
+        assert list(cache["items"]) == ["2"]
+
     def test_saves_incrementally_after_each_page(self, tmp_path):
         page1 = [_make_raw(1, False, ["wifi"])]
         page2 = [_make_raw(2, True, ["mqtt"])]

@@ -185,6 +185,19 @@ def update_cache(cache: dict, cache_path: Path | None = None, repo: str = ESPHOM
 
     print(f"  fetched {total} open items         ")
 
+    # An open-only fetch never sees items that have since closed or merged, so
+    # without this the cache (and the table counts) would only ever grow.
+    if since:
+        evicted = 0
+        for page in _fetch_stream(repo, "closed", since=since):
+            for item in page:
+                if items_store.pop(str(item["number"]), None) is not None:
+                    evicted += 1
+        if evicted:
+            print(f"  evicted {evicted} items closed since last fetch")
+            if cache_path:
+                save_cache(cache, cache_path)
+
     cache["last_fetched_at"] = datetime.now(timezone.utc).isoformat()
     if cache_path:
         save_cache(cache, cache_path)

@@ -40,9 +40,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/github_cache.json
-          key: github-api-cache-${{ github.run_id }}
+          key: github-api-cache-v2-${{ github.run_id }}
           restore-keys: |
-            github-api-cache-
+            github-api-cache-v2-
 
       - name: Clone esphome (full history)
         run: git clone https://github.com/esphome/esphome.git esphome-src
