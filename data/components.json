@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T16:32:23.396257+00:00",
+  "generated_at": "2026-09-21T08:15:45.982592+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1275,14 +1275,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 280,
-    "known_issues": 182,
+    "total_issues": 285,
+    "known_issues": 187,
     "new_comp_issues": 0,
     "unattr_issues": 98,
-    "total_prs": 476,
-    "known_prs": 341,
-    "new_comp_prs": 95,
-    "unattr_prs": 40
+    "total_prs": 481,
+    "known_prs": 343,
+    "new_comp_prs": 96,
+    "unattr_prs": 42
   },
   "components": {
     "a01nyub": {
@@ -2467,7 +2467,7 @@
       "codeowners": [
         "@kuba2k2"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "bk72xx_ble": {
@@ -4801,7 +4801,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 16
     },
     "es7210": {
@@ -6736,7 +6736,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 5
     },
     "iaqcore": {
@@ -8611,7 +8611,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 3
     },
     "micronova": {
@@ -8971,7 +8971,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 5,
-      "open_prs": 4
+      "open_prs": 5
     },
     "modbus_client": {
       "version_created": "2026.8.0",
@@ -10191,7 +10191,7 @@
         "@kbx81"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 0
     },
     "pn7160_i2c": {
       "version_created": "2023.12.0",
@@ -10211,7 +10211,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "pn7160_spi": {
       "version_created": "2023.12.0",
@@ -10231,7 +10231,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "power_supply": {
       "version_created": "1.13.1",
@@ -11782,7 +11782,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "sgp40": {
       "version_created": "1.17.0",
@@ -11821,7 +11821,7 @@
         "@SenexCrenshaw"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "sha256": {
       "version_created": "2025.9.2",
@@ -14127,7 +14127,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 0,
+      "open_issues": 1,
       "open_prs": 0
     },
     "uponor_smatrix": {
@@ -14358,7 +14358,7 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 6,
+      "open_issues": 7,
       "open_prs": 4
     },
     "voltage_sampler": {
@@ -14495,7 +14495,7 @@
       "has_codeowners": false,
       "codeowners_count": 0,
       "codeowners": [],
-      "open_issues": 5,
+      "open_issues": 6,
       "open_prs": 8
     },
     "web_server_base": {
@@ -15596,7 +15596,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 7
+      "open_prs": 8
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
