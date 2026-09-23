@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T07:59:16.852458+00:00",
+  "generated_at": "2026-09-23T08:00:52.470191+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1275,14 +1275,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 287,
-    "known_issues": 187,
+    "total_issues": 291,
+    "known_issues": 189,
     "new_comp_issues": 0,
-    "unattr_issues": 100,
-    "total_prs": 487,
-    "known_prs": 350,
+    "unattr_issues": 102,
+    "total_prs": 509,
+    "known_prs": 371,
     "new_comp_prs": 96,
-    "unattr_prs": 41
+    "unattr_prs": 42
   },
   "components": {
     "a01nyub": {
@@ -1932,7 +1932,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 16
+      "open_prs": 17
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2061,7 +2061,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "at581x": {
       "version_created": "2024.3.1",
@@ -2158,7 +2158,7 @@
       "codeowners": [
         "@kahrendt"
       ],
-      "open_issues": 1,
+      "open_issues": 0,
       "open_prs": 3
     },
     "audio_adc": {
@@ -2432,7 +2432,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "binary_sensor_map": {
       "version_created": "1.13.1",
@@ -3422,7 +3422,7 @@
         "@lygris"
       ],
       "open_issues": 2,
-      "open_prs": 1
+      "open_prs": 2
     },
     "ccs811": {
       "version_created": "1.13.1",
@@ -3556,7 +3556,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 4
     },
     "climate_ir": {
       "version_created": "1.14.0",
@@ -3575,7 +3575,7 @@
         "@glmnet"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 5
     },
     "climate_ir_lg": {
       "version_created": "1.14.5",
@@ -3753,7 +3753,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "cs5460a": {
       "version_created": "1.19.0",
@@ -4216,7 +4216,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 5
+      "open_prs": 6
     },
     "delonghi": {
       "version_created": "2022.5.0",
@@ -4918,7 +4918,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 39,
+      "open_issues": 41,
       "open_prs": 12
     },
     "esp32_ble": {
@@ -5322,7 +5322,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "ethernet_info": {
       "version_created": "2022.10.1",
@@ -5478,7 +5478,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "fastled_base": {
       "version_created": "1.13.1",
@@ -5672,8 +5672,8 @@
     },
     "fujitsu_general": {
       "version_created": "1.14.0",
-      "version_last_modified": "2026.8.1",
-      "last_commit_date": "2026-08-23",
+      "version_last_modified": "2026.9.0",
+      "last_commit_date": "2026-09-23",
       "type": [
         "climate"
       ],
@@ -5761,7 +5761,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "gp2y1010au0f": {
       "version_created": "2024.9.2",
@@ -5917,7 +5917,7 @@
         "@orestismers"
       ],
       "open_issues": 1,
-      "open_prs": 7
+      "open_prs": 8
     },
     "grove_gas_mc_v2": {
       "version_created": "2024.10.0",
@@ -7629,7 +7629,7 @@
         "@esphome/core"
       ],
       "open_issues": 3,
-      "open_prs": 8
+      "open_prs": 9
     },
     "lightwaverf": {
       "version_created": "2023.9.0",
@@ -8823,7 +8823,7 @@
         "@RubyBailey"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "mitsubishi_cn105": {
       "version_created": "2026.3.2",
@@ -8842,7 +8842,7 @@
         "@crnjan"
       ],
       "open_issues": 2,
-      "open_prs": 0
+      "open_prs": 1
     },
     "mixer": {
       "version_created": "2025.2.0",
@@ -9397,7 +9397,7 @@
         "@edwardtfn",
         "@senexcrenshaw"
       ],
-      "open_issues": 3,
+      "open_issues": 4,
       "open_prs": 4
     },
     "nfc": {
@@ -9494,7 +9494,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 11
     },
     "ntc": {
       "version_created": "1.13.1",
@@ -10770,7 +10770,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 12
+      "open_prs": 13
     },
     "remote_receiver": {
       "version_created": "1.13.1",
@@ -11177,7 +11177,7 @@
         "@ximex"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "runtime_image": {
       "version_created": "2026.2.0",
@@ -12495,7 +12495,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "sps30": {
       "version_created": "1.14.4",
@@ -12997,7 +12997,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "sts3x": {
       "version_created": "1.14.0",
@@ -13111,7 +13111,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 1
     },
     "sx126x": {
       "version_created": "2025.7.0",
@@ -13407,7 +13407,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 10
     },
     "text": {
       "version_created": "2023.10.4",
@@ -14244,7 +14244,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 9
     },
     "vbus": {
       "version_created": "2023.2.0",
@@ -14434,7 +14434,7 @@
         "@dhoeben"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 2
     },
     "waveshare_epaper": {
       "version_created": "1.13.1",
@@ -14671,7 +14671,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 11
+      "open_prs": 12
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -15497,7 +15497,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 4
+      "open_prs": 5
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -15577,8 +15577,8 @@
     },
     "zigbee": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.8.2",
-      "last_commit_date": "2026-09-10",
+      "version_last_modified": "2026.9.0",
+      "last_commit_date": "2026-09-22",
       "type": [
         "zigbee"
       ],
@@ -15596,7 +15596,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 2,
-      "open_prs": 10
+      "open_prs": 9
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
