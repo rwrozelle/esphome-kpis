@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:39:10.421635+00:00",
+  "generated_at": "2026-11-21T10:22:13.233021+00:00",
   "esphome_releases": [
     {
       "tag": "1.1",
@@ -1295,14 +1295,14 @@
     }
   ],
   "issue_stats": {
-    "total_issues": 241,
-    "known_issues": 167,
+    "total_issues": 238,
+    "known_issues": 168,
     "new_comp_issues": 0,
-    "unattr_issues": 74,
+    "unattr_issues": 70,
     "total_prs": 457,
-    "known_prs": 346,
-    "new_comp_prs": 78,
-    "unattr_prs": 33
+    "known_prs": 340,
+    "new_comp_prs": 82,
+    "unattr_prs": 35
   },
   "components": {
     "a01nyub": {
@@ -1438,8 +1438,8 @@
     },
     "adc": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.10.0",
-      "last_commit_date": "2026-10-22",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -1458,7 +1458,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "adc128s102": {
       "version_created": "2022.10.1",
@@ -2055,8 +2055,8 @@
     },
     "api": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-16",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "api"
       ],
@@ -2070,7 +2070,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 13
+      "open_prs": 12
     },
     "aqi": {
       "version_created": "2025.12.1",
@@ -2321,7 +2321,7 @@
     "audio": {
       "version_created": "2024.10.1",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-18",
+      "last_commit_date": "2026-11-20",
       "type": [
         "audio"
       ],
@@ -2337,7 +2337,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 4
     },
     "audio_adc": {
       "version_created": "2025.2.0",
@@ -2400,8 +2400,8 @@
     },
     "audio_http": {
       "version_created": "2026.4.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-10-28",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "audio"
       ],
@@ -2417,7 +2417,7 @@
         "@kahrendt"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "axs15231": {
       "version_created": "2024.10.1",
@@ -2691,8 +2691,8 @@
     },
     "bk72xx_ble": {
       "version_created": "2026.7.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "bk72xx_ble"
       ],
@@ -2793,8 +2793,8 @@
     },
     "bl0942": {
       "version_created": "2022.9.1",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -4073,7 +4073,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "counter": {
       "version_created": "2026.9.1",
@@ -4188,9 +4188,9 @@
       "open_prs": 1
     },
     "cst3240": {
-      "version_created": "2026.10.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-17",
+      "version_created": "2026.11.0",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "touchscreen"
       ],
@@ -4204,7 +4204,7 @@
         "@tpruvot"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "cst328": {
       "version_created": "2026.6.5",
@@ -4545,8 +4545,8 @@
       "codeowners": [
         "@ssieb"
       ],
-      "open_issues": 1,
-      "open_prs": 0
+      "open_issues": 2,
+      "open_prs": 1
     },
     "daly_bms": {
       "version_created": "2021.9.2",
@@ -4830,8 +4830,8 @@
     },
     "dfrobot_sen0609": {
       "version_created": "2026.10.0",
-      "version_last_modified": "2026.10.1",
-      "last_commit_date": "2026-10-31",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "binary_sensor",
         "button",
@@ -4851,7 +4851,7 @@
         "@remcom"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "dht": {
       "version_created": "1.13.1",
@@ -4908,8 +4908,8 @@
     },
     "display_menu_base": {
       "version_created": "2022.11.0",
-      "version_last_modified": "2026.10.1",
-      "last_commit_date": "2026-11-01",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "number",
         "select",
@@ -4925,7 +4925,7 @@
         "@numo68"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "dlms_meter": {
       "version_created": "2026.1.4",
@@ -5046,8 +5046,8 @@
     },
     "ds3231": {
       "version_created": "2026.10.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "binary_sensor",
         "sensor"
@@ -5062,7 +5062,7 @@
         "@linkedupbits"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "dsmr": {
       "version_created": "2021.8.0",
@@ -5378,8 +5378,8 @@
     },
     "ens210": {
       "version_created": "2022.5.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-11",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -5393,7 +5393,7 @@
         "@itn3rd77"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "entity_transport": {
       "version_created": "2026.10.2",
@@ -5431,7 +5431,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 2,
+      "open_issues": 1,
       "open_prs": 19
     },
     "es7210": {
@@ -5553,8 +5553,8 @@
     },
     "es9038q2m_katana": {
       "version_created": "2026.10.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "es9038q2m_katana"
       ],
@@ -5568,7 +5568,7 @@
         "@GioMez"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "esp32": {
       "version_created": "2021.9.1",
@@ -5588,8 +5588,8 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 60,
-      "open_prs": 8
+      "open_issues": 59,
+      "open_prs": 9
     },
     "esp32_ble": {
       "version_created": "1.19.0",
@@ -5855,7 +5855,7 @@
         "@jesserockz"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 3
     },
     "esp32_rmt_led_strip": {
       "version_created": "2023.5.0",
@@ -5920,8 +5920,8 @@
     },
     "esp8266": {
       "version_created": "2021.9.1",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-09",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "platform"
       ],
@@ -5936,7 +5936,7 @@
       "codeowners": [
         "@esphome/core"
       ],
-      "open_issues": 13,
+      "open_issues": 14,
       "open_prs": 2
     },
     "esp8266_pwm": {
@@ -6003,7 +6003,7 @@
         "@francescopace"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "esphome": {
       "version_created": "2024.5.1",
@@ -6047,7 +6047,7 @@
     "ethernet": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-19",
+      "last_commit_date": "2026-11-20",
       "type": [
         "ethernet"
       ],
@@ -6061,7 +6061,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 3
+      "open_prs": 2
     },
     "ethernet_info": {
       "version_created": "2022.10.1",
@@ -6661,7 +6661,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 5
     },
     "gpio_expander": {
       "version_created": "2024.9.1",
@@ -6895,7 +6895,7 @@
         "@paveldn"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 4
     },
     "haier_tundra": {
       "version_created": "2026.10.0",
@@ -7349,7 +7349,7 @@
         "@OttoWinter"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "honeywell_hih_i2c": {
       "version_created": "2023.12.8",
@@ -7507,7 +7507,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 3
     },
     "htu21d": {
       "version_created": "1.13.1",
@@ -7643,8 +7643,8 @@
     },
     "i2c": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-17",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "i2c"
       ],
@@ -7666,7 +7666,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 4
+      "open_prs": 3
     },
     "i2c_device": {
       "version_created": "2024.10.2",
@@ -7706,7 +7706,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 2,
+      "open_issues": 3,
       "open_prs": 5
     },
     "i2s_clockless_led_strip": {
@@ -8707,7 +8707,7 @@
     "libretiny": {
       "version_created": "2023.8.3",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-18",
+      "last_commit_date": "2026-11-20",
       "type": [
         "platform"
       ],
@@ -8723,7 +8723,7 @@
         "@kuba2k2"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 8
     },
     "libretiny_pwm": {
       "version_created": "2023.8.3",
@@ -8805,8 +8805,8 @@
     },
     "lis2dw12": {
       "version_created": "2026.10.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "binary_sensor",
         "sensor",
@@ -8822,7 +8822,7 @@
         "@latonita"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "lis2dw12_i2c": {
       "version_created": "2026.9.1",
@@ -9029,7 +9029,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 2
     },
     "lp5562": {
       "version_created": "2026.10.0",
@@ -9921,7 +9921,7 @@
       "codeowners": [
         "@jesserockz"
       ],
-      "open_issues": 4,
+      "open_issues": 3,
       "open_prs": 1
     },
     "media_source": {
@@ -9945,8 +9945,8 @@
     },
     "mhz19": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.10.1",
-      "last_commit_date": "2026-10-30",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -9958,7 +9958,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "micro_wake_word": {
       "version_created": "2024.2.0",
@@ -10253,8 +10253,8 @@
     },
     "mitsubishi_cn105": {
       "version_created": "2026.3.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-09",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "climate"
       ],
@@ -10268,7 +10268,7 @@
         "@crnjan"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 0
     },
     "mixer": {
       "version_created": "2025.2.0",
@@ -10308,8 +10308,8 @@
     },
     "mlx90393": {
       "version_created": "2022.1.4",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-16",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -10323,7 +10323,7 @@
         "@functionpointer"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 0
     },
     "mlx90614": {
       "version_created": "2023.4.2",
@@ -10500,7 +10500,7 @@
       "codeowners": [
         "@oarcher"
       ],
-      "open_issues": 1,
+      "open_issues": 2,
       "open_prs": 0
     },
     "monochromatic": {
@@ -10880,7 +10880,7 @@
     "network": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-18",
+      "last_commit_date": "2026-11-20",
       "type": [
         "network"
       ],
@@ -10896,7 +10896,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "nextion": {
       "version_created": "1.13.1",
@@ -11003,9 +11003,9 @@
       "open_prs": 0
     },
     "npm1300": {
-      "version_created": "2026.10.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-17",
+      "version_created": "2026.11.0",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "binary_sensor",
         "sensor",
@@ -11022,7 +11022,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "nrf52": {
       "version_created": "2025.7.0",
@@ -11041,7 +11041,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 6
+      "open_prs": 5
     },
     "ns2009": {
       "version_created": "2026.9.1",
@@ -11096,7 +11096,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 2
     },
     "one_wire": {
       "version_created": "2024.6.0",
@@ -11115,7 +11115,7 @@
         "@ssieb"
       ],
       "open_issues": 1,
-      "open_prs": 1
+      "open_prs": 4
     },
     "online_image": {
       "version_created": "2024.8.0",
@@ -11161,7 +11161,7 @@
         "@olegtarasov"
       ],
       "open_issues": 0,
-      "open_prs": 0
+      "open_prs": 1
     },
     "openthread": {
       "version_created": "2025.6.0",
@@ -12503,8 +12503,8 @@
     },
     "remote_base": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-16",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "binary_sensor"
       ],
@@ -12516,7 +12516,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 2
     },
     "remote_receiver": {
       "version_created": "1.13.1",
@@ -12779,8 +12779,8 @@
     },
     "rp2": {
       "version_created": "2026.6.5",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-14",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "rp2"
       ],
@@ -13381,8 +13381,8 @@
     },
     "selec_meter": {
       "version_created": "1.20.1",
-      "version_last_modified": "2026.10.1",
-      "last_commit_date": "2026-10-28",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -13396,7 +13396,7 @@
         "@sourabhjaiswal"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "select": {
       "version_created": "1.20.4",
@@ -13498,7 +13498,7 @@
     "sendspin": {
       "version_created": "2026.4.2",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-18",
+      "last_commit_date": "2026-11-20",
       "type": [
         "image",
         "media_player",
@@ -13519,7 +13519,7 @@
         "@kahrendt"
       ],
       "open_issues": 3,
-      "open_prs": 10
+      "open_prs": 3
     },
     "senseair": {
       "version_created": "1.14.0",
@@ -13578,8 +13578,8 @@
     },
     "serial_proxy": {
       "version_created": "2026.3.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-13",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "serial_proxy"
       ],
@@ -13593,7 +13593,7 @@
         "@kbx81"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "servo": {
       "version_created": "1.13.1",
@@ -15246,8 +15246,8 @@
     },
     "sy6970": {
       "version_created": "2026.1.2",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "sensor"
       ],
@@ -15261,7 +15261,7 @@
         "@linkedupbits"
       ],
       "open_issues": 0,
-      "open_prs": 2
+      "open_prs": 1
     },
     "syslog": {
       "version_created": "2025.4.2",
@@ -15400,8 +15400,8 @@
     },
     "tca9548a": {
       "version_created": "1.17.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-04",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "gpio_expander"
       ],
@@ -15415,7 +15415,7 @@
         "@andreashergert1984"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "tca9555": {
       "version_created": "2024.9.1",
@@ -15699,8 +15699,8 @@
     },
     "time": {
       "version_created": "1.11.0",
-      "version_last_modified": "2026.10.1",
-      "last_commit_date": "2026-10-30",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "time"
       ],
@@ -15716,7 +15716,7 @@
         "@esphome/core"
       ],
       "open_issues": 0,
-      "open_prs": 5
+      "open_prs": 4
     },
     "time_based": {
       "version_created": "1.13.1",
@@ -15925,9 +15925,9 @@
       "open_prs": 0
     },
     "tmc22xx": {
-      "version_created": "2026.9.1",
-      "version_last_modified": "2026.9.1",
-      "last_commit_date": "2026-10-19",
+      "version_created": "2026.10.0",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "stepper"
       ],
@@ -15941,7 +15941,7 @@
         "@remcom"
       ],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "tmp102": {
       "version_created": "1.16.0",
@@ -16253,7 +16253,7 @@
         "@esphome/core"
       ],
       "open_issues": 1,
-      "open_prs": 14
+      "open_prs": 15
     },
     "uart_mux": {
       "version_created": "2026.9.0",
@@ -16374,8 +16374,8 @@
     },
     "uln2003": {
       "version_created": "1.13.1",
-      "version_last_modified": "2026.9.1",
-      "last_commit_date": "2026-10-18",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "stepper"
       ],
@@ -16387,7 +16387,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 0,
-      "open_prs": 1
+      "open_prs": 0
     },
     "ultrasonic": {
       "version_created": "1.13.1",
@@ -16445,7 +16445,7 @@
         "@jesserockz"
       ],
       "open_issues": 1,
-      "open_prs": 0
+      "open_prs": 1
     },
     "uponor_smatrix": {
       "version_created": "2024.2.1",
@@ -16547,7 +16547,7 @@
         "@clydebarrow"
       ],
       "open_issues": 0,
-      "open_prs": 3
+      "open_prs": 4
     },
     "usb_uart": {
       "version_created": "2025.5.1",
@@ -16781,8 +16781,8 @@
     },
     "voice_assistant": {
       "version_created": "2023.4.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-07",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "media_player",
         "speaker"
@@ -16797,8 +16797,8 @@
         "@jesserockz",
         "@kahrendt"
       ],
-      "open_issues": 3,
-      "open_prs": 6
+      "open_issues": 2,
+      "open_prs": 5
     },
     "voltage_sampler": {
       "version_created": "1.13.1",
@@ -16891,7 +16891,7 @@
       "codeowners": [
         "@clydebarrow"
       ],
-      "open_issues": 2,
+      "open_issues": 1,
       "open_prs": 0
     },
     "waveshare_io_ch32v003": {
@@ -16917,7 +16917,7 @@
     "web_server": {
       "version_created": "1.13.1",
       "version_last_modified": "2026.11.0",
-      "last_commit_date": "2026-11-19",
+      "last_commit_date": "2026-11-20",
       "type": [
         "web_server"
       ],
@@ -16935,7 +16935,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 3,
-      "open_prs": 10
+      "open_prs": 9
     },
     "web_server_base": {
       "version_created": "1.13.6",
@@ -17112,7 +17112,7 @@
       "codeowners_count": 0,
       "codeowners": [],
       "open_issues": 1,
-      "open_prs": 4
+      "open_prs": 6
     },
     "wifi_info": {
       "version_created": "1.13.1",
@@ -17960,8 +17960,8 @@
     },
     "zephyr": {
       "version_created": "2025.7.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-17",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "platform"
       ],
@@ -17977,7 +17977,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 8
+      "open_prs": 6
     },
     "zephyr_ble_server": {
       "version_created": "2025.10.2",
@@ -18000,8 +18000,8 @@
     },
     "zephyr_coredump": {
       "version_created": "2026.10.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-07",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "zephyr_coredump"
       ],
@@ -18022,8 +18022,8 @@
     },
     "zephyr_mcumgr": {
       "version_created": "2026.3.0",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-11",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "ota"
       ],
@@ -18079,8 +18079,8 @@
     },
     "zigbee": {
       "version_created": "2025.12.5",
-      "version_last_modified": "2026.10.2",
-      "last_commit_date": "2026-11-16",
+      "version_last_modified": "2026.11.0",
+      "last_commit_date": "2026-11-20",
       "type": [
         "zigbee"
       ],
@@ -18098,7 +18098,7 @@
         "@tomaszduda23"
       ],
       "open_issues": 0,
-      "open_prs": 7
+      "open_prs": 6
     },
     "zio_ultrasonic": {
       "version_created": "2023.7.0",
